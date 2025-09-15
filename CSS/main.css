@@ -94,7 +94,7 @@ header {
     width: 100px;
     height: auto;
     position: absolute;
-    top: 4.5%;
+    top: 2.1%;
     transform: translate(-50%, -50%);
 }
 
@@ -385,7 +385,7 @@ header {
 
     .logo-img{
         width: 300px;
-        top: 4%;
+        top: 5.8%;
     }
 
     .close-button{

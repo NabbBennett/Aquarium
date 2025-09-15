@@ -22,6 +22,7 @@ body {
     font-weight: normal;
     background-color: #838A90;
     max-width: 320px;
+    margin: 0 auto;
 }
 
 /* GLOBAL ATTRIBUTES */
@@ -161,7 +162,7 @@ header {
 .content{
     display: flex;
     background-color: white;
-    padding: 10px 0px 0px;
+    padding: 10px 0 0;
 }
 
 /* WELCOME */
@@ -252,7 +253,7 @@ header {
     transform: scale(1.1);
 }
 
-@media screen and (max-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
     body {
         max-width: 768px;
     }
@@ -261,9 +262,207 @@ header {
         max-width: 748px;
     }
 
+    .tab{
+        font-size: 30px;
+        max-width: 80px;
+        padding: 10px 20px 10px 15px;
+    }
+
+    .nav-btn {
+        font-size: 25px;
+    }
+
+    .logo{
+        padding: 15px 200px;
+    }
+
+    .logo-img{
+        width: 180px;
+        top: 3.5%;
+    }
+
+    .close-button{
+        padding-right: 20px;
+    }
+
+    .nav-btn-close {
+        font-size: 25px;
+    }
+
+    .navbar a {
+        font-size: 30px;
+    }
+
+    .navbar span {
+        font-size: 30px;
+        margin: 0 10px;
+    }
+
+    .main-section{
+        max-width: 748px;
+        padding: 40px 0 10px 0;
+    }
+
+    .content{
+        padding:40px 0 0;
+    }
+
+    .information{
+        padding: 40px;
+    }
+    .summary-header{
+        max-width: 300px;
+        padding: 6px 12px;
+        top: 235px;
+    }
     
+    .summary-header h2{
+        font-size: 35px;
+    }
+
+    .square-blue{
+        max-width: 500px;
+        padding: 25px 120px;
+        margin-bottom: 40px;
+        border-width: 4px;
+    }
+
+    .square-blue p{
+        padding: 30px;
+        font-size: 25px;
+    }
+
+    .validoggo{
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 530px;
+        padding-left: 120px;
+    }
+
+    .inter-poster{
+        padding: 20px;;
+    }
+
+    .poster-img{
+        width: 100%;
+    }
+
+    .read-it{
+        max-width: 200px;
+        padding: 10px 30px;
+        margin: 15px auto;
+    }
+
+    .read-button{
+        font-size: 40px;
+    }
+
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (min-width: 1280px) {
+    body {
+        max-width: 1280px;
+    }
+
+   header {
+        max-width: 1260px;
+    }
+
+    .tab{
+        font-size: 50px;
+        max-width: 100px;
+        padding: 20px 40px 20px 25px;
+    }
+
+    .nav-btn {
+        font-size: 45px;
+    }
+
+    .logo{
+        padding: 25px 350px;
+    }
+
+    .logo-img{
+        width: 300px;
+        top: 4%;
+    }
+
+    .close-button{
+        padding-right: 40px;
+    }
+
+    .nav-btn-close {
+        font-size: 45px;
+    }
+
+    .navbar a {
+        font-size: 45px;
+    }
+
+    .navbar span {
+        font-size: 45px;
+        margin: 0 15px;
+    }
+
+    .main-section{
+        max-width: 1260px;
+        padding: 60px 0 20px 0;
+    }
+
+    .content{
+        padding:60px 0px 0px;
+    }
+
+    .information{
+        padding: 60px;
+    }
+    .summary-header{
+        max-width: 600px;
+        padding: 6px 24px;
+        top: 350px;
+    }
     
+    .summary-header h2{
+        font-size: 70px;
+    }
+
+    .square-blue{
+        max-width: 600px;
+        padding: 45px 200px;
+        margin-bottom: 80px;
+        border-width: 6px;
+    }
+
+    .square-blue p{
+        padding: 45px;
+        font-size: 45px;
+    }
+
+    .validoggo{
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        top: 850px;
+        padding-left: 200px;
+    }
+
+    .inter-poster{
+        padding: 60px;
+    }
+
+    .poster-img{
+        width: 120%;
+        height: auto;
+    }
+
+    .read-it{
+        max-width: 350px;
+        padding: 20px 50px;
+        margin: 25px auto;
+    }
+
+    .read-button{
+        font-size: 70px;
+    }
 }

@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aquarium</title>
-    <link rel="stylesheet" href="CSS/main.css">
+    <title>Chapter 1</title>
+    <link rel="stylesheet" href="CSS/chapter.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <header>
         <div class="tab">
-            <p class="page-name"> HOME </p> <!-- Cambia dependiendo la pagina en la que estes -->
+            <p class="page-name"> Chapter 1 </p> <!-- Cambia dependiendo la pagina en la que estes -->
         </div>
 
         <div class="navegator">
@@ -50,36 +50,36 @@
         </div>
     </header>
 
-    <section class="main-section"> <!-- Fondo azul -->
-        <div class="content"> <!-- Fondo blanco -->
-            <div class="information">
-                <div class="summary-header">
-                    <h2>Welcome</h2>
-                </div>
+    <main>
+        <div class="separator"></div>
 
-                <div class="square-blue">
-                    <p>"text"</p>
-                </div>
-
-                <div class="square-blue">
-                    <p>"Text"</p>
-                </div>
-
-                <div class="Vali">
-                    <img class="validoggo" src="images/Vally.png" alt="Vally">
-                </div>
-           </div>
-
-                <div class="inter-poster">
-                    <img class="poster-img" src="images/PosterInterno.png" alt="Inter Poster">
-                </div>
- 
+        <div class="comic-panel">
+            <h2 id="chapter"></h2>
+            <figure class="comic-img">
+                <img id="comic-img" src="" alt="Comic Image">
+            </figure>
+            <figcaption id="comic-text" class="comic-text"></figcaption>
         </div>
 
-        <div class="read-it">
-            <a href="chapter.html" class="read-button">Read It Now!</a>
+        <div class="button-action">
+            <div class="back-next-buttons">
+                <a href="#" class="nav-btn home-btn">
+                    <i class="fas fa-arrow-left"></i>
+                </a>
+                
+                <a href="#" class="nav-btn">
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
         </div>
-    </section>
 
+        <div class="info-sesion">
+            <button class="save-btn">Guardar</button>
+            <button class="auto-save" type="checkbox">Auto guardar</button>
+            <button class="load-btn">Cargar progreso</button>
+            <button class="reset-btn">Resetear</button>
+        </div>
+    </main>
 </body>
+<script src="JS/chapter.js"></script>
 </html>

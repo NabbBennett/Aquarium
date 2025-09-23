@@ -1,4 +1,4 @@
-// Estructura de datos CORREGIDA - chapters en lugar de pages
+// Estructura de datos 
 const chapters = [
     {
         id: 1,

@@ -224,7 +224,7 @@ const chapters = [
                 title: "Introduction I - 31",
                 image: "CHAPTER 1/Aquarium 1-33.png",
                 alt: "Comic Image 31",
-                text: ["Díalogo<br><br>Aura: ¿Ves? No hay ninguna bruja aquí. De hecho, jaja, ¡Las odio mucho! Igual que tú.<br>Bartender: ¿Lista de crímenes?<br>Aura: ... ¿Disculpa?<br>Aura: Estoy bastante segura de que me confundes con otra persona... Verás, solo pasaba por aquí y tengo muchísimas ganas de una cerveza, así que...<br>Bartender: Ahem."]
+                text: ["Díalogo<br><br><figcaption style=text-align:left>Aura: ¿Ves? No hay ninguna bruja aquí. De hecho, jaja, ¡Las odio mucho! Igual que tú.<br>Bartender: ¿Lista de crímenes?<br>Aura: ... ¿Disculpa?<br>Aura: Estoy bastante segura de que me confundes con otra persona... Verás, solo pasaba por aquí y tengo muchísimas ganas de una cerveza, así que...<br>Bartender: Ahem."]
                 /*AQUI VA UNA CONVERSACION (HABLAR CON VALLY)*/
             },
             {
@@ -232,7 +232,7 @@ const chapters = [
                 title: "Introduction I - 32",
                 image: "CHAPTER 1/Aquarium 1-34.png",
                 alt: "Comic Image 32",
-                text: ["Díalogo<br><br>Aura: ...<br>Aura: Oye, eso. Eso no estaba antes.<br>Bartender: Políticas del bar.<br><br>Quedas incrédulo."]
+                text: ["Díalogo<br><br><figcaption style=text-align:left>Aura: ...<br>Aura: Oye, eso. Eso no estaba antes.<br>Bartender: Políticas del bar.<br><br><figcaption style=text-align:center>Quedas incrédulo."]
             },
             {
                 id: 33,

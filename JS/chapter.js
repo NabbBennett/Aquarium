@@ -376,7 +376,8 @@ const chapters = [
             {
                 id: 1,
                 title: "Chapter 2 - Page 1",
-                image: "CHAPTER 2/Aquarium 2-1.png", 
+                video: "CHAPTER 1/video_prueba.mp4",
+                hasVideo: true,
                 alt: "Comic 2-1",
                 text: ["“”"]
             },
@@ -399,18 +400,48 @@ function renderCurrentPage() {
     const chapter = chapters[currentChapterIndex];
     const page = chapter.pages[currentPageIndex];
     
-    document.getElementById("chapter").textContent = page.title;
-    document.getElementById("comic-img").src = page.image;
-    document.getElementById("comic-img").alt = page.alt;
+    const comicImg = document.getElementById("comic-img");
+    const comicVideo = document.getElementById("comic-video");
+    const comicText = document.getElementById("comic-text");
     
-    document.getElementById("comic-text").innerHTML = page.text;
+    // Detectar si es video o imagen, es niñe o niñe
+    if (page.video) {
+        comicImg.style.display = 'none';
+        comicVideo.style.display = 'block';
+        comicVideo.src = page.video;
+        comicVideo.poster = page.image; // Imagen de miniatura MINIATURA MINIATURA VEGETTA777
 
-    document.querySelector('.page-name').textContent = chapter.title;
+        // CONFIGURACIÓN PARA LOOP
+        comicVideo.loop = true;
+        comicVideo.muted = true; //autoplay
+        comicVideo.playsInline = true; // Para iOS -diva emoji-
+
+        // Intentar reproducción automática (golpear a la puta)
+        const playPromise = comicVideo.play();
+
+        // reproducción (sexual) automática
+        if (playPromise !== undefined) {
+            playPromise.then(() => {
+                console.log('Video playing in loop');
+            }).catch(error => {
+                console.log('Auto-play prevented, showing controls');
+                comicVideo.controls = true;
+            });
+        }
+    } else {
+        // Detener video cuando cambies a una página sin video emoji joe watin
+        comicVideo.pause();
+        comicVideo.currentTime = 0;
+        
+        comicVideo.style.display = 'none';
+        comicImg.style.display = 'block';
+        comicImg.src = page.image;
+        comicImg.alt = page.alt;
+    }
+    
+    comicText.innerHTML = page.text;
     document.title = page.title;
-    
     updateNavigationButtons();
-    
-    updateProgressIndicators();
 }
 
 // Navegación entre páginas

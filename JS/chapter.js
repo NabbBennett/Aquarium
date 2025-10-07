@@ -203,7 +203,7 @@ const chapters = [
                 title: "Introduction I - 28",
                 image: "CHAPTER 1/Aquarium 1-30.png",
                 alt: "Comic Image 28",
-                text: ["Díalogo.<br><br>Bartender: Identifícate<br>Aura: Oh, Aura. Jejeje... saludos.<br>Bartender: No por nombre. Rango.<br>Aura: Señora, le juro que no quiero problemas, sólo cerveza. ¿Quizás sólo una? ¿Acepta darme una para llevar?"]
+                text: ["Díalogo.<br><br> <figcaption style=text-align:left> Bartender: Identifícate<br></figcaption> Aura: Oh, Aura. Jejeje... saludos.<br>Bartender: No por nombre. Rango.<br>Aura: Señora, le juro que no quiero problemas, sólo cerveza. ¿Quizás sólo una? ¿Acepta darme una para llevar?"]
             },
             {
                 id: 29,

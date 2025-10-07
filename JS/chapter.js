@@ -2,321 +2,371 @@
 const chapters = [
     {
         id: 1,
-        title: "Chapter 1",
+        title: "Introduction I",
         pages: [
             {
                 id: 1,
-                title: "Chapter 1 - Page 1",
+                title: "Introduction I - 1",
                 image: "CHAPTER 1/Aquarium 1-1.png", 
                 alt: "Comic 1",
                 text: [
-                    "“My name is Aura.”<br><br>“I always thought I didn't actually exist — that I was a nebula drifting through outer space, glowing among countless other non-organic and intangible beings.”<br><br>But that's a lie. A lie I tell myself to escape reality. I'm fully aware I have work tomorrow, and my stomach aches from the dinner I couldn't afford last night. My real body is asleep and noway found, and I'm about to wake up in my other world.”"
+                    "Bienvenido, tu nombre es Aura.<br><br>En el inicio de tu aventura, y con este personaje como tu primera elección, comienzas con esta sensación de que no existes: una mera nebulosa flotando en el espacio exterior, brillando entre innumerables seres inorgánicos e intangibles. Es solo una primera impresión, la cual no aplica a la totalidad de tu experiencia ni a lo que ella simboliza.<br><br>Estás adquiriendo consciencia, buscando tu cuerpo terrestre —el que sea—, el primero en el que tus piernas respondan y en el que el progreso alcanzado sea el más cercano al éxito. Los demás no te interesan: necesitas un mundo moldeable.<br><br>Un mundo donde puedas redirigir tu narrativa."
                 ]
             },
             {
                 id: 2,
-                title: "Chapter 1 - Page 2", 
+                title: "Introduction I - 2", 
                 image: "CHAPTER 1/Aquarium 1-2.png",
                 alt: "Comic 2",
                 text: [
-                    "“The fantasy world where I create my own narrative.”<br><br>“The place where I am a <bold>wild hunter.</bold>”"
+                    "Eres una cazadora en el bosque.</bold>"
                 ]
             },
             {
                 id: 3,
-                title: "Chapter 1 - Page 3",
+                title: "Introduction I - 3",
                 image: "CHAPTER 1/Aquarium 1-3.png",
                 alt: "Comic Image 3",
-                text: ["“The ‘narrative’ goes like this: I’m homeless — a nobody with no family. Lowkey a tragic individual. I sell the skins of forest animals to afford my daily food and basic needs.”"]
+                text: ["Tu narrativa va de la siguiente forma: eres una persona sin familia, una don nadie sin reconocimientos. En decir, un personaje cargado de trasfondos trágicos y lamentables que sólo te hundieron en la mediocridad. Vendes pieles y partes de animales del bosque para cubrir tu comida diaria y tus necesidades básicas."]
             },
             {
                 id: 4,
-                title: "Chapter 1 - Page 4",
+                title: "Introduction I - 4",
                 image: "CHAPTER 1/Aquarium 1-4.gif",
                 alt: "Comic Image 4",
-                text: ["“Then, “THEY” appear.”"],
+                text: ["Entonces, algo cambia.<br><br>Gritos. Miedo. Desesperación.<br><br>Las calles se llenan de pánico mientras preparas tu arma para enfrentarte a algo que nadie había visto nunca antes."],
             },
             {
                 id: 5,
-                title: "Chapter 1 - Page 5",
+                title: "Introduction I - 5",
                 image: "CHAPTER 1/Aquarium 1-5.gif",
                 alt: "Comic Image 5",
                 text: [""]
             },
             {
                 id: 6,
-                title: "Chapter 1 - Page 6",
+                title: "Introduction I - 6",
                 image: "CHAPTER 1/Aquarium 1-6.gif",
                 alt: "Comic Image 6",
-                text: ["“Monsters.”"],
+                text: ["“Monstruos.”"],
             },
             {
                 id: 7,
-                title: "Chapter 1 - Page 7",
+                title: "Introduction I - 7",
                 image: "CHAPTER 1/Aquarium 1-7.gif",
                 alt: "Comic Image 7",
-                text: ["“Fast, unpredictable, hungry. In a split of the eye they were everywhere around. No time to react, no sword was capable to reach them.”"]
+                text: ["Rápidos, impredecibles, hambrientos.<br><br>En un abrir y cerrar de ojos, estaban por todas partes.<br><br>Sin tiempo para reaccionar, ninguna espada de los guerreros presentes era capaz de alcanzarlos"]
             },
             {
                 id: 8,
-                title: "Chapter 1 - Page 8",
+                title: "Introduction I - 8",
                 image: "CHAPTER 1/Aquarium 1-8.gif",
                 alt: "Comic Image 8",
                 text: ["SPLAAASH!"]
             },
             {
                 id: 9,
-                title: "Chapter 1 - Page 9",
+                title: "Introduction I - 9",
                 image: "CHAPTER 1/Aquarium 1-9.gif",
                 alt: "Comic Image 9",
-                text: ["“Something i've never seen before.”"]
+                text: ["Podías sentir cómo la realidad se dispersaba, y se volvía inconcluso lo que pasaría a continuación.<br><br>Dudaste si podrías hacerles frente, si habría un cambio real en tu participación en la batalla.<br><br>¿Quién eras tú en comparación a éstas personas?"]
             },
             {
                 id: 10,
-                title: "Chapter 1 - Page 10",
+                title: "Introduction I - 10",
                 image: "CHAPTER 1/Aquarium 1-10.gif",
                 alt: "Comic Image 10",
                 text: [""]
             },
             {
                 id: 11,
-                title: "Chapter 1 - Page 11",
+                title: "CIntroduction I - 11",
                 image: "CHAPTER 1/Aquarium 1-11.gif",
                 alt: "Comic Image 11",
                 text: [""]
             },
             {
                 id: 12,
-                title: "Chapter 1 - Page 12",
+                title: "Introduction I - 12",
                 image: "CHAPTER 1/Aquarium 1-12.gif",
                 alt: "Comic Image 12",
                 text: [""]
             },
             {
                 id: 13,
-                title: "Chapter 1 - Page 13",
+                title: "Introduction I - 13",
                 image: "CHAPTER 1/Aquarium 1-13.png",
                 alt: "Comic Image 13",
-                text: ["“It turns out they were capable of inducing horrible hallucinations in the citizens. It wasn’t until my arrow destroyed it that I was able to see clearly.”"]
+                text: ["En el momento en que tu flecha le atravesó, lo entendiste."]
             },
             {
                 id: 14,
-                title: "Chapter 1 - Page 14",
+                title: "Introduction I - 14",
                 image: "CHAPTER 1/Aquarium 1-14.png",
                 alt: "Comic Image 14",
-                text: ["“This bow and its arrow, blessed by an unknown god, helped me become the only hunter capable of destroying this menace. Once in the shadows, now I stood up as a savior for my town. But that glory really didn’t last long... Nothing would have prepared me for what came next.”"]
+                text: ["Las alucinaciones no sólo funcionaban para inducir el terror en sus víctimas, sino también para hacer tu muerte más desesperante y agonizante de lo que estaba destinada a ser. Eran masas sin fuerza para atacar, pero sí con deseos de esparcir miseria.<br><br>Este arco y su flecha, bendecidos por un dios desconocido, te ayudaron a convertirte en el único cazador capaz de destruir esta amenaza.<br><br>Antes en las sombras, ahora te alzas como el salvador del reino.<br><br>Pero esa gloria no duró mucho.<br><br>En tu mundo de fantasía (el cual ahora contemplas como tu única realidad) la magia no es algo extraño."]
             },
             {
                 id: 15,
-                title: "Chapter 1 - Page 15",
-                image: "CHAPTER 1/Aquarium 1-15.gif",
+                title: "Introduction I - 15",
+                image: "CHAPTER 1/Aquarium 1-15.png",
                 alt: "Comic Image 15",
-                text: ["“Not when something as valuable as income was involved.”<br><br>“Or that was just my theory. Since the monsters made appear these coins out of no where.”"]
+                text: ["Sin embargo, eso no hacía que la aparición de los monstruos fuera menos extraña o preocupante. Todas las fuentes de magia son registradas y proporcionadas por las brujas, y solo ellas.<br><br>Después estaban sus familiares: animales con características humanas, otorgados por las brujas, que sirven de guía y consejo. Suelen trabajar bajo la sombra de sus amas, y los más sometidos a esta labor siempre fueron las aves.<br><br>Y, por último, los humanos. Realmente, nada destacable en ellos. Viven para el pueblo y dejan sus vidas y su seguridad en manos de los seres mágicos.<br><br>Eso deja la clasificación de la siguiente forma: brujas, sus familiares y humanos."]
             },
             {
                 id: 16,
-                title: "Chapter 1 - Page 16",
-                image: "CHAPTER 1/Aquarium 1-16.png",
+                title: "Introduction I - 16",
+                image: "CHAPTER 1/Aquarium 1-16.gif",
                 alt: "Comic Image 16",
-                text: ["“Like really. Coins? Not just any coins. Golden coins! What kind of evil magical force would do this? It felt like a gift from the sky. But that detail immediately froze me out.” <br><br> “Like i knew it would only cause me troubles.”"]
+                text: ["Pero- Bueno. En realidad las cosas son hm, diferentes, ahora.<br><br>Ehm, ¿Lo estás arreglando? Bien."]
             },
             {
                 id: 17,
-                title: "Chapter 1 - Page 17",
-                image: "CHAPTER 1/Aquarium 1-17.png",
+                title: "Introduction I - 17",
+                image: "CHAPTER 1/Aquarium 1-17.gif",
                 alt: "Comic Image 17",
-                text: ["“In my fantasy world, the one I contemplate as my only reality, magic is not something odd. But that didn’t make the appearance of the ‘Golden Monsters’ any less strange or worrying.”<br><br>“All sources of magic are registered and provided by witches—and only them.That leaves the leaderboard like this: the witches followed by their animal familiars, and last, humans.(being the most useless from all)”"]
+                text: ["Desde que todo esto de los monstruos sucedió, los pájaros (los familiares más leales de las brujas) se separaron de sus amas.No importa el motivo. Probablemente algún drama estúpido del cual, para nada, tienes una opinión al respecto.<br><br>Lo importante es la situación en la que fuiste arrastrada."]
             },
             {
                 id: 18,
-                title: "Chapter 1 - Page 18",
-                image: "CHAPTER 1/Aquarium 1-18.gif",
+                title: "Introduction I - 18",
+                image: "CHAPTER 1/Aquarium 1-19.png",
                 alt: "Comic Image 18",
-                text: ["“But, well, let’s strike these ones out. Yeah, like that.”<br><br>“Since all this happened, Birds:the witches’ most loyal familiars—separated themselves from their masters. Doesn’t matter why. Probably some stupid drama.”"]
+                text: ["La líder de las brujas, Magnolia, vio tu asombroso éxito. Fue testigo de toda tu grandeza y, en vez de hacer lo obvio (premiarte por tus logros y tu gran hazaña), decidió mandarte a capturar y, al atraparte, encarcelarte como si fueras una criminal.<br><br>No tuviste realmente nada que ver con la amenaza real, pero, por supuesto, ser la única capaz de enfrentarlos y no poder responder a ninguna de sus preguntas te convertía en la culpable."]
             },
             {
                 id: 19,
-                title: "Chapter 1 - Page 19",
-                image: "CHAPTER 1/Aquarium 1-19.gif",
+                title: "Introduction I - 19",
+                image: "CHAPTER 1/Aquarium 1-20.png",
                 alt: "Comic Image 19",
-                text: ["“the important matter is THE unfortune situation I was DRAGGED into by these people-”<br><br>“The witch leader. Magnolia, saw my amazing success, saw all my greatness, and decided to imprison me like I was some kind of CRIMINAL!”"]
+                text: ["“Magnolia: Su arma será confiscada para su investigación.”<br><br>¿DISCULPA?"
+                ]
             },
             {
                 id: 20,
-                title: "Chapter 1 - Page 20",
-                image: "CHAPTER 1/Aquarium 1-20.png",
+                title: "Introduction I - 20",
+                image: "CHAPTER 1/Aquarium 1-21.png",
                 alt: "Comic Image 20",
-                text: ["“I didn’t have anything to do with the actual menace, but of course.<br> <br>“Being the only one who could stand up against them.”<br> <br>“And not being able to answer any of their questions convicted me as an implicated party.”"]
+                text: ["Nunca sentiste humillación más grande. Justo en el punto más decisivo de tu vida, el momento que lo cambiaría todo, te confiscaron tus posesiones más preciadas."]
             },
             {
                 id: 21,
-                title: "Chapter 1 - Page 21",
-                image: "CHAPTER 1/Aquarium 1-21.png",
+                title: "Introduction I - 21",
+                image: "CHAPTER 1/Aquarium 1-22.gif",
                 alt: "Comic Image 21",
-                text: ["Magnolia: Your weapons will be confiscated until last decision.<br><br>“EXCUSE ME???”"]
+                text: ["¡Y TE ECHARON COMO SÍ FUERAS UN MALDITO PERRO- oh bueno."]
             },
             {
                 id: 22,
-                title: "Chapter 1 - Page 22",
-                image: "CHAPTER 1/Aquarium 1-22.png",
-                alt: "Comic Image 22",
-                text: ["“Never felt more humiliated in my life. Just at the peak of my plot, the moment that changed everything, I was confiscated from my most prized possessions—”"]
-            },
-            {
-                id: 23,
-                title: "Chapter 1 - Page 23",
+                title: "Introduction I - 22",
                 image: "CHAPTER 1/Aquarium 1-23.gif",
-                alt: "Comic Image 23",
-                text: ["“AND THEY THROWN ME OUT LIKE A GODDAMN DOG— oh well.”"]
-            },
-            {
-                id: 24,
-                title: "Chapter 1 - Page 24",
-                image: "CHAPTER 1/Aquarium 1-24.gif",
-                alt: "Comic Image 24",
+                alt: "Comic Image 22",
                 text: ["Ouch."]
             },
             {
-                id: 25,
-                title: "Chapter 1 - Page 25",
+                id: 23,
+                title: "Introduction I - 23",
                 image: "CHAPTER 1/Aquarium 1-25.png",
-                alt: "Comic Image 25",
+                alt: "Comic Image 23",
                 text: [""]
             },
             {
+                id: 24,
+                title: "Introduction I - 24",
+                image: "CHAPTER 1/Aquarium 1-26.png",
+                alt: "Comic Image 24",
+                text: ["TODOS ESTABAN EN TU CONTRA. Nunca merecieron un héroe. Esperabas que ese villano que trajo los monstruos los acabara a todos."]
+            },
+            {
+                id: 25,
+                title: "Introduction I - 25",
+                image: "CHAPTER 1/Aquarium 1-27.png",
+                alt: "Comic Image 25",
+                text: ["(Otro día)<br><br>…No pasa nada.<br><br>Con el paso del tiempo, alcanzaste cierta calma. No sabes si fue por el propio transcurrir de los días o por la persecución a la que te sometieron para quitarte tu arco. Pero, por mucho sentimiento de venganza que tuvieras, no te sentías capaz de luchar.<br><br>De todas formas, estás acostumbrada a estar sola. Esto no es nuevo.<br><br>Pensar en una solución no es para ti, al menos no ahora mismo."]
+            },
+            {
                 id: 26,
-                title: "Chapter 1 - Page 26",
-                image: "CHAPTER 1/Aquarium 1-26.gif",
+                title: "Introduction I - 26",
+                image: "CHAPTER 1/Aquarium 1-28.png",
                 alt: "Comic Image 26",
                 text: [""]
             },
             {
                 id: 27,
-                title: "Chapter 1 - Page 27",
-                image: "CHAPTER 1/Aquarium 1-27.png",
+                title: "Introduction I - 27",
+                image: "CHAPTER 1/Aquarium 1-29.png",
                 alt: "Comic Image 27",
-                text: ["“At that moment, I knew. EVERYONE WERE AGAINST ME. They never deserved a hero. Hope that crazy-ass capitalist villain kills them all TO DEATH!!!.”"]
+                text: ["Tienes mejores alternativas para atravesar este momento difícil."]
             },
             {
                 id: 28,
-                title: "Chapter 1 - Page 28",
-                image: "CHAPTER 1/Aquarium 1-28.png",
+                title: "Introduction I - 28",
+                image: "CHAPTER 1/Aquarium 1-30.png",
                 alt: "Comic Image 28",
-                text: ["(Days later).<br><br>“…It’s okay.”<br>“I'm used to being alone. This is nothing new.”<br>“Just this time i ended up as the most suspicious culprit, like if i was a menace to society...”"]
+                text: ["Díalogo.<br><br>Bartender: Identifícate<br>Aura: Oh, Aura. Jejeje... saludos.<br>Bartender: No por nombre. Rango.<br>Aura: Señora, le juro que no quiero problemas, sólo cerveza. ¿Quizás sólo una? ¿Acepta darme una para llevar?"]
             },
             {
                 id: 29,
-                title: "Chapter 1 - Page 29",
-                image: "CHAPTER 1/Aquarium 1-29.png",
+                title: "Introduction I - 29",
+                image: "CHAPTER 1/Aquarium 1-31.png",
                 alt: "Comic Image 29",
-                text: ["“Thinking about a solution is not for me right now.”"]
+                text: ["Ah, claro. Su estúpido drama se desborda por el camino.<br><br>Justo cuando sólo quiero un respiro..."]
             },
             {
                 id: 30,
-                title: "Chapter 1 - Page 30",
-                image: "CHAPTER 1/Aquarium 1-30.png",
+                title: "Introduction I - 30",
+                image: "CHAPTER 1/Aquarium 1-32.gif",
                 alt: "Comic Image 30",
-                text: ["“I have better plans to get through this.”"]
+                text: [""]
             },
             {
                 id: 31,
-                title: "Chapter 1 - Page 31",
-                image: "CHAPTER 1/Aquarium 1-31.png",
+                title: "Introduction I - 31",
+                image: "CHAPTER 1/Aquarium 1-33.png",
                 alt: "Comic Image 31",
-                text: ["“Oh. A bird...”<br><br>Bartender: Identify yourself.<br>Aura: Oh, i'm Aura. Heheh... Greetings.<br>Bartender: No by name.<br>Aura: Madam, I swear I don’t want any problems, just some beer. Maybe just one? Would you by any chance accept giving me one to go?"]
+                text: ["Díalogo<br><br>Aura: ¿Ves? No hay ninguna bruja aquí. De hecho, jaja, ¡Las odio mucho! Igual que tú.<br>Bartender: ¿Lista de crímenes?<br>Aura: ... ¿Disculpa?<br>Aura: Estoy bastante segura de que me confundes con otra persona... Verás, solo pasaba por aquí y tengo muchísimas ganas de una cerveza, así que...<br>Bartender: Ahem."]
                 /*AQUI VA UNA CONVERSACION (HABLAR CON VALLY)*/
             },
             {
                 id: 32,
-                title: "Chapter 1 - Page 32",
-                image: "CHAPTER 1/Aquarium 1-32.png",
+                title: "Introduction I - 32",
+                image: "CHAPTER 1/Aquarium 1-34.png",
                 alt: "Comic Image 32",
-                text: ["“Ah, of course. Their stupid drama spills out on my way.”<br>“Just when I wanted to catch my breath...”<br>“-sigh- i guess i have no other choice.”"]
+                text: ["Díalogo<br><br>Aura: ...<br>Aura: Oye, eso. Eso no estaba antes.<br>Bartender: Políticas del bar.<br><br>Quedas incrédulo."]
             },
             {
                 id: 33,
-                title: "Chapter 1 - Page 33",
-                image: "CHAPTER 1/Aquarium 1-33.gif",
+                title: "Introduction I - 33",
+                image: "CHAPTER 1/Aquarium 1-35.png",
                 alt: "Comic Image 33",
-                text: ["“”"]
+                text: ["Escuchaste que los pájaros también estaban contra otros familiares, pero ¿en serio? ¿Tú? ¿Cuando ni siquiera encajas en los estándares normales de un familiar?<br><br>O... ¿Acaso ésta persona estaba en tu juicio?"]
             },
             {
                 id: 34,
-                title: "Chapter 1 - Page 34",
-                image: "CHAPTER 1/Aquarium 1-34.png",
+                title: "Introduction I - 34",
+                image: "CHAPTER 1/Aquarium 1-36.png",
                 alt: "Comic Image 34",
-                text: ["*nervous laughs*<br>Aura: See? No witch here. I actually, haha, hate them a lot. Just like you.<br>Bartender: Crime list?<br>Aura: Ex—excuse me?<br>Aura: I’m pretty sure you’re confusing me with someone else... See, I was just passing by and I JUST really, really want a beer, so...<br>Bartender: Ahem..."]
+                text: ["Díalogo<br><br>Aura: Entonces... si “solo pájaros”, ¿ese qué?<br>Bartender: ¿Ese? Es “Glitch”.<br>Aura: Salud.<br>Bartender: Glitch. Un amigo humano de mi sobrina, Maple. Trabaja incansablemente y con dignidad en mi bar. No hay magia implícita.<br>Aura: No hago magia.<br>Bartender: ¿Qué hay de ese arco, niña? ¿Cómo lo creaste?<br>Aura: Señora, yo no lo creé.<br>Bartender: Claro.<br>Bartender: ¿Sabes qué? Ya oí suficiente de ti en ese juicio.<br>Bartender: Tu arma podría ser buena, pero dejar ese polvo a los ciudadanos de rango superior fue un error. Esa era una situación que se suponía debían regular únicamente las brujas. Qué irresponsabilidad."]
             },
             {
                 id: 35,
-                title: "Chapter 1 - Page 35",
-                image: "CHAPTER 1/Aquarium 1-35.png",
+                title: "Introduction I - 35",
+                image: "CHAPTER 1/Aquarium 1-37.gif",
                 alt: "Comic Image 35",
-                text: ["“Uh.”<br>Aura: ...<br>Aura: Hey—that. That wasn’t there before.<br>Bartender: New bar policies."]
+                text: ["¿Cómo es que esa persona puede concentrarse tanto? Debe de estar viviendo en su propio mundo. Ni siquiera parece interesado en nuestra conversación..."]
             },
             {
                 id: 36,
-                title: "Chapter 1 - Page 36",
-                image: "CHAPTER 1/Aquarium 1-36.png",
+                title: "Introduction I - 36",
+                image: "CHAPTER 1/Aquarium 1-38.gif",
                 alt: "Comic Image 36",
-                text: ["“UGHH I SERIOUSLY CAN’T TAKE THIS ANYMORE.”<br>“I heard birds were against other familiars too, but really, me? When I don’t even fit the normal familiar standards???”<br>“Or wait, was this person on my trial? Hmmmmm...”"]
+                text: ["Díalogo.<br><br>Maple: ¡TÍA, HE VUELTO! DISCULPA LA DEMORA.<br>Aura: Oh.<br>Bartender: Maple, ¿qué estas...? ¿QUÉ...?<br>Maple: ¿Eh? Oh... UHHH<br>Bartender: ¡¿Son partículas mágicas?! ¿Maple? ¡Jovencita, más vale que tengas una buena explicación para ésto!"]
             },
             {
                 id: 37,
-                title: "Chapter 1 - Page 37",
-                image: "CHAPTER 1/Aquarium 1-37.png",
+                title: "Introduction I - 37",
+                image: "CHAPTER 1/Aquarium 1-39.png",
                 alt: "Comic Image 37",
-                text: ["???<br><br>Aura: So... if “Birds only,” what’s that?<br>Bartender: That over there? They’re “Glitch”<br>Aura: An “Snitch”?” did it sneaked in here or something?.<br>Bartender: Glitch. A human friend of my niece “Maple.” A new worker in my bar. No magic implied.<br>Aura: I don’t do magic.<br>Bartender: What about that bow, kid? Creating that was sure magic.<br>Aura: I didn’t create it.<br>Bartender: Sure.<br>Bartender: You know what? I heard enough from you in that trial.<br>Bartender: Your weapon could be good. But because of your actions, the situation only became more complicated. That was a situation meant to be regulated by the witches—what an irresponsibility..."]
+                text: ["Díalogo.<br><br>Maple: ¡CHICOS! ¡CHICOS! ¡LA CAGUÉ! ¡TÍA PINES SE ENTERÓ! ¡AGERA, APAGA EL HECHIZO!<br>Bartender: ¿Acabo de oír el nombre de esa bruja amiguita tuya? ¡De la que te dije que te alejaras!<br>Maple: AGERA, GLITCH. QUE ALGUIEN CONTESTE, POR FAVOR.<br>Bartender: ¡¿ESO TAMBIÉN ES UN DISPOSITIVO MÁGICO LO QUE ESTÁS USANDO AHORA MISMO?!"]
             },
             {
                 id: 38,
-                title: "Chapter 1 - Page 38",
-                image: "CHAPTER 1/Aquarium 1-38.gif",
+                title: "Introduction I - 38",
+                image: "CHAPTER 1/Aquarium 1-40.gif",
                 alt: "Comic Image 38",
-                text: ["“How is that person able to concentrate that much? They must be living in their own world. Not even a peek at our conversation…”"]
+                text: ["<br>Maple: Tía, por favor. ¡Todo tiene una explicación! ¡Y fue idea mía! No los culpes, por favor.<br>Bartender: TU IDEA, SU IDEA... ¡No importa cuándo te dije específicamente que NO USARAS ninguna fuente de magia!<br>"]
             },
             {
                 id: 39,
-                title: "Chapter 1 - Page 39",
-                image: "CHAPTER 1/Aquarium 1-39.gif",
+                title: "Introduction I - 39",
+                image: "CHAPTER 1/Aquarium 1-41.gif",
                 alt: "Comic Image 39",
-                text: ["...<br><br>Maple: AUNTIE, I’M BACK!! SORRY FOR TAKING SO LONG.<br>Aura: Oh.<br>Bartender: Maple, what took you—WHAT THE—<br>Maple: Uh? Oh... UHHH.<br>Bartender: Maple? Are those magic particles?! Young lady, you better have a good explanation for this!"]
+                text: ["Maple: Glitch se sentía muy, muy mal, pero le dijiste que esta era su última oportunidad de conservar el trabajo, ya que las otras veces no pudo…<br>Bartender: Sabía que ese humano tampoco era un buen ejemplo para ti. Tantas segundas oportunidades. ¿para qué? ¡Cada vez que lo veía, estaba bien! ¡Solo excusas!<br>"]
             },
             {
                 id: 40,
-                title: "Chapter 1 - Page 40",
-                image: "CHAPTER 1/Aquarium 1-40.png",
+                title: "Introduction I - 40",
+                image: "CHAPTER 1/Aquarium 1-42.gif",
                 alt: "Comic Image 40",
-                text: ["Maple: GUYS! GUYS! I SCREWED UP. UNCLE PINES FOUND OUT!<br>AGERA, TURN OFF THE SPELL!<br>Pines: did i just heard the name of that witch friend of yours? The one I TOLD YOU to STAY AWAY FROM!<br>Maple: AGERA, GLITCH. SOMEONE PICK UP, PLEASE.<br>Pines: IS THAT A MAGIC DEVICE WHAT YOU’RE USING RIGHT NOW?!"]
+                text: ["Maple: ¡GLITCH TENÍA MUCHAS GANAS DE TRABAJAR, TÍA!<br>Agera: ¿Hola...? Maple, ¿estás ahí? (a través del dispositivo)<br>Bartender: ¡VAMOS A DESTRUIR ESTO!<br>Maple: NOOO, AGERA LO HÍZO PARA MI ¡POR FAVOOOR!"]
             },
             {
                 id: 41,
-                title: "Chapter 1 - Page 41",
-                image: "CHAPTER 1/Aquarium 1-41.gif",
+                title: "Introduction I - 41",
+                image: "CHAPTER 1/Aquarium 1-43.gif",
                 alt: "Comic Image 41",
-                text: ["Maple: Auntie, please. Everything has an explanation! And—and it was my idea! Don’t blame them, please.<br>Pines: YOUR IDEA, THEIR IDEA—It doesn’t matter when I specifically told you to NOT USE any source of magic!<br>Maple: Glitch was feeling really, really bad, but you told them this was their last chance to get the job since they couldn’t the other times…<br>Pines: I KNEW that human was also not a good example for you. So many second chances—for what? Every time I saw they were just fine! Bare excuses!"]
+                text: [""]
             },
             {
                 id: 42,
-                title: "Chapter 1 - Page 42",
-                image: "CHAPTER 1/Aquarium 1-42.gif",
+                title: "Introduction I - 42",
+                image: "CHAPTER 1/Aquarium 1-44.png",
                 alt: "Comic Image 42",
-                text: ["Maple: GLITCH REALLY, REALLY WANTED TO WORK, AUNTIE! You... had to see them last night—it was…<br>Agera: Hello...? Maple—are you there?(through the device)."]
+                text: ["Por muy —o poco— interesante que sea la desdicha de una cazadora desarmada que busca vengarse de la sociedad, lo cierto es que la sociedad no está preparada para ella. No, realmente no están preparados para eso.<br><br>Y menos si no tienen un contexto previo de ciertos sucesos.<br><br>Pero, para pasar a ello, habría que ampliar nuestras perspectivas. Te sugeriría empezar con el sujeto del bar."]
             },
             {
                 id: 43,
-                title: "Chapter 1 - Page 43",
-                image: "CHAPTER 1/Aquarium 1-43.gif",
+                title: "Introduction I - 43",
+                image: "CHAPTER 1/Aquarium 1-45.gif",
                 alt: "Comic Image 43",
-                text: ["Pines: OH WE ARE GOING TO DESTROY THIS THING!<br>Maple: N-NOOO, AGERA DID IT FOR ME. PLEASEEE!"]
+                text: ["No, no ese sujeto. Eso es una mujer, y te recomendaría no acercarte mucho a ella ahora."]
             },
             {
                 id: 44,
-                title: "Chapter 1 - Page 44",
-                image: "CHAPTER 1/Aquarium 1-44.gif",
+                title: "Introduction I - 44",
+                image: "CHAPTER 1/Aquarium 1-46.gif",
                 alt: "Comic Image 44",
-                text: ["<br><br>To be continue... Some day."]
-            }
+                text: ["Este tampoco, parece  en aprietos."]
+            },
+            {
+                id: 45,
+                title: "Introduction I - 45",
+                image: "CHAPTER 1/Aquarium 1-47.gif",
+                alt: "Comic Image 44",
+                text: ["No tan lejos. Era a este al que me refería, pero, si soy completamente honesto, me equivoqué en el enfoque. Él en realidad no está en el bar.<br><br>¿Sí se entendieron los sucesos anteriores? Eso espero. Apenas vamos con cosas simples y ya siento que no puedo narrar esto sin enredarme.<br><br>Pero bueno, esto es un holograma. Más que todo, uno mágico; no realmente permitido en este lugar por el dueño del bar.<br><br>Y para saber sobre el verdadero Glitch, te recomendaría meterte en sus zapatos."]
+            },
+            {
+                id: 46,
+                title: "Introduction I - 46",
+                image: "CHAPTER 1/Aquarium 1-48.png",
+                alt: "Comic Image 44",
+                text: ["Bienvenido a tu hogar.<br><br>Vives en una modesta casa de estilo madriguera, con un extenso bosque como patio trasero. Muy similar a las de cierta propiedad intelectual que no podemos mencionar, tu hogar está rodeado de plantas de todo tipo y color. Sin mencionar tu extensa colección de hongos coloridos, todos expuestos a un lado de la casa, perfectamente colocados y cuidados.<br><br>Pero… ¿dónde estás?"]
+            },
+            {
+                id: 47,
+                title: "Introduction I - 47",
+                image: "CHAPTER 1/Aquarium 1-46.gif",
+                alt: "Comic Image 44",
+                text: ["Este tampoco, parece  en aprietos."]
+            },
+            {
+                id: 48,
+                title: "Introduction I - 48",
+                image: "CHAPTER 1/Aquarium 1-46.gif",
+                alt: "Comic Image 44",
+                text: ["Este tampoco, parece  en aprietos."]
+            },
+            {
+                id: 49,
+                title: "Introduction I - 49",
+                image: "CHAPTER 1/Aquarium 1-46.gif",
+                alt: "Comic Image 44",
+                text: ["Este tampoco, parece  en aprietos."]
+            },
+            {
+                id: 50,
+                title: "Introduction I - 50",
+                image: "CHAPTER 1/Aquarium 1-46.gif",
+                alt: "Comic Image 44",
+                text: ["Este tampoco, parece  en aprietos."]
+            },
+            {
+                id: 51,
+                title: "Introduction I - 51",
+                image: "CHAPTER 1/Aquarium 1-46.gif",
+                alt: "Comic Image 44",
+                text: ["Este tampoco, parece  en aprietos."]
+            },
         ]
     },
     {

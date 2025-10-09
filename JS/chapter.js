@@ -1248,6 +1248,49 @@ const chapters = [
 let currentChapterIndex = 0;
 let currentPageIndex = 0;
 
+// Función para precargar imágenes
+function preloadAdjacentPages() {
+    const currentChapter = chapters[currentChapterIndex];
+    
+    // Precargar página siguiente
+    if (currentPageIndex < currentChapter.pages.length - 1) {
+        const nextPage = currentChapter.pages[currentPageIndex + 1];
+        if (nextPage.image && !nextPage.video) {
+            const nextImg = new Image();
+            nextImg.src = nextPage.image;
+        }
+    }
+    
+    // Precargar página anterior
+    if (currentPageIndex > 0) {
+        const prevPage = currentChapter.pages[currentPageIndex - 1];
+        if (prevPage.image && !prevPage.video) {
+            const prevImg = new Image();
+            prevImg.src = prevPage.image;
+        }
+    }
+}
+
+// Funciones para el loader de imagenes, video y texto
+function showLoader() {
+    let loader = document.getElementById('comic-loader');
+    if (!loader) {
+        loader = document.createElement('div');
+        loader.id = 'comic-loader';
+        loader.className = 'comic-loader';
+        loader.innerHTML = '<div class="loader-spinner"></div><p>Cargando...</p>';
+        document.querySelector('.comic-panel').appendChild(loader);
+    }
+    loader.style.display = 'flex';
+}
+
+function hideLoader() {
+    const loader = document.getElementById('comic-loader');
+    if (loader) {
+        loader.style.display = 'none';
+    }
+}
+
 function renderCurrentPage() {
     const chapter = chapters[currentChapterIndex];
     const page = chapter.pages[currentPageIndex];
@@ -1255,39 +1298,46 @@ function renderCurrentPage() {
     const comicImg = document.getElementById("comic-img");
     const comicVideo = document.getElementById("comic-video");
     const comicText = document.getElementById("comic-text");
-    const pageTitle = document.getElementById("page-title");
-
-    if (pageTitle) {
-        pageTitle.textContent = page.title;
-    }
-
-    document.title = page.title;
     
-    // Detectar si es video o imagen, es niñe o niñe
+    // Mostrar loader mientras carga
+    showLoader();
+    
+    comicImg.onload = function() {
+        hideLoader();
+        preloadAdjacentPages();
+    };
+    
+    comicImg.onerror = function() {
+        hideLoader();
+        comicImg.alt = "Error cargando imagen";
+    };
+    
+    // Detectar si es video o imagen
     if (page.video) {
         comicImg.style.display = 'none';
         comicVideo.style.display = 'block';
         comicVideo.src = page.video;
-        comicVideo.poster = page.image; // Imagen de miniatura MINIATURA MINIATURA VEGETTA777
+        comicVideo.poster = page.image;
 
         // CONFIGURACIÓN PARA LOOP
         comicVideo.loop = true;
-        comicVideo.muted = false;
-        comicVideo.playsInline = true; // Para iOS -diva emoji-
-        comicVideo.controls = true;
+        comicVideo.muted = true;
+        comicVideo.playsInline = true;
 
-        // Intentar reproducción automática (golpear a la puta)
         const playPromise = comicVideo.play();
+
+        // Reproducción automática
         if (playPromise !== undefined) {
             playPromise.then(() => {
-                console.log('Video playing in loop (muted for autoplay)');
+                console.log('Video playing in loop');
+                hideLoader();
             }).catch(error => {
-                console.log('Auto-play prevented');
+                console.log('Auto-play prevented, showing controls');
                 comicVideo.controls = true;
+                hideLoader();
             });
         }
     } else {
-        // Detener video cuando cambies a una página sin video emoji joe watin
         comicVideo.pause();
         comicVideo.currentTime = 0;
         
@@ -1310,11 +1360,11 @@ function nextPage() {
         // Hay más páginas en este capítulo
         currentPageIndex++;
     } else if (currentChapterIndex < chapters.length - 1) {
-        // sisno pues pasa al siguiente capítulo
+        // Pasar al siguiente capítulo
         currentChapterIndex++;
         currentPageIndex = 0;
     }
-    // Si no hay más contenido, no hace nada xD
+    // Si no hay más contenido, no hace nada
     
     renderCurrentPage();
     saveProgress();
@@ -1329,12 +1379,11 @@ function prevPage() {
         currentChapterIndex--;
         currentPageIndex = chapters[currentChapterIndex].pages.length - 1;
     }
-    // Si es el primer capítulo y primera página, no hace nadaXD
+    // Si es el primer capítulo y primera página, no hace nada
     renderCurrentPage();
     saveProgress();
 }
 
-// Navegación a capítulos
 function goToChapter(chapterIndex) {
     if (chapterIndex >= 0 && chapterIndex < chapters.length) {
         currentChapterIndex = chapterIndex;
@@ -1402,19 +1451,6 @@ function updateNavigationButtons() {
     });
 }
 
-// Actualizar indicadores de progreso
-function updateProgressIndicators() {
-    const currentChapter = chapters[currentChapterIndex];
-    
-    // Crear indicador de progreso si no existe
-    let progressIndicator = document.querySelector('.progress-indicator');
-    if (!progressIndicator) {
-        progressIndicator = document.createElement('div');
-        progressIndicator.className = 'progress-indicator';
-        document.querySelector('.comic-panel').appendChild(progressIndicator);
-    }
-}
-
 // Sistema de guardado de progreso
 function saveProgress() {
     const progress = {
@@ -1430,7 +1466,6 @@ function loadProgress() {
     if (saved) {
         try {
             const progress = JSON.parse(saved);
-            // Validar que los índices existen
             if (progress.chapterIndex < chapters.length && 
                 progress.pageIndex < chapters[progress.chapterIndex].pages.length) {
                 currentChapterIndex = progress.chapterIndex;

@@ -1243,35 +1243,59 @@ const chapters = [
         ]
     }
 ];
-
 // Variables 
 let currentChapterIndex = 0;
 let currentPageIndex = 0;
+let preloadedImages = new Map(); 
 
-// Función para precargar imágenes
-function preloadAdjacentPages() {
+function preloadMultiplePages() {
     const currentChapter = chapters[currentChapterIndex];
+    const pagesToPreload = 15;
     
-    // Precargar página siguiente
-    if (currentPageIndex < currentChapter.pages.length - 1) {
-        const nextPage = currentChapter.pages[currentPageIndex + 1];
-        if (nextPage.image && !nextPage.video) {
-            const nextImg = new Image();
-            nextImg.src = nextPage.image;
+    for (let i = -pagesToPreload; i <= pagesToPreload; i++) {
+        const targetPageIndex = currentPageIndex + i;
+        
+        // Verificar que la página existe
+        if (targetPageIndex >= 0 && targetPageIndex < currentChapter.pages.length) {
+            const targetPage = currentChapter.pages[targetPageIndex];
+            
+            if (targetPage.image && !targetPage.video) {
+                if (!preloadedImages.has(targetPage.image)) {
+                    const img = new Image();
+                    img.src = targetPage.image;
+                    preloadedImages.set(targetPage.image, img);
+                }
+            }
         }
     }
     
-    // Precargar página anterior
-    if (currentPageIndex > 0) {
-        const prevPage = currentChapter.pages[currentPageIndex - 1];
-        if (prevPage.image && !prevPage.video) {
-            const prevImg = new Image();
-            prevImg.src = prevPage.image;
+    if (currentChapterIndex < chapters.length - 1) {
+        const nextChapter = chapters[currentChapterIndex + 1];
+        if (nextChapter.pages.length > 0) {
+            const firstPage = nextChapter.pages[0];
+            if (firstPage.image && !firstPage.video && !preloadedImages.has(firstPage.image)) {
+                const img = new Image();
+                img.src = firstPage.image;
+                preloadedImages.set(firstPage.image, img);
+            }
         }
     }
 }
 
-// Funciones para el loader de imagenes, video y texto
+function preloadChapter(chapterIndex) {
+    if (chapterIndex >= 0 && chapterIndex < chapters.length) {
+        const chapter = chapters[chapterIndex];
+        
+        chapter.pages.forEach((page, index) => {
+            if (page.image && !page.video && !preloadedImages.has(page.image)) {
+                const img = new Image();
+                img.src = page.image;
+                preloadedImages.set(page.image, img);
+            }
+        });
+    }
+}
+
 function showLoader() {
     let loader = document.getElementById('comic-loader');
     if (!loader) {
@@ -1300,38 +1324,50 @@ function renderCurrentPage() {
     const comicText = document.getElementById("comic-text");
     const pageTitle = document.getElementById("page-title"); 
     
-    // Mostrar loader mientras carga
+    comicImg.style.display = 'none';
+    comicVideo.style.display = 'none';
+    
     showLoader();
     
-     if (pageTitle) {
+    if (pageTitle) {
         pageTitle.textContent = page.title;
     }
     
-    comicImg.onload = function() {
-        hideLoader();
-        preloadAdjacentPages();
-    };
+    const preloadedImage = preloadedImages.get(page.image);
     
-    comicImg.onerror = function() {
+    if (preloadedImage && preloadedImage.complete) {
+        comicImg.src = page.image;
+        comicImg.style.display = 'block';
         hideLoader();
-        comicImg.alt = "Error cargando imagen";
-    };
+    } else {
+        comicImg.onload = function() {
+            comicImg.style.display = 'block';
+            hideLoader();
+        };
+        
+        comicImg.onerror = function() {
+            hideLoader();
+            comicImg.alt = "Error cargando imagen";
+            comicImg.style.display = 'block';
+        };
+        
+        comicImg.src = page.image;
+    }
     
-    // Detectar si es video o imagen
+    comicImg.alt = page.alt;
+    
     if (page.video) {
         comicImg.style.display = 'none';
         comicVideo.style.display = 'block';
         comicVideo.src = page.video;
         comicVideo.poster = page.image;
 
-        // CONFIGURACIÓN PARA LOOP
         comicVideo.loop = true;
-        comicVideo.muted = true;
+        comicVideo.muted = false;
         comicVideo.playsInline = true;
 
         const playPromise = comicVideo.play();
 
-        // Reproducción automática
         if (playPromise !== undefined) {
             playPromise.then(() => {
                 console.log('Video playing in loop');
@@ -1343,33 +1379,31 @@ function renderCurrentPage() {
             });
         }
     } else {
-        comicVideo.pause();
+        if (!comicVideo.paused) {
+            comicVideo.pause();
+        }
         comicVideo.currentTime = 0;
-        
         comicVideo.style.display = 'none';
-        comicImg.style.display = 'block';
-        comicImg.src = page.image;
-        comicImg.alt = page.alt;
     }
     
     comicText.innerHTML = page.text;
     document.title = page.title;
+    
+    setTimeout(preloadMultiplePages, 100);
+    
     updateNavigationButtons();
 }
 
-// Navegación entre páginas
 function nextPage() {
     const currentChapter = chapters[currentChapterIndex];
     
     if (currentPageIndex < currentChapter.pages.length - 1) {
-        // Hay más páginas en este capítulo
         currentPageIndex++;
     } else if (currentChapterIndex < chapters.length - 1) {
-        // Pasar al siguiente capítulo
         currentChapterIndex++;
         currentPageIndex = 0;
+        preloadedImages.clear();
     }
-    // Si no hay más contenido, no hace nada
     
     renderCurrentPage();
     saveProgress();
@@ -1377,14 +1411,12 @@ function nextPage() {
 
 function prevPage() {
     if (currentPageIndex > 0) {
-        // Página anterior
         currentPageIndex--;
     } else if (currentChapterIndex > 0) {
-        // Capítulo anterior
         currentChapterIndex--;
         currentPageIndex = chapters[currentChapterIndex].pages.length - 1;
+        preloadedImages.clear();
     }
-    // Si es el primer capítulo y primera página, no hace nada
     renderCurrentPage();
     saveProgress();
 }
@@ -1393,6 +1425,7 @@ function goToChapter(chapterIndex) {
     if (chapterIndex >= 0 && chapterIndex < chapters.length) {
         currentChapterIndex = chapterIndex;
         currentPageIndex = 0;
+        preloadedImages.clear();
         renderCurrentPage();
         saveProgress();
     }
@@ -1402,6 +1435,7 @@ function nextChapter() {
     if (currentChapterIndex < chapters.length - 1) {
         currentChapterIndex++;
         currentPageIndex = 0;
+        preloadedImages.clear();
         renderCurrentPage();
         saveProgress();
     }
@@ -1411,23 +1445,21 @@ function prevChapter() {
     if (currentChapterIndex > 0) {
         currentChapterIndex--;
         currentPageIndex = 0;
+        preloadedImages.clear();
         renderCurrentPage();
         saveProgress();
     }
 }
 
-// Actualizar botones de navegación
 function updateNavigationButtons() {
     const currentChapter = chapters[currentChapterIndex];
     const prevButtons = document.querySelectorAll('.fa-arrow-left');
     const nextButtons = document.querySelectorAll('.fa-arrow-right');
     
-    // Verificar si hay contenido anterior/siguiente
     const hasPrevPage = currentPageIndex > 0 || currentChapterIndex > 0;
     const hasNextPage = currentPageIndex < currentChapter.pages.length - 1 || 
                        currentChapterIndex < chapters.length - 1;
     
-    // Actualizar botones de flecha izquierda
     prevButtons.forEach(icon => {
         const button = icon.closest('.nav-btn');
         if (hasPrevPage) {
@@ -1441,7 +1473,6 @@ function updateNavigationButtons() {
         }
     });
     
-    // Actualizar botones de flecha derecha
     nextButtons.forEach(icon => {
         const button = icon.closest('.nav-btn');
         if (hasNextPage) {
@@ -1456,7 +1487,6 @@ function updateNavigationButtons() {
     });
 }
 
-// Sistema de guardado de progreso
 function saveProgress() {
     const progress = {
         chapterIndex: currentChapterIndex,
@@ -1471,7 +1501,9 @@ function loadProgress() {
     if (saved) {
         try {
             const progress = JSON.parse(saved);
-            if (progress.chapterIndex < chapters.length && 
+            if (progress.chapterIndex !== undefined && 
+                progress.pageIndex !== undefined &&
+                progress.chapterIndex < chapters.length && 
                 progress.pageIndex < chapters[progress.chapterIndex].pages.length) {
                 currentChapterIndex = progress.chapterIndex;
                 currentPageIndex = progress.pageIndex;
@@ -1486,13 +1518,12 @@ function resetProgress() {
     localStorage.removeItem('comicProgress');
     currentChapterIndex = 0;
     currentPageIndex = 0;
+    preloadedImages.clear();
     renderCurrentPage();
 }
 
-// Navegación con teclado
 function setupKeyboardNavigation() {
     document.addEventListener('keydown', function(e) {
-        // Ignorar si se está escribiendo en un input
         if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
         
         switch(e.key) {
@@ -1512,21 +1543,18 @@ function setupKeyboardNavigation() {
                 e.preventDefault();
                 currentChapterIndex = chapters.length - 1;
                 currentPageIndex = chapters[currentChapterIndex].pages.length - 1;
+                preloadedImages.clear();
                 renderCurrentPage();
                 break;
         }
     });
 }
 
-// Inicialización cuando se carga la página
 document.addEventListener('DOMContentLoaded', function() {
-    // Cargar progreso guardado
     loadProgress();
     
-    // Renderizar página actual
     renderCurrentPage();
     
-    // Configurar event listeners para navegación
     document.querySelectorAll('.fa-arrow-left').forEach(icon => {
         icon.closest('.nav-btn').addEventListener('click', function(e) {
             e.preventDefault();
@@ -1557,7 +1585,6 @@ document.addEventListener('DOMContentLoaded', function() {
         window.close() || window.history.back();
     });
     
-    // Botones de gestión de progreso
     document.querySelector('.save-btn')?.addEventListener('click', saveProgress);
     document.querySelector('.load-btn')?.addEventListener('click', loadProgress);
     document.querySelector('.reset-btn')?.addEventListener('click', resetProgress);
@@ -1573,9 +1600,32 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Configurar navegación por teclado
     setupKeyboardNavigation();
     
-    // Guardar progreso al cerrar la página
+    setTimeout(() => {
+        if (currentChapterIndex < chapters.length - 1) {
+            preloadChapter(currentChapterIndex + 1);
+        }
+    }, 2000);
+    
     window.addEventListener('beforeunload', saveProgress);
+    
+    if (currentChapterIndex > 0) {
+        setTimeout(() => {
+            preloadChapter(currentChapterIndex - 1);
+        }, 3000);
+    }
 });
+
+function preloadAllChapters() {
+    chapters.forEach((chapter, index) => {
+        setTimeout(() => {
+            preloadChapter(index);
+        }, index * 1000); 
+    });
+}
+
+function clearImageCache() {
+    preloadedImages.clear();
+    console.log('Cache de imágenes limpiado');
+}

@@ -376,7 +376,7 @@ const chapters = [
             {
                 id: 1,
                 title: "Chapter 2 - Page 1",
-                video: "CHAPTER 1/video_prueba.mp4",
+                video: "fUNNY/medusa.mp4",
                 hasVideo: true,
                 alt: "Comic 2-1",
                 text: ["“”"]
@@ -403,6 +403,13 @@ function renderCurrentPage() {
     const comicImg = document.getElementById("comic-img");
     const comicVideo = document.getElementById("comic-video");
     const comicText = document.getElementById("comic-text");
+    const pageTitle = document.getElementById("page-title");
+
+    if (pageTitle) {
+        pageTitle.textContent = page.title;
+    }
+
+    document.title = page.title;
     
     // Detectar si es video o imagen, es niñe o niñe
     if (page.video) {
@@ -413,18 +420,17 @@ function renderCurrentPage() {
 
         // CONFIGURACIÓN PARA LOOP
         comicVideo.loop = true;
-        comicVideo.muted = true; //autoplay
+        comicVideo.muted = false;
         comicVideo.playsInline = true; // Para iOS -diva emoji-
+        comicVideo.controls = true;
 
         // Intentar reproducción automática (golpear a la puta)
         const playPromise = comicVideo.play();
-
-        // reproducción (sexual) automática
         if (playPromise !== undefined) {
             playPromise.then(() => {
-                console.log('Video playing in loop');
+                console.log('Video playing in loop (muted for autoplay)');
             }).catch(error => {
-                console.log('Auto-play prevented, showing controls');
+                console.log('Auto-play prevented');
                 comicVideo.controls = true;
             });
         }

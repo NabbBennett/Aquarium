@@ -1298,9 +1298,14 @@ function renderCurrentPage() {
     const comicImg = document.getElementById("comic-img");
     const comicVideo = document.getElementById("comic-video");
     const comicText = document.getElementById("comic-text");
+    const pageTitle = document.getElementById("page-title"); 
     
     // Mostrar loader mientras carga
     showLoader();
+    
+     if (pageTitle) {
+        pageTitle.textContent = page.title;
+    }
     
     comicImg.onload = function() {
         hideLoader();

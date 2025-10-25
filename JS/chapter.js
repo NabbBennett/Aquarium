@@ -139,8 +139,8 @@ const chapters = [
                 title: "Introduction I - 19",
                 image: "CHAPTER 1/Aquarium 1-20.png",
                 alt: "Comic Image 19",
-                text: ["“Magnolia: Su arma será confiscada para su investigación.”<br><br>¿DISCULPA?"
-                ]
+                text: ["¿DISCULPA?"],
+                dialog: ["<figcaption style='text-align:left; color: RED'> Magnolia: <span style='color: BLACK'>Tu arco será confiscado para su investigación."]
             },
             {
                 id: 20,
@@ -203,8 +203,7 @@ const chapters = [
                 title: "Introduction I - 28",
                 image: "CHAPTER 1/Aquarium 1-30.png",
                 alt: "Comic Image 28",
-                text: ["Díalogo.<br><br><figcaption style=text-align:left> Bartender: Identifícate<br> Aura: Oh, Aura. Jejeje... saludos.<br>Bartender: No por nombre. Rango.<br>Aura: Señora, le juro que no quiero problemas, sólo cerveza. ¿Quizás sólo una? ¿Acepta darme una para llevar?"]
-            },
+                dialog: ["<figcaption style='text-align:left; color: #7e3215'> Bartender: <span style='color: BLACK'>Identifícate</span></figcaption><figcaption style='text-align:left; color: #d1be11'> Aura: <span style='color: BLACK'>Oh, Aura. Jejeje... saludos.</span></figcaption><figcaption style='text-align:left; color: #7e3215'> Bartender: <span style='color: BLACK'>No por nombre. Rango.</span></figcaption><figcaption style='text-align:left; color: #d1be11'> Aura: <span style='color: BLACK'>Señora, le juro que no quiero problemas, sólo cerveza. ¿Quizás sólo una? ¿Acepta darme una para llevar?</span></figcaption>"]},
             {
                 id: 29,
                 title: "Introduction I - 29",
@@ -224,15 +223,16 @@ const chapters = [
                 title: "Introduction I - 31",
                 image: "CHAPTER 1/Aquarium 1-33.png",
                 alt: "Comic Image 31",
-                text: ["Díalogo<br><br><figcaption style=text-align:left>Aura: ¿Ves? No hay ninguna bruja aquí. De hecho, jaja, ¡Las odio mucho! Igual que tú.<br>Bartender: ¿Lista de crímenes?<br>Aura: ... ¿Disculpa?<br>Aura: Estoy bastante segura de que me confundes con otra persona... Verás, solo pasaba por aquí y tengo muchísimas ganas de una cerveza, así que...<br>Bartender: Ahem."]
-                /*AQUI VA UNA CONVERSACION (HABLAR CON VALLY)*/
+                dialog: ["<figcaption style='text-align:left; color: #d1be11'> Aura: <span style='color: BLACK'> ¿Ves? No hay ninguna bruja aquí. De hecho, jaja, ¡Las odio mucho! Igual que tú.</span></figcaption><figcaption style='text-align:left; color: #7e3215'> Bartender: <span style='color: BLACK'> ¿Lista de crímenes? </span></figcaption><figcaption style='text-align:left; color: #d1be11'> Aura: <span style='color: BLACK'> ... ¿Disculpa? Estoy bastante segura de que me confundes con otra persona... Verás, solo pasaba por aquí y tengo muchísimas ganas de una cerveza, así que...</span></figcaption><figcaption style='text-align:left; color: #7e3215'> Bartender: <span style='color: BLACK'> Ahem.</span></figcaption>"]
+                
             },
             {
                 id: 32,
                 title: "Introduction I - 32",
                 image: "CHAPTER 1/Aquarium 1-34.png",
                 alt: "Comic Image 32",
-                text: ["Díalogo<br><br><figcaption style=text-align:left>Aura: ...<br>Aura: Oye, eso. Eso no estaba antes.<br>Bartender: Políticas del bar.<br><br><figcaption style=text-align:center>Quedas incrédulo."]
+                text: ["Quedas incrédulo."],
+                dialog: ["<figcaption style='text-align:left; color: #d1be11'> Aura: <span style='color: BLACK'> ... Oye, eso. Eso no estaba antes.</span></figcaption><figcaption style='text-align:left; color: #7e3215'> Bartender: <span style='color: BLACK'>Políticas del bar.</span></figcaption><figcaption style='text-align:center'>"]
             },
             {
                 id: 33,
@@ -1216,8 +1216,6 @@ const chapters = [
                 text: ["To be continued (really soon tbh)<br><br>Hola estoy muriendo gracias por leer bye"]
             },
             
-    
-        
 
         ]
     },
@@ -1322,7 +1320,10 @@ function renderCurrentPage() {
     const comicImg = document.getElementById("comic-img");
     const comicVideo = document.getElementById("comic-video");
     const comicText = document.getElementById("comic-text");
+    const comicDialog = document.getElementById("comic-dialog");
     const pageTitle = document.getElementById("page-title"); 
+    const expandBtn = document.getElementById("expand-btn");
+    const dialogBox = document.querySelector(".dialog-box");
     
     comicImg.style.display = 'none';
     comicVideo.style.display = 'none';
@@ -1389,10 +1390,46 @@ function renderCurrentPage() {
     comicText.innerHTML = page.text;
     document.title = page.title;
     
+const hasText = page.text && page.text.length > 0;
+    
+    if (hasText) {
+        comicText.style.display = 'block';
+    } else {
+        comicText.style.display = 'none';
+    }
+
+const hasDialog = page.dialog && page.dialog.length > 0;
+    
+    if (hasDialog) {
+        // Si hay diálogo
+        comicDialog.innerHTML = page.dialog;
+        expandBtn.style.display = 'block';
+        dialogBox.style.display = 'block';
+        dialogBox.classList.remove('expanded');
+        expandBtn.textContent = 'Abrir Conversación';
+    } else {
+        // Si no hay diálogo
+        comicDialog.innerHTML = '';
+        expandBtn.style.display = 'none';
+        dialogBox.style.display = 'none';
+    }
+    
     setTimeout(preloadMultiplePages, 100);
     
     updateNavigationButtons();
 }
+
+document.getElementById('expand-btn').addEventListener('click', function() {
+    const dialogBox = document.querySelector('.dialog-box');
+    dialogBox.classList.toggle('expanded');
+            
+    // Cambiar el texto del botón
+    if (dialogBox.classList.contains('expanded')) {
+        this.textContent = 'Cerrar';
+    } else {
+        this.textContent = 'Abrir Conversación';
+    }
+});
 
 function nextPage() {
     const currentChapter = chapters[currentChapterIndex];
@@ -1629,3 +1666,4 @@ function clearImageCache() {
     preloadedImages.clear();
     console.log('Cache de imágenes limpiado');
 }
+

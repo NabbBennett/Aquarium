@@ -139,8 +139,8 @@ const chapters = [
                 title: "Introduction I - 19",
                 image: "CHAPTER 1/Aquarium 1-20.png",
                 alt: "Comic Image 19",
-                text: ["¿DISCULPA?"],
-                dialog: ["<figcaption style='text-align:left; color: RED'> Magnolia: <span style='color: BLACK'>Tu arco será confiscado para su investigación."]
+                text: ["“Magnolia: Su arma será confiscada para su investigación.”<br><br>¿DISCULPA?"
+                ]
             },
             {
                 id: 20,
@@ -203,7 +203,8 @@ const chapters = [
                 title: "Introduction I - 28",
                 image: "CHAPTER 1/Aquarium 1-30.png",
                 alt: "Comic Image 28",
-                dialog: ["<figcaption style='text-align:left; color: #7e3215'> Bartender: <span style='color: BLACK'>Identifícate</span></figcaption><figcaption style='text-align:left; color: #d1be11'> Aura: <span style='color: BLACK'>Oh, Aura. Jejeje... saludos.</span></figcaption><figcaption style='text-align:left; color: #7e3215'> Bartender: <span style='color: BLACK'>No por nombre. Rango.</span></figcaption><figcaption style='text-align:left; color: #d1be11'> Aura: <span style='color: BLACK'>Señora, le juro que no quiero problemas, sólo cerveza. ¿Quizás sólo una? ¿Acepta darme una para llevar?</span></figcaption>"]},
+                text: ["Diálogo.<br><br><figcaption style=text-align:left> Bartender: Identifícate<br> Aura: Oh, Aura. Jejeje... saludos.<br>Bartender: No por nombre. Rango.<br>Aura: Señora, le juro que no quiero problemas, sólo cerveza. ¿Quizás sólo una? ¿Acepta darme una para llevar?"]
+            },
             {
                 id: 29,
                 title: "Introduction I - 29",
@@ -223,16 +224,15 @@ const chapters = [
                 title: "Introduction I - 31",
                 image: "CHAPTER 1/Aquarium 1-33.png",
                 alt: "Comic Image 31",
-                dialog: ["<figcaption style='text-align:left; color: #d1be11'> Aura: <span style='color: BLACK'> ¿Ves? No hay ninguna bruja aquí. De hecho, jaja, ¡Las odio mucho! Igual que tú.</span></figcaption><figcaption style='text-align:left; color: #7e3215'> Bartender: <span style='color: BLACK'> ¿Lista de crímenes? </span></figcaption><figcaption style='text-align:left; color: #d1be11'> Aura: <span style='color: BLACK'> ... ¿Disculpa? Estoy bastante segura de que me confundes con otra persona... Verás, solo pasaba por aquí y tengo muchísimas ganas de una cerveza, así que...</span></figcaption><figcaption style='text-align:left; color: #7e3215'> Bartender: <span style='color: BLACK'> Ahem.</span></figcaption>"]
-                
+                text: ["Diálogo<br><br><figcaption style=text-align:left>Aura: ¿Ves? No hay ninguna bruja aquí. De hecho, jaja, ¡Las odio mucho! Igual que tú.<br>Bartender: ¿Lista de crímenes?<br>Aura: ... ¿Disculpa?<br>Aura: Estoy bastante segura de que me confundes con otra persona... Verás, solo pasaba por aquí y tengo muchísimas ganas de una cerveza, así que...<br>Bartender: Ahem."]
+                /*AQUI VA UNA CONVERSACION (HABLAR CON VALLY)*/
             },
             {
                 id: 32,
                 title: "Introduction I - 32",
                 image: "CHAPTER 1/Aquarium 1-34.png",
                 alt: "Comic Image 32",
-                text: ["Quedas incrédulo."],
-                dialog: ["<figcaption style='text-align:left; color: #d1be11'> Aura: <span style='color: BLACK'> ... Oye, eso. Eso no estaba antes.</span></figcaption><figcaption style='text-align:left; color: #7e3215'> Bartender: <span style='color: BLACK'>Políticas del bar.</span></figcaption><figcaption style='text-align:center'>"]
+                text: ["Diálogo<br><br><figcaption style=text-align:left>Aura: ...<br>Aura: Oye, eso. Eso no estaba antes.<br>Bartender: Políticas del bar.<br><br><figcaption style=text-align:center>Quedas incrédulo."]
             },
             {
                 id: 33,
@@ -246,7 +246,7 @@ const chapters = [
                 title: "Introduction I - 34",
                 image: "CHAPTER 1/Aquarium 1-36.png",
                 alt: "Comic Image 34",
-                text: ["Díalogo<br><br><figcaption style=text-align:left>Aura: Entonces... si “solo pájaros”, ¿ese qué?<br>Bartender: ¿Ese? Es “Glitch”.<br>Aura: Salud.<br>Bartender: Glitch. Un amigo humano de mi sobrina, Maple. Trabaja incansablemente y con dignidad en mi bar. No hay magia implícita.<br>Aura: No hago magia.<br>Bartender: ¿Qué hay de ese arco, niña? ¿Cómo lo creaste?<br>Aura: Señora, yo no lo creé.<br>Bartender: Claro.<br>Bartender: ¿Sabes qué? Ya oí suficiente de ti en ese juicio.<br>Bartender: Tu arma podría ser buena, pero dejar ese polvo a los ciudadanos de rango superior fue un error. Esa era una situación que se suponía debían regular únicamente las brujas. Qué irresponsabilidad."]
+                text: ["Diálogo<br><br><figcaption style=text-align:left>Aura: Entonces... si “solo pájaros”, ¿ese qué?<br>Bartender: ¿Ese? Es “Glitch”.<br>Aura: Salud.<br>Bartender: Glitch. Un amigo humano de mi sobrina, Maple. Trabaja incansablemente y con dignidad en mi bar. No hay magia implícita.<br>Aura: No hago magia.<br>Bartender: ¿Qué hay de ese arco, niña? ¿Cómo lo creaste?<br>Aura: Señora, yo no lo creé.<br>Bartender: Claro.<br>Bartender: ¿Sabes qué? Ya oí suficiente de ti en ese juicio.<br>Bartender: Tu arma podría ser buena, pero dejar ese polvo a los ciudadanos de rango superior fue un error. Esa era una situación que se suponía debían regular únicamente las brujas. Qué irresponsabilidad."]
             },
             {
                 id: 35,
@@ -260,14 +260,14 @@ const chapters = [
                 title: "Introduction I - 36",
                 image: "CHAPTER 1/Aquarium 1-38.gif",
                 alt: "Comic Image 36",
-                text: ["Díalogo.<br><br><figcaption style=text-align:left>Maple: ¡TÍA, HE VUELTO! DISCULPA LA DEMORA.<br>Aura: Oh.<br>Bartender: Maple, ¿qué estas...? ¿QUÉ...?<br>Maple: ¿Eh? Oh... UHHH<br>Bartender: ¡¿Son partículas mágicas?! ¿Maple? ¡Jovencita, más vale que tengas una buena explicación para ésto!"]
+                text: ["Diálogo.<br><br><figcaption style=text-align:left>Maple: ¡TÍA, HE VUELTO! DISCULPA LA DEMORA.<br>Aura: Oh.<br>Bartender: Maple, ¿qué estas...? ¿QUÉ...?<br>Maple: ¿Eh? Oh... UHHH<br>Bartender: ¡¿Son partículas mágicas?! ¿Maple? ¡Jovencita, más vale que tengas una buena explicación para ésto!"]
             },
             {
                 id: 37,
                 title: "Introduction I - 37",
                 image: "CHAPTER 1/Aquarium 1-39.png",
                 alt: "Comic Image 37",
-                text: ["Díalogo.<br><br><figcaption style=text-align:left>Maple: ¡CHICOS! ¡CHICOS! ¡LA CAGUÉ! ¡TÍA PINES SE ENTERÓ! ¡AGERA, APAGA EL HECHIZO!<br>Bartender: ¿Acabo de oír el nombre de esa bruja amiguita tuya? ¡De la que te dije que te alejaras!<br>Maple: AGERA, GLITCH. QUE ALGUIEN CONTESTE, POR FAVOR.<br>Bartender: ¡¿ESO TAMBIÉN ES UN DISPOSITIVO MÁGICO LO QUE ESTÁS USANDO AHORA MISMO?!"]
+                text: ["Diálogo.<br><br><figcaption style=text-align:left>Maple: ¡CHICOS! ¡CHICOS! ¡LA CAGUÉ! ¡TÍA PINES SE ENTERÓ! ¡AGERA, APAGA EL HECHIZO!<br>Bartender: ¿Acabo de oír el nombre de esa bruja amiguita tuya? ¡De la que te dije que te alejaras!<br>Maple: AGERA, GLITCH. QUE ALGUIEN CONTESTE, POR FAVOR.<br>Bartender: ¡¿ESO TAMBIÉN ES UN DISPOSITIVO MÁGICO LO QUE ESTÁS USANDO AHORA MISMO?!"]
             },
             {
                 id: 38,
@@ -667,14 +667,14 @@ const chapters = [
                 title: "Introduction I - 94",
                 image: "CHAPTER 1/Aquarium 1-95.gif",
                 alt: "Comic Image 94",
-                text: ["Díalogo<br><br><figcaption style=text-align:left>Bruja 1: ¿Es normal que los perros dejen este olor tan apestoso?<br>Bruja 2: ¡Recuerda el hechizo de ubicación! Mientras más apestoso sea, más cerca estamos.<br>Bruja 1: ¿Que tipo de lógica es esa? ¿No podria ser lavanda o fresas?<br>Bruja 3: Creo que secuestró a un civil a su paso.<br>Bruja 2: jeje. Eso solo agrega OTRO cargo más. En adición a las horas escapando de la justicia.<br>Brujas 1: ¿Magnolia te solicitó llevar esas cuentas?<br>Brujas 2: No. Sólo que se verá mejor cuando la publiquemos en la lista negra. Evasión de la justicia, posesión de magia no autorizada, secuestro, atentado contra la guardia de magia, uso indebido de artefactos encantados, invocación no registrada de entidades, uso de magia en zonas de baja contención, cruzar límites de civiles y cualquier otra cosa que se pueda incrustar a la marcha.<br>Bruja 1: Suena bien."]
+                text: ["Diálogo<br><br><figcaption style=text-align:left>Bruja 1: ¿Es normal que los perros dejen este olor tan apestoso?<br>Bruja 2: ¡Recuerda el hechizo de ubicación! Mientras más apestoso sea, más cerca estamos.<br>Bruja 1: ¿Que tipo de lógica es esa? ¿No podria ser lavanda o fresas?<br>Bruja 3: Creo que secuestró a un civil a su paso.<br>Bruja 2: jeje. Eso solo agrega OTRO cargo más. En adición a las horas escapando de la justicia.<br>Brujas 1: ¿Magnolia te solicitó llevar esas cuentas?<br>Brujas 2: No. Sólo que se verá mejor cuando la publiquemos en la lista negra. Evasión de la justicia, posesión de magia no autorizada, secuestro, atentado contra la guardia de magia, uso indebido de artefactos encantados, invocación no registrada de entidades, uso de magia en zonas de baja contención, cruzar límites de civiles y cualquier otra cosa que se pueda incrustar a la marcha.<br>Bruja 1: Suena bien."]
             },
             {
                 id: 95,
                 title: "Introduction I - 95",
                 image: "CHAPTER 1/Aquarium 1-96.gif",
                 alt: "Comic Image 95",
-                text: ["Díalogo<br><br><figcaption style=text-align:left>Bruja 1: No es como si estuvieramos mintiendo de todas formas. Y quién sabe que otras fechorías haya cometido fuera del radar de la ley. Éstos familiares no empezaron a revelarse recién, ¿Sabes?<br>Bruja 2: No lo sé. Lo entendería con las aves, por culpa de la ex-consejera principal de Magnolia. Pero los demás familiares están bastante cómodos con nosotros, no entiendo el enojo.<br>Bruja 3: Les dimos cuerpos más humanos y un hogar para vivir, ¡quién los entiende! No sé por qué querrían la razón en todo siempre. Están para aconsejar, no demandar.<br>Bruja 1: Bueno, suficiente. Hay que movernos rápido. Hoy debe enfrentar justicia."]
+                text: ["Diálogo<br><br><figcaption style=text-align:left>Bruja 1: No es como si estuvieramos mintiendo de todas formas. Y quién sabe que otras fechorías haya cometido fuera del radar de la ley. Éstos familiares no empezaron a revelarse recién, ¿Sabes?<br>Bruja 2: No lo sé. Lo entendería con las aves, por culpa de la ex-consejera principal de Magnolia. Pero los demás familiares están bastante cómodos con nosotros, no entiendo el enojo.<br>Bruja 3: Les dimos cuerpos más humanos y un hogar para vivir, ¡quién los entiende! No sé por qué querrían la razón en todo siempre. Están para aconsejar, no demandar.<br>Bruja 1: Bueno, suficiente. Hay que movernos rápido. Hoy debe enfrentar justicia."]
             },
             {
                 id: 96,
@@ -695,7 +695,7 @@ const chapters = [
                 title: "Introduction I - 98",
                 image: "CHAPTER 1/Aquarium 1-99.gif",
                 alt: "Comic Image 98",
-                text: ["Díalogo<br><br><figcaption style=text-align:left>Glitch: Ehm… ¿Te lo doy de vuelta?<br>Aura: ¿No crees que es ridículo? ¿Absurdo? ¡Sabía bien que tenía que huir de esas locas! Cero intención de trabajar conmigo… con razón las aves no las soportan. Cuánto a que esto solo ocasiona una ruptura total.<br>Glitch:Bueno, sí, aves cercanas me han comentado al respecto…<br>Aura:¿No pueden solo llegar a un acuerdo? Vamos, no es como si fuéramos tantos en la comunidad. Algo se podría discutir si se lo propusieran. Todo ese control a las brujas se les subió a la cabeza.<br>Aura: De paso ahora es mi culpa. Tsk. Agarran al más tonto como carnada.<br>Glitch: ¿Por qué te culparían?<br>Aura: ¿Por… tener la solución? Pero no sé de dónde la saqué. No importa. NO creo que importe. Estoy ayudando, estuve ayudando. ¿¡Merezco ser perseguida como un criminal por eso!? Que suerte más de mierda.<br>Aura: ¡Las aves tampoco se salvan! Tan tercas con que pueden resolver el asunto con ellas hablando y con argumentos. Nah, nah… eso solo va—"]
+                text: ["Diálogo<br><br><figcaption style=text-align:left>Glitch: Ehm… ¿Te lo doy de regreso?<br>Aura: ¿No crees que es ridículo? ¿Absurdo? ¡Sabía bien que tenía que huir de esas locas! Cero intención de trabajar conmigo… con razón las aves no las soportan. Cuánto a que esto solo ocasiona una ruptura total.<br>Glitch:Bueno, sí, aves cercanas me han comentado al respecto…<br>Aura:¿No pueden solo llegar a un acuerdo? Vamos, no es como si fuéramos tantos en la comunidad. Algo se podría discutir si se lo propusieran. Todo ese control a las brujas se les subió a la cabeza.<br>Aura: De paso ahora es mi culpa. Tsk. Agarran al más tonto como carnada.<br>Glitch: ¿Por qué te culparían?<br>Aura: ¿Por… tener la solución? Pero no sé de dónde la saqué. No importa. NO creo que importe. Estoy ayudando, estuve ayudando. ¿¡Merezco ser perseguida como un criminal por eso!? Que suerte más de mierda.<br>Aura: ¡Las aves tampoco se salvan! Tan tercas con que pueden resolver el asunto con ellas hablando y con argumentos. Nah, nah… eso solo va—"]
             },
             {
                 id: 99,
@@ -716,14 +716,14 @@ const chapters = [
                 title: "Introduction I - 101",
                 image: "CHAPTER 1/Aquarium 1-102.png",
                 alt: "Comic Image 101",
-                text: ["Díalogo<br><br><figcaption style=text-align:left>Glitch: ¡¿Estás bien?!<br>Glitch: Deberías ver dónde caminas, sabes…<br>Aura: ¿TÚ-?! ugh…"]
+                text: ["Diálogo<br><br><figcaption style=text-align:left>Glitch: ¡¿Estás bien?!<br>Glitch: Deberías ver dónde caminas, sabes…<br>Aura: ¿TÚ-?! ugh…"]
             },
             {
                 id: 102,
                 title: "Introduction I - 102",
                 image: "CHAPTER 1/Aquarium 1-103.png",
                 alt: "Comic Image 102",
-                text: ["Díalogo<br><br><figcaption style=text-align:left>Aura: Quedatelo.<br>Glitch: No lo quiero, es tuyo.<br>Aura: Quien sabe. Tal vez ese dios sólo quería deshacerse de chatarra vieja o algo. Lo único de mi propiedad es mi mediocridad, oh.. jaja.<br>Aura: El barro no es malo de todas formas. Es… Cómodo. Podría vivir aquí para siempre. Jejeje.<br>Glitch: ¡Ahí voy!<br>Aura: ¿Eh? NONO-"]
+                text: ["Diálogo<br><br><figcaption style=text-align:left>Aura: Quedatelo.<br>Glitch: No lo quiero, es tuyo.<br>Aura: Quien sabe. Tal vez ese dios sólo quería deshacerse de chatarra vieja o algo. Lo único de mi propiedad es mi mediocridad, oh.. jaja.<br>Aura: El barro no es malo de todas formas. Es… Cómodo. Podría vivir aquí para siempre. Jejeje.<br>Glitch: ¡Ahí voy!<br>Aura: ¿Eh? NONO-"]
             },
             {
                 id: 103,
@@ -737,14 +737,14 @@ const chapters = [
                 title: "Introduction I - 104",
                 image: "CHAPTER 1/Aquarium 1-105.gif",
                 alt: "Comic Image 104",
-                text: ["Díalogo<br><br><figcaption style=text-align:left>Aura: … Uh.<br>Glitch: ESTOY TAN ASUSTADO COMO TÚ.<br>Aura: ¿No te rompiste algo?<br>Glitch: NO LO SÉ.<br>Glitch: Ahem."]
+                text: ["Diálogo<br><br><figcaption style=text-align:left>Aura: … Uh.<br>Glitch: ESTOY TAN ASUSTADO COMO TÚ.<br>Aura: ¿No te rompiste algo?<br>Glitch: NO LO SÉ.<br>Glitch: Ahem."]
             },
             {
                 id: 104,
                 title: "Introduction I - 104",
                 image: "CHAPTER 1/Aquarium 1-106.png",
                 alt: "Comic Image 104",
-                text: ["Díalogo<br><br><figcaption style=text-align:left>Glitch: ¿Dices que un dios te lo dio?<br>Aura: …<br>Aura: Siempre he tenido mala suerte toda mi vida. Ese arco fue como un rayo de luz.<br>Aura: No recuerdo su rostro ni nada de él. Solo recuerdo sus palabras.<br>Glitch: ¿Qué te dijo?<br>Aura: “No te pierdas”.<br>Aura: Y aquí estamos… perdidos y sin salida.<br>Aura: Hubiera sido amable que me dijera qué camino seguir en primer lugar…<br>Glitch: He llegado a pensar eso de mí mismo. Así que no creo que sea algo que deba hacerte sentir anormal.<br>Glitch: Sentir que solo quieres vivir sin que tantas cosas pasen a tu alrededor… ninguna de las que puedes controlar.<br>Glitch: Sentirte perdido.<br>Glitch: Tal vez… tal vez no hablaba de caminos como tal, sino de no perderte a ti misma.<br>Aura: ¿Te sientes perdido?<br>Glitch: Desde siempre.<br>Aura: Yo quiero encontrar mi propósito. Pensé que lo tenía.<br>Aura: Pero… si esto es por lo que tengo que pasar, ya no sé si lo quiero.<br>Aura: Debería conformarme con la mísera paga de mi trabajo, jaja. No aspirar estupideces.<br>Aura: Pero no me escuches. No quisiera deprimirte con mi forma de pensar.<br>Aura: Gulp.<br>Glitch: Tienes muy buena puntería con esta cosa, y eres muy ágil.<br>Glitch: No creo que estés haciendo las cosas mal… sino que vivimos en una sociedad de mierda.<br>Glitch: Podrías seguir siendo tú. Y al diablo con ellos.<br>Glitch: Nadie podría manejar esto mejor que tú."]
+                text: ["Diálogo<br><br><figcaption style=text-align:left>Glitch: ¿Dices que un dios te lo dio?<br>Aura: …<br>Aura: Siempre he tenido mala suerte toda mi vida. Ese arco fue como un rayo de luz.<br>Aura: No recuerdo su rostro ni nada de él. Solo recuerdo sus palabras.<br>Glitch: ¿Qué te dijo?<br>Aura: “No te pierdas”.<br>Aura: Y aquí estamos… perdidos y sin salida.<br>Aura: Hubiera sido amable que me dijera qué camino seguir en primer lugar…<br>Glitch: He llegado a pensar eso de mí mismo. Así que no creo que sea algo que deba hacerte sentir anormal.<br>Glitch: Sentir que solo quieres vivir sin que tantas cosas pasen a tu alrededor… ninguna de las que puedes controlar.<br>Glitch: Sentirte perdido.<br>Glitch: Tal vez… tal vez no hablaba de caminos como tal, sino de no perderte a ti misma.<br>Aura: ¿Te sientes perdido?<br>Glitch: Desde siempre.<br>Aura: Yo quiero encontrar mi propósito. Pensé que lo tenía.<br>Aura: Pero… si esto es por lo que tengo que pasar, ya no sé si lo quiero.<br>Aura: Debería conformarme con la mísera paga de mi trabajo, jaja. No aspirar estupideces.<br>Aura: Pero no me escuches. No quisiera deprimirte con mi forma de pensar.<br>Aura: Gulp.<br>Glitch: Tienes muy buena puntería con esta cosa, y eres muy ágil.<br>Glitch: No creo que estés haciendo las cosas mal… sino que vivimos en una sociedad de mierda.<br>Glitch: Podrías seguir siendo tú. Y al diablo con ellos.<br>Glitch: Nadie podría manejar esto mejor que tú."]
             },
             {
                 id: 105,
@@ -800,7 +800,7 @@ const chapters = [
                 title: "Introduction I - 112",
                 image: "CHAPTER 1/Aquarium 1-114.gif",
                 alt: "Comic Image 112",
-                text: ["Díalogo<br><br><figcaption style=text-align:left>Glitch: ¿No fue eso demasiado ruidoso? Ehm,,, ¿No habrán escuchado la explosión? ¡Se estarán acercando acá!<br>Glitch: Sabes, podría pedir ayuda a unas amigas, una es una bruja otra un pato pero son de confiar, s-sólo con marcarles desde aquí vendrían a ayudar..."]
+                text: ["Diálogo<br><br><figcaption style=text-align:left>Glitch: ¿No fue eso demasiado ruidoso? Ehm,,, ¿No habrán escuchado la explosión? ¡Se estarán acercando acá!<br>Glitch: Sabes, podría pedir ayuda a unas amigas, una es una bruja otra un pato pero son de confiar, s-sólo con marcarles desde aquí vendrían a ayudar..."]
             },
             {
                 id: 113,
@@ -856,7 +856,7 @@ const chapters = [
                 title: "Introduction I - 120",
                 image: "CHAPTER 1/Aquarium 1-122.png",
                 alt: "Comic Image 120",
-                text: ["Díalogo<br><br><figcaption style=text-align:left>(Vaya idiota)<br>Glitch: Tú no te metas. <br>Glitch: ¿Puedes dejarme solo?<br>(No creo que quieras estarlo, más bien, sé que no)<br>Glitch: Estoy ocupado ahora mismo.<br>(¿Ocupado evitandome?)<br>Glitch: Eso mismo.<br>(Añade ocupado evitandote)<br>Glitch: …<br>(Eh, cambia esa cara.)<br>(Sabes que sólo estoy para aclarar tu mente)<br>(Soy tu único aliado, Glitch)<br>Glitch: Claro."]
+                text: ["Diálogo<br><br><figcaption style=text-align:left>(Vaya idiota)<br>Glitch: Tú no te metas. <br>Glitch: ¿Puedes dejarme solo?<br>(No creo que quieras estarlo, más bien, sé que no)<br>Glitch: Estoy ocupado ahora mismo.<br>(¿Ocupado evitandome?)<br>Glitch: Eso mismo.<br>(Añade ocupado evitandote)<br>Glitch: …<br>(Eh, cambia esa cara.)<br>(Sabes que sólo estoy para aclarar tu mente)<br>(Soy tu único aliado, Glitch)<br>Glitch: Claro."]
             },
             {
                 id: 121,
@@ -1010,14 +1010,14 @@ const chapters = [
                 title: "Introduction I - 142",
                 image: "CHAPTER 1/Aquarium 1-145.png",
                 alt: "Comic Image 142",
-                text: ["Díalogo<br><br><figcaption style=text-align:left>Agera: Aún no he salido de mi turno… ¿Por qué no me avisaron?<br>Maple: ¡Sólo venia a visitar como siempre! ¿No te alegras que Glitch esté vivo?"]
+                text: ["Diálogo<br><br><figcaption style=text-align:left>Agera: Aún no he salido de mi turno… ¿Por qué no me avisaron?<br>Maple: ¡Sólo venia a visitar como siempre! ¿No te alegras que Glitch esté vivo?"]
             },
             {
                 id: 143,
                 title: "Introduction I - 143",
                 image: "CHAPTER 1/Aquarium 1-146.png",
                 alt: "Comic Image 143",
-                text: ["Díalogo<br><br><figcaption style=text-align:left>Agera: Pues claro que si. Glicho. ¿Dónde habías estado?<br>Glitch: Heheh… un poco aquí. Un poco allá.<br>Maple: Pudiste haber estado un poco en el bar-<br>Agera: SH- Maple!<br>Glitch: Está bien, tiene razón. Siento mi imprudencia con eso… No quería meterlas en problemas.<br>Agera: Lo importante es que estás bien. ¿Los has visto? ¿A los monstruos?<br>Glitch: Oh- pues… Si. Lamentablemente.<br>Agera: Woah. ¿C-Cómo escapaste?<br>Glitch: -SIIIGHH-...<br>Maple: Seguramente les dió su merecido. ¿Ves Agera? Que te dije yo. Que no les habían trancado los golpes necesarios. <br>Maple: Eso segurito lo aprendió de mi. ¿A qué siiii?<br>Glitch: Yo… No recuerdo bien que pasó. Ni hace cuántos días fué. <br>Glitch: Lo lamento.<br>Agera: No no, no hay de qué. Iré a seguir las clases, NO salgan de esta torre en lo que vuelvo. ¿Entendido?<br>Maple: Roger that!"]
+                text: ["Diálogo<br><br><figcaption style=text-align:left>Agera: Pues claro que si. Glicho. ¿Dónde habías estado?<br>Glitch: Heheh… un poco aquí. Un poco allá.<br>Maple: Pudiste haber estado un poco en el bar-<br>Agera: SH- Maple!<br>Glitch: Está bien, tiene razón. Siento mi imprudencia con eso… No quería meterlas en problemas.<br>Agera: Lo importante es que estás bien. ¿Los has visto? ¿A los monstruos?<br>Glitch: Oh- pues… Si. Lamentablemente.<br>Agera: Woah. ¿C-Cómo escapaste?<br>Glitch: -SIIIGHH-...<br>Maple: Seguramente les dió su merecido. ¿Ves Agera? Que te dije yo. Que no les habían trancado los golpes necesarios. <br>Maple: Eso segurito lo aprendió de mi. ¿A qué siiii?<br>Glitch: Yo… No recuerdo bien que pasó. Ni hace cuántos días fué. <br>Glitch: Lo lamento.<br>Agera: No no, no hay de qué. Iré a seguir las clases, NO salgan de esta torre en lo que vuelvo. ¿Entendido?<br>Maple: Roger that!"]
             },
             {
                 id: 144,
@@ -1038,7 +1038,7 @@ const chapters = [
                 title: "Introduction I - 146",
                 image: "CHAPTER 1/Aquarium 1-149.gif",
                 alt: "Comic Image 146",
-                text: ["Díalogo<br><br><figcaption style=text-align:left>Maple: Hablemos de nuestros sentimientos.<br>Glitch: . . . Uh.<br>Maple: O, en cambio. Vayámonos de aquí<br>Maple: Conozco un puesto de varitas de pescado. ¿No se te hace apetitoso?<br>Glitch: Vamos."]
+                text: ["Diálogo<br><br><figcaption style=text-align:left>Maple: Hablemos de nuestros sentimientos.<br>Glitch: . . . Uh.<br>Maple: O, en cambio. Vayámonos de aquí<br>Maple: Conozco un puesto de varitas de pescado. ¿No se te hace apetitoso?<br>Glitch: Vamos."]
             },
             {
                 id: 147,
@@ -1170,14 +1170,14 @@ const chapters = [
                 title: "Introduction I - 163",
                 image: "CHAPTER 1/Aquarium 1-167.png",
                 alt: "Comic Image 163",
-                text: ["Díalogo<br><br><figcaption style=text-align:left>Magnolia: Maple.<br>Maple: <br>Magnolia: ¿Y tú tía?<br>Maple: En casa<br>Magnolia: Me refiero a cómo está.<br>Maple: ¿Tú qué crees?<br>Magnolia: Tengo una idea. Pero pensé que sería más cortés preguntar antes que asumir. Algo que tal vez ella debería aprender.<br>Maple: (Alzar hombros)<br>Magnolia: Sigh<br>Glitch: ¿Ha considerado colocar alarmas contra incendios?<br>Magnolia: ¿Eso se debe a…?<br>Glitch: Hay fuego saliendo de esa planta."]
+                text: ["Diálogo<br><br><figcaption style=text-align:left>Magnolia: Maple.<br>Maple: <br>Magnolia: ¿Y tú tía?<br>Maple: En casa<br>Magnolia: Me refiero a cómo está.<br>Maple: ¿Tú qué crees?<br>Magnolia: Tengo una idea. Pero pensé que sería más cortés preguntar antes que asumir. Algo que tal vez ella debería aprender.<br>Maple: (Alzar hombros)<br>Magnolia: Sigh<br>Glitch: ¿Ha considerado colocar alarmas contra incendios?<br>Magnolia: ¿Eso se debe a…?<br>Glitch: Hay fuego saliendo de esa planta."]
             },
             {
                 id: 164,
                 title: "Introduction I - 164",
                 image: "CHAPTER 1/Aquarium 1-168.gif",
                 alt: "Comic Image 164",
-                text: ["Díalogo<br><br><figcaption style=text-align:left>Magnolia: Este castillo se mueve por las emociones de su creador, sólo revela lo malo que es tener aves cerca de aquí si todas van a tener esa actitud.<br>Magnolia: Me retiraré por el momento, mientras reflexionarán aquí unas horas."]
+                text: ["Diálogo<br><br><figcaption style=text-align:left>Magnolia: Este castillo se mueve por las emociones de su creador, sólo revela lo malo que es tener aves cerca de aquí si todas van a tener esa actitud.<br>Magnolia: Me retiraré por el momento, mientras reflexionarán aquí unas horas."]
             },
             
             {
@@ -1199,23 +1199,328 @@ const chapters = [
                 title: "Introduction I - 167",
                 image: "CHAPTER 1/Aquarium 1-171.png",
                 alt: "Comic Image 167",
-                text: ["Díalogo<br><br><figcaption style=text-align:left>Maple: Ohh, ¡lo siento!!<br>Glitch: Está bien, he estado encerrado en peores lugares.<br>Maple: Ni siquiera pudiste probar las varitas de pescado…<br>Glitch: Está bien, puede ser luego. No creo que el vendedor esté muerto.<br>Maple:<br>Glitch:<br>Maple:<br>Glitch: o…<br>Maple: AGHHH!!<br>Maple: ¡El mundo supone ponerme desafios emocionantes, no esto!"]
+                text: ["Diálogo<br><br><figcaption style=text-align:left>Maple: Ohh, ¡lo siento!!<br>Glitch: Está bien, he estado encerrado en peores lugares.<br>Maple: Ni siquiera pudiste probar las varitas de pescado…<br>Glitch: Está bien, puede ser luego. No creo que el vendedor esté muerto.<br>Maple:<br>Glitch:<br>Maple:<br>Glitch: o…<br>Maple: AGHHH!!<br>Maple: ¡El mundo supone ponerme desafios emocionantes, no esto!"]
             },
             {
                 id: 168,
                 title: "Introduction I - 168",
                 image: "CHAPTER 1/Aquarium 1-172.png",
                 alt: "Comic Image 168",
-                text: ["Díalogo<br><br><figcaption style=text-align:left>Glitch: Está bien Maple, podríamos leer un libro…<br>Maple: OH- (Sonreir)<br>Maple: Pero hazles vocecitas a los personajes cuando lo leas.<br>Glitch: Sólo hay libros de herbologia…<br>Maple: ¿Y?<br>(Maple agarra un libro)<br>Maple: Cada planta puede tener una voz diferente al ser descritas.<br>Glitch: …<br>Glitch: Claro."]
+                text: ["Diálogo<br><br><figcaption style=text-align:left>Glitch: Está bien Maple, podríamos leer un libro…<br>Maple: OH- (Sonreir)<br>Maple: Pero hazles vocecitas a los personajes cuando lo leas.<br>Glitch: Sólo hay libros de herbologia…<br>Maple: ¿Y?<br>(Maple agarra un libro)<br>Maple: Cada planta puede tener una voz diferente al ser descritas.<br>Glitch: …<br>Glitch: Claro."]
             },
             {
                 id: 169,
                 title: "Introduction I - 169",
-                image: "CHAPTER 1/baka.png",
+                image: "CHAPTER 1/Aquarium 1-173a.png",
                 alt: "Comic Image 169",
-                text: ["To be continued (really soon tbh)<br><br>Hola estoy muriendo gracias por leer bye"]
+                text: ["Te encuentras en un lugar completamente diferente, siendo también una persona totalmente distinta. Pero deberías haberte acostumbrado ya a los cambios abruptos, ¿no es así?<br><br>No hay suficiente consciencia en la visión que estamos teniendo como para identificar quién eres ahora mismo. Sin embargo, en lo que parece ser un hogar humilde y tranquilo, una niña se asoma a la ventana para observar el pueblo que la rodea."]
             },
+            {
+                id: 170,
+                title: "Introduction I - 170",
+                image: "CHAPTER 1/Aquarium 1-173.png",
+                alt: "Comic Image 170",
+                text: ["¡Oh!<br><br>Parece percatarse de una serpiente de aspecto amigable que desciende del árbol para saludarla desde la ventana. Lejos de asustarse, tanto la niña como el perro, su mascota, observan con curiosidad las intenciones de la criatura, algo que nunca habían visto antes en sus cortas vidas."]
+            },
+            {
+                id: 171,
+                title: "Introduction I - 171",
+                image: "CHAPTER 1/Aquarium 1-174.png",
+                alt: "Comic Image 171",
+                text: ["Desde la ventana, la serpiente termina enroscándose en el hombro de la niña para darle lo que parece ser un abrazo bastante fuera de lo común."]
+            },
+            {
+                id: 172,
+                title: "Introduction I - 172",
+                image: "CHAPTER 1/Aquarium 1-175.png",
+                alt: "Comic Image 172",
+                text: ["No es hasta que su madre entra a la habitación que la diversión se detiene. Claro que una criatura peligrosa cerca de su niña la llena de terror al primer vistazo."]
+            },
+            {
+                id: 173,
+                title: "Introduction I - 173",
+                image: "CHAPTER 1/Aquarium 1-176.png",
+                alt: "Comic Image 173",
+                text: [""]
+            },
+            {
+                id: 174,
+                title: "Introduction I - 174",
+                image: "CHAPTER 1/Aquarium 1-178.png",
+                alt: "Comic Image 174",
+                text: ["Al mismo tiempo que el perro ladra ante todo el alboroto, la mujer toma un arma y se dispone a atacar a la serpiente.<br><br>“DETENTE, ¡NO LO HAGAS!”<br><br>—Grita la niña—<br>«¡Sólo quiere ser mi amigo, por favor!»"]
+            },
+            {
+                id: 175,
+                title: "Introduction I - 175",
+                image: "CHAPTER 1/Aquarium 1-179.png",
+                alt: "Comic Image 175",
+                text: [""]
+            },
+            {
+                id: 176,
+                title: "Introduction I - 176",
+                image: "CHAPTER 1/Aquarium 1-180.png",
+                alt: "Comic Image 176",
+                text: [""]
+            },
+            {
+                id: 177,
+                title: "Introduction I - 177",
+                image: "CHAPTER 1/Aquarium 1-181.png",
+                alt: "Comic Image 177",
+                text: ["¡Fiu! no hay nada de que preocuparse, después de aquel día, la serpiente pasó a vivir en el hogar de la niña, el perro y la madre. Fue cuidada y disfrutó de todas las golosinas que quisiera, cuando quisiera."]
+            },
+            {
+                id: 178,
+                title: "Introduction I - 178",
+                image: "CHAPTER 1/Aquarium 1-182.png",
+                alt: "Comic Image 178",
+                text: ["Un muy hermoso escenario, un muy lindo final feliz con una enseñanza."]
+            },
+            {
+                id: 179,
+                title: "Introduction I - 179",
+                image: "CHAPTER 1/Aquarium 1-183.gif",
+                alt: "Comic Image 179",
+                text: ["No debes juzgar un libro por su portada :) "]
+            },
+            {
+                id: 180,
+                title: "Introduction I - 180",
+                image: "CHAPTER 1/Aquarium 1-184.png",
+                alt: "Comic Image 180",
+                text: [""]
+            },
+            {
+                id: 181,
+                title: "Introduction I - 181",
+                image: "CHAPTER 1/Aquarium 1-185.png",
+                alt: "Comic Image 181",
+                text: [""]
+            },
+            {
+                id: 182,
+                title: "Introduction I - 182",
+                image: "CHAPTER 1/Aquarium 1-186.png",
+                alt: "Comic Image 182",
+                text: ["Oh, ya eres alguien de nuevo. ¡Yay!<br><br>Muchas idas y aventuras por todas partes, pero ninguna para ti. Un dolor de cabeza te nublaba la razón mientras tu tripa empezaba a hacer los ruidos usuales. En tu estado actual, lo ideal sería mejor estar en la calle y mendigar por comida, pero tu dignidad corre riesgo. ¿Estás en la calle ahora mismo? Podría ser. No recuerdas nada.<br><br>Huele a... ¿Cerveza?"]
+            },
+            {
+                id: 183,
+                title: "Introduction I - 183",
+                image: "CHAPTER 1/Aquarium 1-187.png",
+                alt: "Comic Image 183",
+                text: ["Si, Cerveza. Bastante Cerveza. Botellas a tu alrededor lo revelan. Probablemente en eso gastaste lo poco que tenías, Arrepentimiento.<br><br>Pero, ¿Cúal es el punto de gastar en comida si puedes cazarla?<br><br>Eso pensaste, hasta que intentaste cazar algo. Vaya que manejar un cuerpo sin suerte es más difícil de lo que recordabas, es como si el arco se hubiera llevado toda es energía. Te tropezaste en cada paso, golpeaste todo menos a un ser vivo."]
+            },
+            {
+                id: 184,
+                title: "Introduction I - 184",
+                image: "CHAPTER 1/Aquarium 1-188.png",
+                alt: "Comic Image 184",
+                text: ["Incluso cazar peces podría ser una tarea imposible. Distinguirlos es como distinguir esas piedras de colores que ese sujeto quería, todas iguales.<br><br>¿Cuál es el punto de tener tantos colores en primer lugar? Parece avaricia. Tal vez con eso ganaron dinero, haciendo colores. Tú también podrías hacer eso (ilusiones); ser el primero en algo siempre es lo que te da los beneficios monetarios más grandes. A menos que haya gente con más poder que te arrebate tus logros sin consecuencia alguna.<br><br>Ese arco era como tu pase VIP a la vida. El deus ex machina de esta basura de historia montada. Misma sensación de ser adoptado por una familia de millonarios en una historia ficticia, para que después, por esa puerta, entre un famoso guapo quien, en sus manos, por supuesto, tiene tu arco.Ese arco era como tu pase VIP a la vida. El deus ex machina de esta basura de historia montada. Misma sensación de ser adoptado por una familia de millonarios en una historia ficticia, para que después, por esa puerta, entre un famoso guapo quien, en sus manos, por supuesto, tiene tu arco."]
+            },
+            {
+                id: 185,
+                title: "Introduction I - 185",
+                image: "CHAPTER 1/Aquarium 1-189.gif",
+                alt: "Comic Image 185",
+                text: ["¡SPLASH!"]
+            },
+            {
+                id: 186,
+                title: "Introduction I - 186",
+                image: "CHAPTER 1/Aquarium 1-190.png",
+                alt: "Comic Image 186",
+                text: ["¡Qué infortunio! Un ave parece haberse llevado toda tu hipotética caza. Claro, no hubieras cazado nada ahora ni nunca, pero ver a alguien más conseguirlo tan fácilmente te hierve la sangre.<br><br>De paso, sabes que has visto esta cara antes, y ella la tuya, al parecer."]
+            },
+            {
+                id: 187,
+                title: "Introduction I - 187",
+                image: "CHAPTER 1/Aquarium 1-191.png",
+                alt: "Comic Image 187",
+                text: ["Diálogo<br><br><figcaption style=text-align:left>Maple: ¡Tengo todo, perro!<br>Maple: Volvamos a la base.<br>Aura: ¿De qué habla?<br>Maple: Pues perteneces al club.<br>Maple: Vaya que gastó lo ganado con rapidez, debía tener mucha sed.<br><br>Es verdad, no recuerdas como llegaste a este rincón o de dónde salieron todas estas bebidas.<br><br>Maple: ¿No lo recuerdas? Te ves…<br>Maple: Venimos de la subasta y te subastaste. Te veías muy animada después <br>de ingerir todo lo que estaba en la mesa y…<br>Aura: ¿M-me compraron?... ¿Quién?<br>Maple: ¡Yo y un amigo! Estabamos desesperados por hacer crecer el club supongo, aceptaste lo poco que teníamos."]
+            },
+            {
+                id: 188,
+                title: "Introduction I - 188",
+                image: "CHAPTER 1/Aquarium 1-192.gif",
+                alt: "Comic Image 188",
+                text: ["Ahí está, roto y en el suelo. Aplastado, baleado y a nada de ser cremado. Tu orgullo de haberte vendido por unas cuantas monedas que, de paso, invertiste en MÁS alcohol. No sabes qué quieres hacer: correr de ahí, matar al ave o simplemente aceptar tu caída sin vuelta atrás.<br><br>¿Qué? ¿Te irías con este desconocido solo por la posibilidad de tener algo que comer en su hogar? ¿Porque ahora eras de su propiedad? ¿Eso en qué te convertirá? ¿Cómo habías llegado a este punto?"]
+            },
+            {
+                id: 189,
+                title: "Introduction I - 189",
+                image: "CHAPTER 1/Aquarium 1-193.png",
+                alt: "Comic Image 189",
+                text: ["Ni modo."]
+            },
+            {
+                id: 190,
+                title: "Introduction I - 190",
+                image: "CHAPTER 1/Aquarium 1-194.png",
+                alt: "Comic Image 190",
+                text: ["Tus alrededores delatan un lugar bastante descuidado, con un carácter algo infantil. Posters con vibras épicas y de genialidad decoran las paredes, así como planos de una sociedad secreta que demuestra querer un cambio. Pero mantenía un ambiente de colores oscuros e intimidantes; parece que lo que más destacaba en su base eran los rojos y el negro. Te preguntas cuántas horas pasarían vagando por aquí en el día."]
+            },
+            {
+                id: 191,
+                title: "Introduction I - 191",
+                image: "CHAPTER 1/Aquarium 1-195.png",
+                alt: "Comic Image 191",
+                text: [" La obra que más destaca parece haber sido hecho por el pato (ya que fue lo primero que quería que vieras al entrar). Muestra a una bruja, a ella misma y a un humano con un aspecto familiar, los tres tomados de la mano, con un texto arriba: “PAZ”.<br><br>Ni en un millón de años entrarías en un lugar tan… fraternal, por cuenta propia. Pero la vida da muchas vueltas."]
+            },
+            {
+                id: 192,
+                title: "Introduction I - 192",
+                image: "CHAPTER 1/Aquarium 1-196.png",
+                alt: "Comic Image 192",
+                text: ["El Ave, de nombre Maple, abre unas cortinas en la parte de atrás de la habitación.<br><br><figcaption style=text-align:left>Maple: Ya que comiste. ¡Sigueme a conocer nuestro proyecto!<br>Aura: Tengo unas preguntas antes que eso.<br>Maple: ¡No!"]
+            },
+            {
+                id: 193,
+                title: "Introduction I - 193",
+                image: "CHAPTER 1/Aquarium 1-197.png",
+                alt: "Comic Image 193",
+                text: ["Eres arrastrada contra tu voluntad. Fuera, el área es más extensa de lo que pensabas, y lo que parece ser una feria en un estado bastante pobre se te presenta. Parece haber sido abandonada hace años; plantas cubren las atracciones y muchas están destruidas o han perdido piezas por el poco mantenimiento recibido.<br><br><figcaption style=text-align:left>Maple: Glitch, Agera y yo encontramos este lugar en una exploración no hace mucho tiempo. Varías de nuestras misiones para reconciliar a ambos bandos han fallado, pero esto…"]
+            },
+            {
+                id: 194,
+                title: "Introduction I - 194",
+                image: "CHAPTER 1/Aquarium 1-198.png",
+                alt: "Comic Image 194",
+                text: ["<figcaption style=text-align:left>Maple: ¡Parece la diversión definitiva! Claro que están amargados y han olvidado lo que nos une, ésto faltaba.<br>Maple: Por eso una voluntaria para restaurar el área era lo que buscabamos…<br><br><figcaption style=text-align:center>Oh, claro. Lo que en cualquier exdelincuente cae después de que no puede reintegrarse a la sociedad:<br><br>Servicio comunitario.<br><br>¿De verdad? ¿Eso ayudaría a qué?<br><br>Sólo podías contemplar el resultado de una forma:<br><br>Aves y brujas llegan, pelean y el festival queda aún más destruido que antes.<br><br>Pero trabajar aquí tal vez no tendría recompensa monetaria, sí comida.<br><br>Suspiras con gran fuerza."]
+            },
+            {
+                id: 195,
+                title: "Introduction I - 195",
+                image: "CHAPTER 1/Aquarium 1-199.png",
+                alt: "Comic Image 195",
+                text: ["<figcaption style=text-align:left>Maple: ¿Entonces?<br>Aura: No creo tener otra opción.<br>Maple: Le decía a Glitch, que no ha querido salir de la tienda por alguna razón.<br>Maple: Tú no tienes opción, te compramos :D<br>Aura: …"]
+            },
+            {
+                id: 196,
+                title: "Introduction I - 196",
+                image: "CHAPTER 1/Aquarium 1-200.png",
+                alt: "Comic Image 196",
+                text: ["Miras atrás y el sujeto se acerca con unas cajas para Maple. Oh… es tu vecino.<br><br>Eh.<br><br>Y el del bar. Se llamaba así, ¿no?<br><br>¿Glitch es tu vecino?<br><br>No sabes si sacar eso a colación ahora sea buena idea; la verdad, mientras menos charla, mejor…"]
+            },
+            {
+                id: 197,
+                title: "Introduction I - 197",
+                image: "CHAPTER 1/Aquarium 1-201.png",
+                alt: "Comic Image 197",
+                text: ["<figcaption style=text-align:left>Glitch: No quería interrumpir tu diálogo, odias eso.<br>Maple: ¡Tendrías razón! ¿Y Agera?<br>Glitch: Pensó que Aura podría tener hambre y fué a hacerle algo.<figcaption style=text-align:center><br><br>Genial. Todos piensan que eres una muerta de hambre.<figcaption style=text-align:left><br><br>Maple: ¡Qué considerada! Lo mejor para nuestra esclava.<br>Aura: …<br>Glitch: ¡N-no eres una esclava! Maple sólo bromea. Lo aseguro.<br>Maple: ¿Lo estoy?<br>Glitch: Ehm.<br>Glitch: Iré a ver en que ayudo a Agera."]
+            },
+            {
+                id: 198,
+                title: "Introduction I - 198",
+                image: "CHAPTER 1/Aquarium 1-202.png",
+                alt: "Comic Image 198",
+                text: ["Rápidamente te arrepientes de no hacer la charla más larga porque Maple ya había agarrado un montón de materiales y empezado a dar indicaciones. Emocionante, todos tus sueños parecían hacerse realidad."]
+            },
+            {
+                id: 199,
+                title: "Introduction I - 199",
+                image: "CHAPTER 1/Aquarium 1-203.png",
+                alt: "Comic Image 199",
+                text: ["(Días después) Otro día de trabajo en el caluroso rincón del planeta que es esta feria. Has escuchado a Maple hablar hasta el cansancio de todas las actividades que tiene planeadas para el día de la feria.<br><br>Globos, pirotecnia, música, comida, juegos. Todo sin el uso de la magia para dar una experiencia más tradicional que no pueda evocar a ningún conflicto, incluso algo que bautizaba como “El truco del burro”<br><br>Suele presumir a la burra y decir que tiene un talento oculto frente a los demás, 0% magia incluida, 100% naturaleza."]
+            },
+            {
+                id: 200,
+                title: "Introduction I - 200",
+                image: "CHAPTER 1/Aquarium 1-204.png",
+                alt: "Comic Image 200",
+                text: ["(Barrer, barrer.)"]
+            },
+            {
+                id: 201,
+                title: "Introduction I - 201",
+                image: "CHAPTER 1/Aquarium 1-215.png",
+                alt: "Comic Image 201",
+                text: ["Al pasar un rato, subes la cabeza y encuentras a un payaso cómodamente posicionado en uno de los puestos, el cual destacaba por ser el único que no parecía en ruinas totales.<br><br>Su semblante es espeluznante, pero sientes como si ya lo hubieras visto en alguna parte."]
+            },
+            {
+                id: 202,
+                title: "Introduction I - 202",
+                image: "CHAPTER 1/Aquarium 1-205.png",
+                alt: "Comic Image 202",
+                text: ["Decides ignorarlo.<br><br>Tal vez es algún conocido de Maple o un vagabundo loco. Pero asunto tuyo no es."]
+            },
+            {
+                id: 203,
+                title: "Introduction I - 203",
+                image: "CHAPTER 1/Aquarium 1-206.gif",
+                alt: "Comic Image 203",
+                text: ["(Barrer, barrer.)"]
+            },
+            {
+                id: 204,
+                title: "Introduction I - 204",
+                image: "CHAPTER 1/Aquarium 1-207.gif",
+                alt: "Comic Image 204",
+                text: ["(!!!)"]
+            },
+            {
+                id: 205,
+                title: "Introduction I - 205",
+                image: "CHAPTER 1/Aquarium 1-208.png",
+                alt: "Comic Image 205",
+                text: ["Ahora te está mirando, llegas rápidamente a la conclusión de que quiere que te acerques a su puesto. No te encanta la idea."]
+            },
+            {
+                id: 206,
+                title: "Introduction I - 206",
+                image: "CHAPTER 1/Aquarium 1-206.gif",
+                alt: "Comic Image 206",
+                text: ["(Barrer, barrer.)"]
+            },
+            {
+                id: 207,
+                title: "Introduction I - 207",
+                image: "CHAPTER 1/Aquarium 1-209.png",
+                alt: "Comic Image 207",
+                text: ["(?)"]
+            },
+            {
+                id: 208,
+                title: "Introduction I - 208",
+                image: "CHAPTER 1/Aquarium 1-210.png",
+                alt: "Comic Image 208",
+                text: ["?!<br><br>"]
+            },
+            {
+                id: 209,
+                title: "Introduction I - 209",
+                image: "CHAPTER 1/Aquarium 1-211.png",
+                alt: "Comic Image 209",
+                text: [""]
+            },
+            {
+                id: 210,
+                title: "Introduction I - 210",
+                image: "CHAPTER 1/Aquarium 1-212.png",
+                alt: "Comic Image 210",
+                text: ["Aura: Sucia rata. ¿Quién eres?"]
+            },
+            {
+                id: 211,
+                title: "Introduction I - 211",
+                image: "CHAPTER 1/Aquarium 1-213.png",
+                alt: "Comic Image 211",
+                text: ["El payaso apunta con el dedo el nombre del puesto:<br><br>“Cake’s Special Gacha”<br><br>No parecía ser muy hablador. "]
+            },
+            {
+                id: 212,
+                title: "Introduction I - 212",
+                image: "CHAPTER 1/Aquarium 1-214.gif",
+                alt: "Comic Image 212",
+                text: ["La flecha en tu mano se ilumina rápidamente, convirtiéndose en una bola muy similar al resto de pelotas que había en la caja de al lado."]
+            },
+    
+        
             
+    
+        
 
         ]
     },
@@ -1226,7 +1531,7 @@ const chapters = [
             {
                 id: 1,
                 title: "Chapter 2 - Page 1",
-                video: "fUNNY/medusa.mp4",
+                video: "CHAPTER 1/video_prueba.mp4",
                 hasVideo: true,
                 alt: "Comic 2-1",
                 text: ["“”"]
@@ -1241,77 +1546,10 @@ const chapters = [
         ]
     }
 ];
+
 // Variables 
 let currentChapterIndex = 0;
 let currentPageIndex = 0;
-let preloadedImages = new Map(); 
-
-function preloadMultiplePages() {
-    const currentChapter = chapters[currentChapterIndex];
-    const pagesToPreload = 15;
-    
-    for (let i = -pagesToPreload; i <= pagesToPreload; i++) {
-        const targetPageIndex = currentPageIndex + i;
-        
-        // Verificar que la página existe
-        if (targetPageIndex >= 0 && targetPageIndex < currentChapter.pages.length) {
-            const targetPage = currentChapter.pages[targetPageIndex];
-            
-            if (targetPage.image && !targetPage.video) {
-                if (!preloadedImages.has(targetPage.image)) {
-                    const img = new Image();
-                    img.src = targetPage.image;
-                    preloadedImages.set(targetPage.image, img);
-                }
-            }
-        }
-    }
-    
-    if (currentChapterIndex < chapters.length - 1) {
-        const nextChapter = chapters[currentChapterIndex + 1];
-        if (nextChapter.pages.length > 0) {
-            const firstPage = nextChapter.pages[0];
-            if (firstPage.image && !firstPage.video && !preloadedImages.has(firstPage.image)) {
-                const img = new Image();
-                img.src = firstPage.image;
-                preloadedImages.set(firstPage.image, img);
-            }
-        }
-    }
-}
-
-function preloadChapter(chapterIndex) {
-    if (chapterIndex >= 0 && chapterIndex < chapters.length) {
-        const chapter = chapters[chapterIndex];
-        
-        chapter.pages.forEach((page, index) => {
-            if (page.image && !page.video && !preloadedImages.has(page.image)) {
-                const img = new Image();
-                img.src = page.image;
-                preloadedImages.set(page.image, img);
-            }
-        });
-    }
-}
-
-function showLoader() {
-    let loader = document.getElementById('comic-loader');
-    if (!loader) {
-        loader = document.createElement('div');
-        loader.id = 'comic-loader';
-        loader.className = 'comic-loader';
-        loader.innerHTML = '<div class="loader-spinner"></div><p>Cargando...</p>';
-        document.querySelector('.comic-panel').appendChild(loader);
-    }
-    loader.style.display = 'flex';
-}
-
-function hideLoader() {
-    const loader = document.getElementById('comic-loader');
-    if (loader) {
-        loader.style.display = 'none';
-    }
-}
 
 function renderCurrentPage() {
     const chapter = chapters[currentChapterIndex];
@@ -1320,127 +1558,60 @@ function renderCurrentPage() {
     const comicImg = document.getElementById("comic-img");
     const comicVideo = document.getElementById("comic-video");
     const comicText = document.getElementById("comic-text");
-    const comicDialog = document.getElementById("comic-dialog");
-    const pageTitle = document.getElementById("page-title"); 
-    const expandBtn = document.getElementById("expand-btn");
-    const dialogBox = document.querySelector(".dialog-box");
     
-    comicImg.style.display = 'none';
-    comicVideo.style.display = 'none';
-    
-    showLoader();
-    
-    if (pageTitle) {
-        pageTitle.textContent = page.title;
-    }
-    
-    const preloadedImage = preloadedImages.get(page.image);
-    
-    if (preloadedImage && preloadedImage.complete) {
-        comicImg.src = page.image;
-        comicImg.style.display = 'block';
-        hideLoader();
-    } else {
-        comicImg.onload = function() {
-            comicImg.style.display = 'block';
-            hideLoader();
-        };
-        
-        comicImg.onerror = function() {
-            hideLoader();
-            comicImg.alt = "Error cargando imagen";
-            comicImg.style.display = 'block';
-        };
-        
-        comicImg.src = page.image;
-    }
-    
-    comicImg.alt = page.alt;
-    
+    // Detectar si es video o imagen, es niñe o niñe
     if (page.video) {
         comicImg.style.display = 'none';
         comicVideo.style.display = 'block';
         comicVideo.src = page.video;
-        comicVideo.poster = page.image;
+        comicVideo.poster = page.image; // Imagen de miniatura MINIATURA MINIATURA VEGETTA777
 
+        // CONFIGURACIÓN PARA LOOP
         comicVideo.loop = true;
-        comicVideo.muted = false;
-        comicVideo.playsInline = true;
+        comicVideo.muted = true; //autoplay
+        comicVideo.playsInline = true; // Para iOS -diva emoji-
 
+        // Intentar reproducción automática (golpear a la puta)
         const playPromise = comicVideo.play();
 
+        // reproducción (sexual) automática
         if (playPromise !== undefined) {
             playPromise.then(() => {
                 console.log('Video playing in loop');
-                hideLoader();
             }).catch(error => {
                 console.log('Auto-play prevented, showing controls');
                 comicVideo.controls = true;
-                hideLoader();
             });
         }
     } else {
-        if (!comicVideo.paused) {
-            comicVideo.pause();
-        }
+        // Detener video cuando cambies a una página sin video emoji joe watin
+        comicVideo.pause();
         comicVideo.currentTime = 0;
+        
         comicVideo.style.display = 'none';
+        comicImg.style.display = 'block';
+        comicImg.src = page.image;
+        comicImg.alt = page.alt;
     }
     
     comicText.innerHTML = page.text;
     document.title = page.title;
-    
-const hasText = page.text && page.text.length > 0;
-    
-    if (hasText) {
-        comicText.style.display = 'block';
-    } else {
-        comicText.style.display = 'none';
-    }
-
-const hasDialog = page.dialog && page.dialog.length > 0;
-    
-    if (hasDialog) {
-        // Si hay diálogo
-        comicDialog.innerHTML = page.dialog;
-        expandBtn.style.display = 'block';
-        dialogBox.style.display = 'block';
-        dialogBox.classList.remove('expanded');
-        expandBtn.textContent = 'Abrir Conversación';
-    } else {
-        // Si no hay diálogo
-        comicDialog.innerHTML = '';
-        expandBtn.style.display = 'none';
-        dialogBox.style.display = 'none';
-    }
-    
-    setTimeout(preloadMultiplePages, 100);
-    
     updateNavigationButtons();
 }
 
-document.getElementById('expand-btn').addEventListener('click', function() {
-    const dialogBox = document.querySelector('.dialog-box');
-    dialogBox.classList.toggle('expanded');
-            
-    // Cambiar el texto del botón
-    if (dialogBox.classList.contains('expanded')) {
-        this.textContent = 'Cerrar';
-    } else {
-        this.textContent = 'Abrir Conversación';
-    }
-});
-
+// Navegación entre páginas
 function nextPage() {
     const currentChapter = chapters[currentChapterIndex];
     
     if (currentPageIndex < currentChapter.pages.length - 1) {
+        // Hay más páginas en este capítulo
         currentPageIndex++;
     } else if (currentChapterIndex < chapters.length - 1) {
+        // sisno pues pasa al siguiente capítulo
         currentChapterIndex++;
         currentPageIndex = 0;
-        preloadedImages.clear();
     }
+    // Si no hay más contenido, no hace nada xD
     
     renderCurrentPage();
     saveProgress();
@@ -1448,21 +1619,23 @@ function nextPage() {
 
 function prevPage() {
     if (currentPageIndex > 0) {
+        // Página anterior
         currentPageIndex--;
     } else if (currentChapterIndex > 0) {
+        // Capítulo anterior
         currentChapterIndex--;
         currentPageIndex = chapters[currentChapterIndex].pages.length - 1;
-        preloadedImages.clear();
     }
+    // Si es el primer capítulo y primera página, no hace nadaXD
     renderCurrentPage();
     saveProgress();
 }
 
+// Navegación a capítulos
 function goToChapter(chapterIndex) {
     if (chapterIndex >= 0 && chapterIndex < chapters.length) {
         currentChapterIndex = chapterIndex;
         currentPageIndex = 0;
-        preloadedImages.clear();
         renderCurrentPage();
         saveProgress();
     }
@@ -1472,7 +1645,6 @@ function nextChapter() {
     if (currentChapterIndex < chapters.length - 1) {
         currentChapterIndex++;
         currentPageIndex = 0;
-        preloadedImages.clear();
         renderCurrentPage();
         saveProgress();
     }
@@ -1482,21 +1654,23 @@ function prevChapter() {
     if (currentChapterIndex > 0) {
         currentChapterIndex--;
         currentPageIndex = 0;
-        preloadedImages.clear();
         renderCurrentPage();
         saveProgress();
     }
 }
 
+// Actualizar botones de navegación
 function updateNavigationButtons() {
     const currentChapter = chapters[currentChapterIndex];
     const prevButtons = document.querySelectorAll('.fa-arrow-left');
     const nextButtons = document.querySelectorAll('.fa-arrow-right');
     
+    // Verificar si hay contenido anterior/siguiente
     const hasPrevPage = currentPageIndex > 0 || currentChapterIndex > 0;
     const hasNextPage = currentPageIndex < currentChapter.pages.length - 1 || 
                        currentChapterIndex < chapters.length - 1;
     
+    // Actualizar botones de flecha izquierda
     prevButtons.forEach(icon => {
         const button = icon.closest('.nav-btn');
         if (hasPrevPage) {
@@ -1510,6 +1684,7 @@ function updateNavigationButtons() {
         }
     });
     
+    // Actualizar botones de flecha derecha
     nextButtons.forEach(icon => {
         const button = icon.closest('.nav-btn');
         if (hasNextPage) {
@@ -1524,6 +1699,20 @@ function updateNavigationButtons() {
     });
 }
 
+// Actualizar indicadores de progreso
+function updateProgressIndicators() {
+    const currentChapter = chapters[currentChapterIndex];
+    
+    // Crear indicador de progreso si no existe
+    let progressIndicator = document.querySelector('.progress-indicator');
+    if (!progressIndicator) {
+        progressIndicator = document.createElement('div');
+        progressIndicator.className = 'progress-indicator';
+        document.querySelector('.comic-panel').appendChild(progressIndicator);
+    }
+}
+
+// Sistema de guardado de progreso
 function saveProgress() {
     const progress = {
         chapterIndex: currentChapterIndex,
@@ -1538,9 +1727,8 @@ function loadProgress() {
     if (saved) {
         try {
             const progress = JSON.parse(saved);
-            if (progress.chapterIndex !== undefined && 
-                progress.pageIndex !== undefined &&
-                progress.chapterIndex < chapters.length && 
+            // Validar que los índices existen
+            if (progress.chapterIndex < chapters.length && 
                 progress.pageIndex < chapters[progress.chapterIndex].pages.length) {
                 currentChapterIndex = progress.chapterIndex;
                 currentPageIndex = progress.pageIndex;
@@ -1555,12 +1743,13 @@ function resetProgress() {
     localStorage.removeItem('comicProgress');
     currentChapterIndex = 0;
     currentPageIndex = 0;
-    preloadedImages.clear();
     renderCurrentPage();
 }
 
+// Navegación con teclado
 function setupKeyboardNavigation() {
     document.addEventListener('keydown', function(e) {
+        // Ignorar si se está escribiendo en un input
         if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
         
         switch(e.key) {
@@ -1580,18 +1769,21 @@ function setupKeyboardNavigation() {
                 e.preventDefault();
                 currentChapterIndex = chapters.length - 1;
                 currentPageIndex = chapters[currentChapterIndex].pages.length - 1;
-                preloadedImages.clear();
                 renderCurrentPage();
                 break;
         }
     });
 }
 
+// Inicialización cuando se carga la página
 document.addEventListener('DOMContentLoaded', function() {
+    // Cargar progreso guardado
     loadProgress();
     
+    // Renderizar página actual
     renderCurrentPage();
     
+    // Configurar event listeners para navegación
     document.querySelectorAll('.fa-arrow-left').forEach(icon => {
         icon.closest('.nav-btn').addEventListener('click', function(e) {
             e.preventDefault();
@@ -1622,6 +1814,7 @@ document.addEventListener('DOMContentLoaded', function() {
         window.close() || window.history.back();
     });
     
+    // Botones de gestión de progreso
     document.querySelector('.save-btn')?.addEventListener('click', saveProgress);
     document.querySelector('.load-btn')?.addEventListener('click', loadProgress);
     document.querySelector('.reset-btn')?.addEventListener('click', resetProgress);
@@ -1637,33 +1830,9 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
+    // Configurar navegación por teclado
     setupKeyboardNavigation();
     
-    setTimeout(() => {
-        if (currentChapterIndex < chapters.length - 1) {
-            preloadChapter(currentChapterIndex + 1);
-        }
-    }, 2000);
-    
+    // Guardar progreso al cerrar la página
     window.addEventListener('beforeunload', saveProgress);
-    
-    if (currentChapterIndex > 0) {
-        setTimeout(() => {
-            preloadChapter(currentChapterIndex - 1);
-        }, 3000);
-    }
 });
-
-function preloadAllChapters() {
-    chapters.forEach((chapter, index) => {
-        setTimeout(() => {
-            preloadChapter(index);
-        }, index * 1000); 
-    });
-}
-
-function clearImageCache() {
-    preloadedImages.clear();
-    console.log('Cache de imágenes limpiado');
-}
-

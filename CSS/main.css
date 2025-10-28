@@ -21,7 +21,6 @@ body {
     font-family: 'FuturaCondensed', monospace;
     font-weight: normal;
     background-color: #838A90;
-    max-width: 320px;
     align-items: center;
     margin: 30px 20px;
 }
@@ -37,20 +36,23 @@ p, h2{
 header {
     display: flex;
     flex-direction: column;
-    max-width: 300px;
 }
 
 .tab {
     background-color: #A7D1E9;
     color: #F9FDEC;
-    padding: 5px 15px 5px 10px;
-    text-align: center;
+    padding: 5px 15px 5px 20px;
+    text-align: left;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    max-width: 30px;
+    width: 10%;
+}
+
+.tab p{
+    padding-left: 5px;
 }
 
 /* NAV*/
@@ -153,25 +155,50 @@ header {
     background-image: url("../images/Back1.png");
     background-size: cover;
     background-position: center;
-    max-width: 300px;
     margin: 0;
     padding: 20px 0 5px 0;
     border-bottom-right-radius: 5px;
 }
 
 .content{
-    display: flex;
     background-color: white;
     padding: 10px 0 0;
 }
 
 /* WELCOME */
+
 .information{
     align-items: center;
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 10px 20px;
 }
+
+.information h2{
+    background-color: #A7D1E9;
+    width: 35%;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.square-blue-top{
+    background-color: white;
+    border-color: #A7D1E9;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin: 0 20px 10px;
+}
+
+.square-blue-top p{
+    font-family: "futuraCondensed", monospace;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
 .summary-header{
     background-color: #A7D1E9;
     padding: 2px 4px;
@@ -179,7 +206,7 @@ header {
     text-align: center;
     border-radius: 5px;
     position: absolute;
-    top: 120px;
+    top: 140px;
 }
 
 .summary-header h2{
@@ -190,35 +217,41 @@ header {
 }
 
 .square-blue{
-    max-width: 260px;
-    padding: 7px 20px;
     background-color: white;
     border-color: #A7D1E9;
     border-style: solid;
     border-width: 2px;
     border-radius: 5px;
     margin-bottom: 20px;
+    margin: 10px 20px 20px;
 }
 
 .square-blue p{
     font-family: "futuraCondensed", monospace;
-    padding: 20px;
+    padding: 5px 10px;
+    text-align: center;
     font-size: 14px;
 }
 
-.validoggo{
+.vali{
+    background-color: red;
+    padding: auto;
+    position: absolute;
+    transform: translateX(80%);
+}    
+
+.vali img{
     width: 50px;
     height: 50px;
-    position: absolute;
-    top: 280px;
-    padding-left: 25px;
 }
 /* WHAT IS AQUARIUM? */
 
 /* INTER-POSTER */
 .inter-poster{
     padding: 10px;
+    margin: 0 10px;
 }
+
 .poster-img{
     border-color: #A7D1E9;
     border-style: solid;

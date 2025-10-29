@@ -18,11 +18,11 @@
 /* BODY */
 
 body {
-    font-family: 'FuturaCndensed', monospace;
+    font-family: 'FuturaCondensed', monospace;
     font-weight: normal;
     background-color: #838A90;
     align-items: center;
-    margin: 25px;
+    margin: 30px 20px;
 }
 
 /* GLOBAL ATTRIBUTES */
@@ -31,7 +31,24 @@ p, h2{
     padding:0;
 }
 
+.Progress{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.Progress img{
+    width: 100%;
+    height: auto    ;
+    margin: 0 auto;
+    position: relative;
+}
 /* HEADER */
+
+.Poster-Ext{
+    display: none;
+}
 
 header {
     display: flex;
@@ -41,14 +58,18 @@ header {
 .tab {
     background-color: #A7D1E9;
     color: #F9FDEC;
-    padding: 5px auto 5px auto;
-    text-align: center;
+    padding: 5px 15px 5px 20px;
+    text-align: left;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    max-width: 25%;
+    width: 20%;
+}
+
+.tab p{
+    padding-left: 5px;
 }
 
 /* NAV*/
@@ -64,7 +85,7 @@ header {
 .navegator-item{
     display: flex;
     justify-content: space-between;
-    padding-left: 5px;
+    padding: 0 15px;
 }
 
 .nav-btn {
@@ -93,16 +114,17 @@ header {
     width: 100px;
     height: auto;
     position: absolute;
-    top: 23px;
+    top: 40px;
     transform: translateX(-50%);
 }
 
 /* CERRAR */
 
 .close-button{
-    padding-right: 10px;
+    padding-right: 15px;
     align-items: center;
 }
+
 .nav-btn-close {
     padding: 5px;
     color: #CDC0A0;
@@ -133,7 +155,6 @@ header {
     margin: 0 10px;
     display: inline-block;
     transition: all 0.3s ease;
-    text-shadow: #00000047 1px 1px 2px;
 }
 
 .navbar a:hover {
@@ -166,12 +187,15 @@ header {
     text-align: center;
     padding: 5px;
     font-size: 30px;
-    font-family: FuturaCondensed;
+    font-family: FuturaCondensed, monospace; ;
 }
 
 .comic-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: transparent;
-    margin: 10px;
+    margin: 10px auto;
     padding: 2px;
 }
 
@@ -189,7 +213,6 @@ header {
 }
 
 .button-action{
-    padding: 5px;
     background-color: white;
     align-items: center;
     justify-content: center;
@@ -212,9 +235,9 @@ header {
 }
 
 .info-sesion button{
+    font-family: "futuraBoldCondensed", monospace;
     background-color: #CDC0A0;
-    color: black;
-    text-shadow: #00000047 1px 1px 2px;
+    color: white;
     font-size: 10px;
     border: none;
     padding: 2px;
@@ -229,13 +252,13 @@ header {
     transition: max-height 0.3s ease-out;
     background-color: #f0f0f0;
     border-radius: 10px;
-    margin: 10px 20px;
+    margin: 10px 10px;
     padding: 0 15px;
 }
 
 .dialog-box.expanded {
-    max-height: 1000px;
-    padding: 15px;
+    max-height: 1500px;
+    padding: 10px 0;
     transition: max-height 0.5s ease-in;
 }
 
@@ -249,7 +272,7 @@ header {
     color: #F9FDEC;
     border: none;
     padding: 10px 20px;
-    font-size: 18px;
+    font-size: 15px;
     cursor: pointer;
     border-radius: 5px;
     margin: 10px 0;
@@ -262,4 +285,198 @@ header {
 
 .expand-btn:active {
     transform: scale(0.98);
+}
+
+.comic-panel figcaption{
+    font-size: 12px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1009px) {
+
+    body{
+        max-width: 700px;
+        margin: 50px auto;
+    }
+
+    .tab {
+        width: 15%;
+        font-size: 25px;
+    }
+
+    .nav-btn {
+        font-size: 25px;
+    }
+
+    .close-button{
+        padding-right: 25px;
+    }
+
+    .nav-btn-close {
+        font-size: 25px;
+    }
+
+    .navegator{
+        padding: 10px 0;
+    }
+
+    .logo {
+        padding: 15px 180px;
+    }
+
+    .logo-img {
+        width: 190px;
+        top: 50px;
+    }
+
+    .navbar a {
+        font-size: 25px;
+    }
+
+    comic-panel h2{
+        font-size: 40px;
+    }
+
+    .comic-img img{
+        max-width: 70%;
+        height: auto;
+        display: block;
+    }
+
+    .button-action a{
+        margin: 0 15px;
+        font-size: 30px;
+    }
+
+    .info-sesion{
+        background-color: white;
+        border-radius: 0 0 10px 10px;
+        padding: 10px 15px 30px;
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+    }
+
+    .info-sesion button{
+        font-size: 22px;
+        padding: 2px;
+        margin: 5px;
+    }
+
+    .comic-panel figcaption{
+        font-size: 18px;
+    }
+
+    .dialog-box {
+        margin: 40px 70px;
+        padding: 0 25px;
+    }
+
+    .dialog-box.expanded {
+        max-height: 1500px;
+        padding: 25px;
+        transition: max-height 0.5s ease-in;
+    }
+
+    .expand-btn {
+        padding: 10px 20px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 1001px) {
+
+    body{
+        max-width: 900px;
+        margin: 50px auto;
+    }
+
+    .tab {
+        width: 15%;
+        font-size: 30px;
+    }
+
+    .nav-btn {
+        font-size: 30px;
+        padding: 0 10px;
+    }
+
+    .close-button{
+        padding-right: 30px;
+    }
+
+    .nav-btn-close {
+        font-size: 30px;
+    }
+
+    .navegator{
+        padding: 10px 0;
+    }
+
+    .logo {
+        padding: 15px 280px;
+    }
+
+    .logo-img {
+        width: 250px;
+        top: 30px;
+    }
+
+    .navbar a {
+        font-size: 25px;
+    }
+
+   comic-panel h2{
+        font-size: 40px;
+    }
+
+    .comic-img img{
+        max-width: 50%;
+        height: auto;
+        display: block;
+    }
+
+    .button-action a{
+        margin: 0 15px;
+        font-size: 30px;
+    }
+
+    .info-sesion{
+        background-color: white;
+        border-radius: 0 0 10px 10px;
+        padding: 10px 15px 30px;
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+    }
+
+    .info-sesion button{
+        font-size: 22px;
+        padding: 2px;
+        margin: 5px;
+    }
+
+    .comic-panel figcaption{
+        font-size: 18px;
+        margin: 10px 40px;
+    }
+
+    .dialog-box {
+        margin: 40px 100px;
+        padding: 0 25px;
+    }
+
+    .dialog-box.expanded {
+        max-height: 1500px;
+        padding: 25px;
+        transition: max-height 0.5s ease-in;
+    }
+
+    .expand-btn {
+        padding: 10px 20px;
+        font-size: 20px;
+    }
+    
 }

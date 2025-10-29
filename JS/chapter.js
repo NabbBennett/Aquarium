@@ -132,15 +132,16 @@ const chapters = [
                 title: "Introduction I - 18",
                 image: "CHAPTER 1/Aquarium 1-19.png",
                 alt: "Comic Image 18",
-                text: ["La líder de las brujas, Magnolia, vio tu asombroso éxito. Fue testigo de toda tu grandeza y, en vez de hacer lo obvio (premiarte por tus logros y tu gran hazaña), decidió mandarte a capturar y, al atraparte, encarcelarte como si fueras una criminal.<br><br>No tuviste realmente nada que ver con la amenaza real, pero, por supuesto, ser la única capaz de enfrentarlos y no poder responder a ninguna de sus preguntas te convertía en la culpable."]
+                text: ["La líder de las brujas, Magnolia, vio tu asombroso éxito. Fue testigo de toda tu grandeza y, en vez de hacer lo obvio (premiarte por tus logros y tu gran hazaña), decidió mandarte a capturar y, al atraparte, encarcelarte como si fueras una criminal.<br><br>No tuviste realmente nada que ver con la amenaza real, pero, por supuesto, ser la única capaz de enfrentarlos y no poder responder a ninguna de sus preguntas te convertía en la culpable."],
+                
             },
             {
                 id: 19,
                 title: "Introduction I - 19",
                 image: "CHAPTER 1/Aquarium 1-20.png",
                 alt: "Comic Image 19",
-                text: ["“Magnolia: Su arma será confiscada para su investigación.”<br><br>¿DISCULPA?"
-                ]
+                text: ["¿DISCULPA?"],
+                dialog: ["<figcaption style='text-align:left; color: #a71bd5'> Magnolia: <span style='color: BLACK'>Su arma será confiscada para su investigación.</span></figcaption>"]
             },
             {
                 id: 20,
@@ -203,7 +204,8 @@ const chapters = [
                 title: "Introduction I - 28",
                 image: "CHAPTER 1/Aquarium 1-30.png",
                 alt: "Comic Image 28",
-                text: ["Diálogo.<br><br><figcaption style=text-align:left> Bartender: Identifícate<br> Aura: Oh, Aura. Jejeje... saludos.<br>Bartender: No por nombre. Rango.<br>Aura: Señora, le juro que no quiero problemas, sólo cerveza. ¿Quizás sólo una? ¿Acepta darme una para llevar?"]
+                text: [""],
+                dialog: ["<figcaption style='text-align:left; color: #7e3215'> Bartender: <span style='color: BLACK'>Identifícate</span></figcaption><figcaption style='text-align:left; color: #d1be11'> Aura: <span style='color: BLACK'>Oh, Aura. Jejeje... saludos.</span></figcaption><figcaption style='text-align:left; color: #7e3215'> Bartender: <span style='color: BLACK'>No por nombre. Rango.</span></figcaption><figcaption style='text-align:left; color: #d1be11'> Aura: <span style='color: BLACK'>Señora, le juro que no quiero problemas, sólo cerveza. ¿Quizás sólo una? ¿Acepta darme una para llevar?</span></figcaption>"]
             },
             {
                 id: 29,
@@ -224,15 +226,16 @@ const chapters = [
                 title: "Introduction I - 31",
                 image: "CHAPTER 1/Aquarium 1-33.png",
                 alt: "Comic Image 31",
-                text: ["Diálogo<br><br><figcaption style=text-align:left>Aura: ¿Ves? No hay ninguna bruja aquí. De hecho, jaja, ¡Las odio mucho! Igual que tú.<br>Bartender: ¿Lista de crímenes?<br>Aura: ... ¿Disculpa?<br>Aura: Estoy bastante segura de que me confundes con otra persona... Verás, solo pasaba por aquí y tengo muchísimas ganas de una cerveza, así que...<br>Bartender: Ahem."]
-                /*AQUI VA UNA CONVERSACION (HABLAR CON VALLY)*/
+                text:[],
+                dialog: ["<figcaption style='text-align:left; color: #d1be11'> Aura: <span style='color: BLACK'>¿Ves? No hay ninguna bruja aquí. De hecho, jaja, ¡Las odio mucho! Igual que tú.</span></figcaption><figcaption style='text-align:left; color: #5d1621'> Bartender: <span style='color: BLACK'>¿Lista de crímenes?</span></figcaption><figcaption style='text-align:left; color: #d1be11'> Aura: <span style='color: BLACK'>... ¿Disculpa?</span></figcaption><figcaption style='text-align:left; color: #d1be11'> Aura: <span style='color: BLACK'>Estoy bastante segura de que me confundes con otra persona... Verás, solo pasaba por aquí y tengo muchísimas ganas de una cerveza, así que...</span></figcaption><figcaption style='text-align:left; color: #5d1621'> Bartender: <span style='color: BLACK'>Ahem.</span></figcaption>"],
             },
             {
                 id: 32,
                 title: "Introduction I - 32",
                 image: "CHAPTER 1/Aquarium 1-34.png",
                 alt: "Comic Image 32",
-                text: ["Diálogo<br><br><figcaption style=text-align:left>Aura: ...<br>Aura: Oye, eso. Eso no estaba antes.<br>Bartender: Políticas del bar.<br><br><figcaption style=text-align:center>Quedas incrédulo."]
+                text: ["<figcaption style='text-align:center'>Quedas incrédulo.</figcaption>"],
+                dialog: ["<figcaption style='text-align:left; color: #d1be11'> Aura: <span style='color: BLACK'>...</span></figcaption><figcaption style='text-align:left; color: #d1be11'> Aura: <span style='color: BLACK'>Oye, eso. Eso no estaba antes.</span></figcaption><figcaption style='text-align:left; color: #5d1621'> Bartender: <span style='color: BLACK'>Políticas del bar.</span></figcaption>"]
             },
             {
                 id: 33,
@@ -246,7 +249,8 @@ const chapters = [
                 title: "Introduction I - 34",
                 image: "CHAPTER 1/Aquarium 1-36.png",
                 alt: "Comic Image 34",
-                text: ["Diálogo<br><br><figcaption style=text-align:left>Aura: Entonces... si “solo pájaros”, ¿ese qué?<br>Bartender: ¿Ese? Es “Glitch”.<br>Aura: Salud.<br>Bartender: Glitch. Un amigo humano de mi sobrina, Maple. Trabaja incansablemente y con dignidad en mi bar. No hay magia implícita.<br>Aura: No hago magia.<br>Bartender: ¿Qué hay de ese arco, niña? ¿Cómo lo creaste?<br>Aura: Señora, yo no lo creé.<br>Bartender: Claro.<br>Bartender: ¿Sabes qué? Ya oí suficiente de ti en ese juicio.<br>Bartender: Tu arma podría ser buena, pero dejar ese polvo a los ciudadanos de rango superior fue un error. Esa era una situación que se suponía debían regular únicamente las brujas. Qué irresponsabilidad."]
+                text:[],
+                dialog: ["<figcaption style='text-align:left; color: #d1be11'> Aura: <span style='color: BLACK'>Entonces... si “solo pájaros”, ¿ese qué?</span></figcaption><figcaption style='text-align:left; color: #5d1621'> Bartender: <span style='color: BLACK'>¿Ese? Es “Glitch”.</span></figcaption><figcaption style='text-align:left; color: #d1be11'> Aura: <span style='color: BLACK'>Salud.</span></figcaption><figcaption style='text-align:left; color: #5d1621'> Bartender: <span style='color: BLACK'>Glitch. Un amigo humano de mi sobrina, Maple. Trabaja incansablemente y con dignidad en mi bar. No hay magia implícita.</span></figcaption><figcaption style='text-align:left; color: #d1be11'> Aura: <span style='color: BLACK'>No hago magia.</span></figcaption><figcaption style='text-align:left; color: #5d1621'> Bartender: <span style='color: BLACK'>¿Qué hay de ese arco, niña? ¿Cómo lo creaste?</span></figcaption><figcaption style='text-align:left; color: #d1be11'> Aura: <span style='color: BLACK'>Señora, yo no lo creé.</span></figcaption><figcaption style='text-align:left; color: #5d1621'> Bartender: <span style='color: BLACK'>Claro.</span></figcaption><figcaption style='text-align:left; color: #5d1621'> Bartender: <span style='color: BLACK'>¿Sabes qué? Ya oí suficiente de ti en ese juicio.</span></figcaption><figcaption style='text-align:left; color: #5d1621'> Bartender: <span style='color: BLACK'>Tu arma podría ser buena, pero dejar ese polvo a los ciudadanos de rango superior fue un error. Esa era una situación que se suponía debían regular únicamente las brujas. Qué irresponsabilidad.</span></figcaption>"]
             },
             {
                 id: 35,
@@ -260,35 +264,40 @@ const chapters = [
                 title: "Introduction I - 36",
                 image: "CHAPTER 1/Aquarium 1-38.gif",
                 alt: "Comic Image 36",
-                text: ["Diálogo.<br><br><figcaption style=text-align:left>Maple: ¡TÍA, HE VUELTO! DISCULPA LA DEMORA.<br>Aura: Oh.<br>Bartender: Maple, ¿qué estas...? ¿QUÉ...?<br>Maple: ¿Eh? Oh... UHHH<br>Bartender: ¡¿Son partículas mágicas?! ¿Maple? ¡Jovencita, más vale que tengas una buena explicación para ésto!"]
+                text: [],
+                dialog: ["<figcaption style='text-align:left; color: #f7a444'> Maple: <span style='color: BLACK'>¡TÍA, HE VUELTO! DISCULPA LA DEMORA.</span></figcaption><figcaption style='text-align:left; color: #d1be11'> Aura: <span style='color: BLACK'>Oh.</span></figcaption><figcaption style='text-align:left; color: #5d1621'> Bartender: <span style='color: BLACK'>Maple, ¿qué estas...? ¿QUÉ...?</span></figcaption><figcaption style='text-align:left; color: #f7a444'> Maple: <span style='color: BLACK'>¿Eh? Oh... UHHH</span></figcaption><figcaption style='text-align:left; color: #5d1621'> Bartender: <span style='color: BLACK'>¡¿Son partículas mágicas?! ¿Maple? ¡Jovencita, más vale que tengas una buena explicación para ésto!</span></figcaption>"]
             },
             {
                 id: 37,
                 title: "Introduction I - 37",
                 image: "CHAPTER 1/Aquarium 1-39.png",
                 alt: "Comic Image 37",
-                text: ["Diálogo.<br><br><figcaption style=text-align:left>Maple: ¡CHICOS! ¡CHICOS! ¡LA CAGUÉ! ¡TÍA PINES SE ENTERÓ! ¡AGERA, APAGA EL HECHIZO!<br>Bartender: ¿Acabo de oír el nombre de esa bruja amiguita tuya? ¡De la que te dije que te alejaras!<br>Maple: AGERA, GLITCH. QUE ALGUIEN CONTESTE, POR FAVOR.<br>Bartender: ¡¿ESO TAMBIÉN ES UN DISPOSITIVO MÁGICO LO QUE ESTÁS USANDO AHORA MISMO?!"]
+                text: [],
+                dialog: ["<figcaption style='text-align:left; color: #f7a444'> Maple: <span style='color: BLACK'>¡CHICOS! ¡CHICOS! ¡LA CAGUÉ! ¡TÍA PINES SE ENTERÓ! ¡AGERA, APAGA EL HECHIZO!</span></figcaption><figcaption style='text-align:left; color: #5d1621'> Bartender: <span style='color: BLACK'>¿Acabo de oír el nombre de esa bruja amiguita tuya? ¡De la que te dije que te alejaras!</span></figcaption><figcaption style='text-align:left; color: #f7a444'> Maple: <span style='color: BLACK'>AGERA, GLITCH. QUE ALGUIEN CONTESTE, POR FAVOR.</span></figcaption><figcaption style='text-align:left; color: #5d1621'> Bartender: <span style='color: BLACK'>¡¿ESO TAMBIÉN ES UN DISPOSITIVO MÁGICO LO QUE ESTÁS USANDO AHORA MISMO?!</span></figcaption>"]
             },
             {
                 id: 38,
                 title: "Introduction I - 38",
                 image: "CHAPTER 1/Aquarium 1-40.gif",
                 alt: "Comic Image 38",
-                text: ["<br><figcaption style=text-align:left>Maple: Tía, por favor. ¡Todo tiene una explicación! ¡Y fue idea mía! No los culpes, por favor.<br>Bartender: TU IDEA, SU IDEA... ¡No importa cuándo te dije específicamente que NO USARAS ninguna fuente de magia!<br>"]
+                text:[],
+                dialog: ["<figcaption style='text-align:left; color: #f7a444'> Maple: <span style='color: BLACK'>Tía, por favor. ¡Todo tiene una explicación! ¡Y fue idea mía! No los culpes, por favor.</span></figcaption><figcaption style='text-align:left; color: #5d1621'> Bartender: <span style='color: BLACK'>TU IDEA, SU IDEA... ¡No importa cuándo te dije específicamente que NO USARAS ninguna fuente de magia!</span></figcaption>"]
             },
             {
                 id: 39,
                 title: "Introduction I - 39",
                 image: "CHAPTER 1/Aquarium 1-41.gif",
                 alt: "Comic Image 39",
-                text: ["<figcaption style=text-align:left>Maple: Glitch se sentía muy, muy mal, pero le dijiste que esta era su última oportunidad de conservar el trabajo, ya que las otras veces no pudo…<br>Bartender: Sabía que ese humano tampoco era un buen ejemplo para ti. Tantas segundas oportunidades. ¿para qué? ¡Cada vez que lo veía, estaba bien! ¡Solo excusas!<br>"]
+                text: [],
+                dialog: ["<figcaption style='text-align:left; color: #f7a444'> Maple: <span style='color: BLACK'>Glitch se sentía muy, muy mal, pero le dijiste que esta era su última oportunidad de conservar el trabajo, ya que las otras veces no pudo…</span></figcaption><figcaption style='text-align:left; color: #5d1621'> Bartender: <span style='color: BLACK'>Sabía que ese humano tampoco era un buen ejemplo para ti. Tantas segundas oportunidades. ¿para qué? ¡Cada vez que lo veía, estaba bien! ¡Solo excusas!</span></figcaption>"]
             },
             {
                 id: 40,
                 title: "Introduction I - 40",
                 image: "CHAPTER 1/Aquarium 1-42.gif",
                 alt: "Comic Image 40",
-                text: ["<figcaption style=text-align:left>Maple: ¡GLITCH TENÍA MUCHAS GANAS DE TRABAJAR, TÍA!<br>Agera: ¿Hola...? Maple, ¿estás ahí? (a través del dispositivo)<br>Bartender: ¡VAMOS A DESTRUIR ESTO!<br>Maple: NOOO, AGERA LO HÍZO PARA MI ¡POR FAVOOOR!"]
+                text: [],
+                dialog: ["<figcaption style='text-align:left; color: #f7a444'> Maple: <span style='color: BLACK'>¡GLITCH TENÍA MUCHAS GANAS DE TRABAJAR, TÍA!</span></figcaption><figcaption style='text-align:left; color: #d9b3ec'> Agera: <span style='color: BLACK'>¿Hola...? Maple, ¿estás ahí? (a través del dispositivo)</span></figcaption><figcaption style='text-align:left; color: #5d1621'> Bartender: <span style='color: BLACK'>¡VAMOS A DESTRUIR ESTO!</span></figcaption><figcaption style='text-align:left; color: #f7a444'> Maple: <span style='color: BLACK'>NOOO, AGERA LO HÍZO PARA MI ¡POR FAVOOOR!</span></figcaption>"]
             },
             {
                 id: 41,
@@ -386,7 +395,8 @@ const chapters = [
                 title: "Introduction I - 54",
                 image: "CHAPTER 1/Aquarium 1-56.gif",
                 alt: "Comic Image 54",
-                text: ["“¡GLIIIITCH!” Parece ser la voz de una de tus amigas. Lo sacas del bolsillo lo más rápido posible, pero tu dispositivo parece no funcionar en ese momento, sin importar cuánto intentes responder.<br><br>Oh- ¿Podrá ser que en tu aventura de ayer-?<br><br>Comunicador<br><br><figcaption style=text-align:left>Maple: ¡Estoy sosteniendo la puerta como puedo! ¿No puedes teletransportarte hacia mí o algo así?<br>Agera: Las teletransportaciones son peligrosas, y estoy con Magnolia en la otra habitación.<br>Maple: ¿No está Glitch conectado? ¿¡DÓNDE ESTÁ ÉL!?<br>Agera: No sé. Maple, yo fui quien invocó al señuelo. No te enojes con él por eso.<br>Maple: ¡NO SOY YO QUIEN ESTÁ ENOJADA, SI ES QUE NO ESCUCHAS LOS GOLPES!<br>Maple: Oh.<br>Agera: ????<br>Maple: Cesaron. Se fue. Phew…<br>Agera: ¿Cómo te encuentras?<br>Maple: Asustada. Pero creo que temo más por el alboroto que pueda armar en el aquelarre. No te recomiendo salir de tu oficina.<br>Agera: *sigh*<br>Maple: ¿Cómo ha ido la investigación?<br>Agera: Ha sido algo reciente, Maple. Encontrar el origen nos ha mantenido despiertas a la mayoría.<br>Agera: Ese arco parece tener un sello. Esto es confidencial, pero no creo que sea magia común…<br>Maple: ¿Y qué pasó con el familiar que detuvieron? ¿El perrito?<br>Agera: Fue descartada por Magnolia como amenaza. Además, dice que solo se topó con él, así que la liberamos por el momento.<br>Maple: ¿Y no es eso sospechoso?<br>Agera: En cualquier caso, parece tener el poder para purgarlos, lo que la haría más una herramienta aliada que una enemiga.<br>Agera: Quisiera hacerle preguntas por mi cuenta, pero se veía algo… muy enojada.<br>Maple: JAJA ¡Me imagino!<br>Maple: Tal vez te partiría la cara si te ve.<br>Maple: Pero oh, no, no, no. No permitiría eso.<br>Agera: Quisiera poder explicarle que nuestra intención no fue mala.<br>Maple: ¡Seguramente se lo harías entender muy bien! Ojalá mi tía fuera otro caso… seguramente se las agarre con Glitch también. Ouch.<br>Agera: Es mi culpa- yo permití.<br>Maple: Tonterías. Cualquier cosa, Glitch y yo podemos cargar con la responsabilidad.<br>Maple: Solo la convenceré que fue mi culpa.<br>Agera: Eso no suena mucho a que ambos carguen con la responsabilidad, que digamos.<br>Maple: ¿Y qué? ¿Que mi tía le rompa la cara? Además, fue mi idea para que mantuviera su trabajo; me gustaba repartirme las tareas con él.<br>Maple: Uhh, quién sabe.<br>Agera: No es la primera vez que desaparece sin avisar, me preocupa.<br>Maple: Yo también lo extraño. Snif.<br>Maple: Cuando lo veas dile que no se acerque al pueblo, Eso sí.<br>Agera: Debo irme. Suerte con eso.<br>Maple: Bye-byeee!"]
+                text: ["“¡GLIIIITCH!” Parece ser la voz de una de tus amigas. Lo sacas del bolsillo lo más rápido posible, pero tu dispositivo parece no funcionar en ese momento, sin importar cuánto intentes responder.<br><br>Oh- ¿Podrá ser que en tu aventura de ayer-?<br><br>Ves tu comunicador"],
+                dialog: ["<figcaption style='text-align:left; color: #f7a444'> Maple: <span style='color: BLACK'>¡Estoy sosteniendo la puerta como puedo! ¿No puedes teletransportarte hacia mí o algo así?</span></figcaption><figcaption style='text-align:left; color: #d9b3ec'> Agera: <span style='color: BLACK'>Las teletransportaciones son peligrosas, y estoy con Magnolia en la otra habitación.</span></figcaption><figcaption style='text-align:left; color: #f7a444'> Maple: <span style='color: BLACK'>¿No está Glitch conectado? ¿¡DÓNDE ESTÁ ÉL!?</span></figcaption><figcaption style='text-align:left; color: #d9b3ec'> Agera: <span style='color: BLACK'>No sé. Maple, yo fui quien invocó al señuelo. No te enojes con él por eso.</span></figcaption><figcaption style='text-align:left; color: #f7a444'> Maple: <span style='color: BLACK'>¡NO SOY YO QUIEN ESTÁ ENOJADA, SI ES QUE NO ESCUCHAS LOS GOLPES!</span></figcaption><figcaption style='text-align:left; color: #f7a444'> Maple: <span style='color: BLACK'>Oh.</span></figcaption><figcaption style='text-align:left; color: #d9b3ec'> Agera: <span style='color: BLACK'>????</span></figcaption><figcaption style='text-align:left; color: #f7a444'> Maple: <span style='color: BLACK'>Cesaron. Se fue. Phew…</span></figcaption><figcaption style='text-align:left; color: #d9b3ec'> Agera: <span style='color: BLACK'>¿Cómo te encuentras?</span></figcaption><figcaption style='text-align:left; color: #f7a444'> Maple: <span style='color: BLACK'>Asustada. Pero creo que temo más por el alboroto que pueda armar en el aquelarre. No te recomiendo salir de tu oficina.</span></figcaption><figcaption style='text-align:left; color: #d9b3ec'> Agera: <span style='color: BLACK'>*sigh*</span></figcaption><figcaption style='text-align:left; color: #f7a444'> Maple: <span style='color: BLACK'>¿Cómo ha ido la investigación?</span></figcaption><figcaption style='text-align:left; color: #d9b3ec'> Agera: <span style='color: BLACK'>Ha sido algo reciente, Maple. Encontrar el origen nos ha mantenido despiertas a la mayoría.</span></figcaption><figcaption style='text-align:left; color: #d9b3ec'> Agera: <span style='color: BLACK'>Ese arco parece tener un sello. Esto es confidencial, pero no creo que sea magia común…</span></figcaption><figcaption style='text-align:left; color: #f7a444'> Maple: <span style='color: BLACK'>¿Y qué pasó con el familiar que detuvieron? ¿El perrito?</span></figcaption><figcaption style='text-align:left; color: #d9b3ec'> Agera: <span style='color: BLACK'>Fue descartada por Magnolia como amenaza. Además, dice que solo se topó con él, así que la liberamos por el momento.</span></figcaption><figcaption style='text-align:left; color: #f7a444'> Maple: <span style='color: BLACK'>¿Y no es eso sospechoso?</span></figcaption><figcaption style='text-align:left; color: #d9b3ec'> Agera: <span style='color: BLACK'>En cualquier caso, parece tener el poder para purgarlos, lo que la haría más una herramienta aliada que una enemiga.</span></figcaption><figcaption style='text-align:left; color: #d9b3ec'> Agera: <span style='color: BLACK'>Quisiera hacerle preguntas por mi cuenta, pero se veía algo… muy enojada.</span></figcaption><figcaption style='text-align:left; color: #f7a444'> Maple: <span style='color: BLACK'>JAJA ¡Me imagino!</span></figcaption><figcaption style='text-align:left; color: #f7a444'> Maple: <span style='color: BLACK'>Tal vez te partiría la cara si te ve.</span></figcaption><figcaption style='text-align:left; color: #f7a444'> Maple: <span style='color: BLACK'>Pero oh, no, no, no. No permitiría eso.</span></figcaption><figcaption style='text-align:left; color: #d9b3ec'> Agera: <span style='color: BLACK'>Quisiera poder explicarle que nuestra intención no fue mala.</span></figcaption><figcaption style='text-align:left; color: #f7a444'> Maple: <span style='color: BLACK'>¡Seguramente se lo harías entender muy bien! Ojalá mi tía fuera otro caso… seguramente se las agarre con Glitch también. Ouch.</span></figcaption><figcaption style='text-align:left; color: #d9b3ec'> Agera: <span style='color: BLACK'>Es mi culpa- yo permití.</span></figcaption><figcaption style='text-align:left; color: #f7a444'> Maple: <span style='color: BLACK'>Tonterías. Cualquier cosa, Glitch y yo podemos cargar con la responsabilidad.</span></figcaption><figcaption style='text-align:left; color: #f7a444'> Maple: <span style='color: BLACK'>Solo la convenceré que fue mi culpa.</span></figcaption><figcaption style='text-align:left; color: #d9b3ec'> Agera: <span style='color: BLACK'>Eso no suena mucho a que ambos carguen con la responsabilidad, que digamos.</span></figcaption><figcaption style='text-align:left; color: #f7a444'> Maple: <span style='color: BLACK'>¿Y qué? ¿Que mi tía le rompa la cara? Además, fue mi idea para que mantuviera su trabajo; me gustaba repartirme las tareas con él.</span></figcaption><figcaption style='text-align:left; color: #f7a444'> Maple: <span style='color: BLACK'>Uhh, quién sabe.</span></figcaption><figcaption style='text-align:left; color: #d9b3ec'> Agera: <span style='color: BLACK'>No es la primera vez que desaparece sin avisar, me preocupa.</span></figcaption><figcaption style='text-align:left; color: #f7a444'> Maple: <span style='color: BLACK'>Yo también lo extraño. Snif.</span></figcaption><figcaption style='text-align:left; color: #f7a444'> Maple: <span style='color: BLACK'>Cuando lo veas dile que no se acerque al pueblo, Eso sí.</span></figcaption><figcaption style='text-align:left; color: #d9b3ec'> Agera: <span style='color: BLACK'>Debo irme. Suerte con eso.</span></figcaption><figcaption style='text-align:left; color: #f7a444'> Maple: <span style='color: BLACK'>Bye-byeee!</span></figcaption>"]
             },
         {
                 id: 55,
@@ -501,158 +511,159 @@ const chapters = [
                 text: ["¿Qué pasó?<br><br>Bueno, fue unos días atrás."]
             },
             {
-                id: 70,
-                title: "Introduction I - 70",
-                image: "CHAPTER 1/Aquarium 1-72.png",
-                alt: "Comic Image 70",
-                text: ["(Hace unos días)<br><br>Estabas saliendo de tu casa para una aventura corta en busca de una piedra de tu libro; no era la primera vez que ibas por piedras raras para tu colección. Pero esta vez te sentías presionado a encontrarla pronto."]
-            },
-            {
                 id: 71,
                 title: "Introduction I - 71",
-                image: "CHAPTER 1/Aquarium 1-73.png",
+                image: "CHAPTER 1/Aquarium 1-72.png",
                 alt: "Comic Image 71",
-                text: ["Pasaste un rato deambulando por el bosque; tu objetivo eran sitios con cascadas y rocas grandes, que es donde normalmente se ubican ese tipo de artefactos."]
+                text: ["(Hace unos días)<br><br>Estabas saliendo de tu casa para una aventura corta en busca de una piedra de tu libro; no era la primera vez que ibas por piedras raras para tu colección. Pero esta vez te sentías presionado a encontrarla pronto."]
             },
             {
                 id: 72,
                 title: "Introduction I - 72",
-                image: "CHAPTER 1/Aquarium 1-74.png",
+                image: "CHAPTER 1/Aquarium 1-73.png",
                 alt: "Comic Image 72",
-                text: ["El ambiente era tranquilo, sereno, hasta que poco a poco se vio apagarse."]
+                text: ["Pasaste un rato deambulando por el bosque; tu objetivo eran sitios con cascadas y rocas grandes, que es donde normalmente se ubican ese tipo de artefactos."]
             },
             {
                 id: 73,
                 title: "Introduction I - 73",
-                image: "CHAPTER 1/Aquarium 1-75.png",
+                image: "CHAPTER 1/Aquarium 1-74.png",
                 alt: "Comic Image 73",
-                text: ["Tu ojo, el que siempre te juzga, parece manifestarse. Observandote con cansancio, como si supiera bien lo que se aproximaba, pero expectante a tu reacción. Siempre te molestaba que hiciera eso, era como si se burlara de ti de antemano, el miedo recorre tu espina dorsal. ¿Por qué no dice nada? ¿De verdad esto es divertido para él?<br><br>Otros ojos siniestros se manifiestan a tu alrededor. No estás seguro si los estás soñando o de verdad están ahí.<br><br>¿Qué significan? ¿Qué quieren de ti?<br><br>No lo puedes tener por seguro."]
+                text: ["El ambiente era tranquilo, sereno, hasta que poco a poco se vio apagarse."]
             },
             {
                 id: 74,
-                title: "Chapter 2 - Page 74",
-                video: "CHAPTER 1/ANIMATIC-TEST-1.mp4",
-                hasVideo: true,
+                title: "Introduction I - 74",
+                image: "CHAPTER 1/Aquarium 1-75.png",
                 alt: "Comic Image 74",
-                text: [""]
+                text: ["Tu ojo, el que siempre te juzga, parece manifestarse. Observandote con cansancio, como si supiera bien lo que se aproximaba, pero expectante a tu reacción. Siempre te molestaba que hiciera eso, era como si se burlara de ti de antemano, el miedo recorre tu espina dorsal. ¿Por qué no dice nada? ¿De verdad esto es divertido para él?<br><br>Otros ojos siniestros se manifiestan a tu alrededor. No estás seguro si los estás soñando o de verdad están ahí.<br><br>¿Qué significan? ¿Qué quieren de ti?<br><br>No lo puedes tener por seguro."]
             },
             {
                 id: 75,
-                title: "Introduction I - 75",
-                image: "CHAPTER 1/Aquarium 1-76.png",
+                title: "Chapter 2 - Page 75",
+                video: "CHAPTER 1/ANIMATIC-TEST-1.mp4",
+                hasVideo: true,
                 alt: "Comic Image 75",
-                text: ["La cueva donde se encuentran es extensa, rocosa y húmeda. Piensas que sigue fuera de las especificaciones de tu libro, pero el sutil sonido de agua cayendo te hace pensar lo contrario. Te imaginas la posibilidad de que más allá de esta cueva pueda estar lo que buscas."]
+                text: [""]
             },
             {
                 id: 76,
                 title: "Introduction I - 76",
-                image: "CHAPTER 1/Aquarium 1-78.png",
+                image: "CHAPTER 1/Aquarium 1-76.png",
                 alt: "Comic Image 76",
-                text: ["Eso parece distraerte de la chica a tu lado. ¡Oh, diablos! ¿Qué deberías hacer? Hablarle, por supuesto. No, por supuesto que no. ¡Eres su rehén! Eso es un poco sexy… ¡NO! ¿Qué estás pensando?<br><br>Habías tardado en caer en cuenta, pero esta chica vivía sobre el lago frente a tu casa. Pensarías que eso haría su primera conversación a solas, en un lugar cerrado y escapando de la justicia, mucho más cómoda. Pero no."]
+                text: ["La cueva donde se encuentran es extensa, rocosa y húmeda. Piensas que sigue fuera de las especificaciones de tu libro, pero el sutil sonido de agua cayendo te hace pensar lo contrario. Te imaginas la posibilidad de que más allá de esta cueva pueda estar lo que buscas."]
             },
             {
                 id: 77,
                 title: "Introduction I - 77",
-                image: "CHAPTER 1/Aquarium 1-79.png",
-                alt: "Comic Image 76",
-                text: ["“Perdón.” se disculpa y camina hacia el frente. Parece estar analizando la zona.<br><br>Díalogo<br><br><figcaption style=text-align:left>Glitch: ¿Perdón por…? M-Me salvaste de unos demonios. Eh… ¿De dónde son esas cosas?<br>Aura: Uhm.<br>Aura: No lo sé. Ni las brujas parecen saber qué son; causan discordia y alucinaciones. Gente ha muerto.<br>Glitch: Vaya…<br>Aura: Y las perras quieren mi arma. ¿No podría ser mejor, no sé… pagarme para acabar con esas pulgas? Tsk. Expropiadores.<br>Glitch: ¿No pueden acabarlas de otra forma?<br>Aura: Al parecer, sólo yo puedo. Pensé que eso era algo genial… hasta que ya no lo fue mucho.<br>Aura: Pedía perdón por arrastrarte a mi persecución y encerrarnos en esta cueva.<br>Glitch: ¡Oh! No pasa nada, jajaja. Yo… más bien me agilizaste la búsqueda. Creo que por aquí hay un objeto que ando buscando.<br>Glitch: Es una piedra que mantiene limpia el agua. Mira… en este libro hay un ejemplo."]
+                image: "CHAPTER 1/Aquarium 1-78.png",
+                alt: "Comic Image 77",
+                text: ["Eso parece distraerte de la chica a tu lado. ¡Oh, diablos! ¿Qué deberías hacer? Hablarle, por supuesto. No, por supuesto que no. ¡Eres su rehén! Eso es un poco sexy… ¡NO! ¿Qué estás pensando?<br><br>Habías tardado en caer en cuenta, pero esta chica vivía sobre el lago frente a tu casa. Pensarías que eso haría su primera conversación a solas, en un lugar cerrado y escapando de la justicia, mucho más cómoda. Pero no."]
             },
             {
                 id: 78,
                 title: "Introduction I - 78",
-                image: "CHAPTER 1/Aquarium 1-80.png",
+                image: "CHAPTER 1/Aquarium 1-79.png",
                 alt: "Comic Image 78",
-                text: ["<figcaption style=text-align:left>Glitch: Lo necesito para la pecera de mi ajolote, ¿Ves?<br>Glitch: Anda deprimido desde hace unos días, y pensé que un agua más cristalina en su pecera lo haría más feliz.<br>Aura: Eso suena peligroso.<br>Glitch: ¿EeH? ¿Por qué?<br>Aura: Será más fácil de detectar para un depredador si el agua está limpia.<br>Glitch: No vive en un estanque fuera como para eso…<br>Aura:  Ya. ¿Entonces está deprimido por nadar en un frasco de popó?<br>Glitch: ¡No nada en popó! Siempre estoy limpiando su pecera. Es más por sustancias tóxicas que se acumulan debido a cosas biológicas. Las peceras son como agua estancada; por lo tanto, la piedra sería quien filtra para eliminar los desechos. Pero cambiar su agua tan seguido…<br>Aura: Seguro. Está bien. La forma sin embargo es igual a las otras rocas.<br>Glitch: Es más característico por el color; la mayoría de piedras con propiedades mágicas brillan de colores.<br>Aura: … Claro.<br>Glitch: ¿Qué es esa expresión?<br>Aura: No es nada. Busca tu piedra, yo vigilo que no aparezcan más de esos.<br>Glitch: ¿Cómo sabes que están cerca? Aparte de esa aura malvada…<br>Aura: Eh- No más que eso. Por lo menos si están cerca puedes sentirlos, así que no te preocupes."]
+                text: ["“Perdón.” se disculpa y camina hacia el frente. Parece estar analizando la zona."],
+                dialog: ["<figcaption style='text-align:left; color: #6994a6'> Glitch: <span style='color: BLACK'>¿Perdón por…? M-Me salvaste de unos demonios. Eh… ¿De dónde son esas cosas?</span></figcaption><figcaption style='text-align:left; color: #d1be11'> Aura: <span style='color: BLACK'>Uhm.</span></figcaption><figcaption style='text-align:left; color: #d1be11'> Aura: <span style='color: BLACK'>No lo sé. Ni las brujas parecen saber qué son; causan discordia y alucinaciones. Gente ha muerto.</span></figcaption><figcaption style='text-align:left; color: #6994a6'> Glitch: <span style='color: BLACK'>Vaya…</span></figcaption><figcaption style='text-align:left; color: #d1be11'> Aura: <span style='color: BLACK'>Y las perras quieren mi arma. ¿No podría ser mejor, no sé… pagarme para acabar con esas pulgas? Tsk. Expropiadores.</span></figcaption><figcaption style='text-align:left; color: #6994a6'> Glitch: <span style='color: BLACK'>¿No pueden acabarlas de otra forma?</span></figcaption><figcaption style='text-align:left; color: #d1be11'> Aura: <span style='color: BLACK'>Al parecer, sólo yo puedo. Pensé que eso era algo genial… hasta que ya no lo fue mucho.</span></figcaption><figcaption style='text-align:left; color: #d1be11'> Aura: <span style='color: BLACK'>Pedía perdón por arrastrarte a mi persecución y encerrarnos en esta cueva.</span></figcaption><figcaption style='text-align:left; color: #6994a6'> Glitch: <span style='color: BLACK'>¡Oh! No pasa nada, jajaja. Yo… más bien me agilizaste la búsqueda. Creo que por aquí hay un objeto que ando buscando.</span></figcaption><figcaption style='text-align:left; color: #6994a6'> Glitch: <span style='color: BLACK'>Es una piedra que mantiene limpia el agua. Mira… en este libro hay un ejemplo.</span></figcaption>"]
             },
             {
                 id: 79,
                 title: "Introduction I - 79",
-                image: "CHAPTER 1/Aquarium 1-81.png",
+                image: "CHAPTER 1/Aquarium 1-80.png",
                 alt: "Comic Image 79",
-                text: ["Exploras todo el río dentro de la cueva junto a la chica cazadora. Sientes que hablaste demasiado como un nerd y te sientes un perdedor. Pero, ¿qué más daba? Al menos no había salido corriendo, y al parecer iba a cuidar de tu pellejo hasta que volvieras a tu hogar.<br><br>(O al menos eso deseabas... no querías volver a repetir esa aterradora experiencia). "]
+                dialog: ["<figcaption style='text-align:left; color: #6994a6'> Glitch: <span style='color: BLACK'>Lo necesito para la pecera de mi ajolote, ¿Ves?</span></figcaption><figcaption style='text-align:left; color: #6994a6'> Glitch: <span style='color: BLACK'>Anda deprimido desde hace unos días, y pensé que un agua más cristalina en su pecera lo haría más feliz.</span></figcaption><figcaption style='text-align:left; color: #d1be11'> Aura: <span style='color: BLACK'>Eso suena peligroso.</span></figcaption><figcaption style='text-align:left; color: #6994a6'> Glitch: <span style='color: BLACK'>¿EeH? ¿Por qué?</span></figcaption><figcaption style='text-align:left; color: #d1be11'> Aura: <span style='color: BLACK'>Será más fácil de detectar para un depredador si el agua está limpia.</span></figcaption><figcaption style='text-align:left; color: #6994a6'> Glitch: <span style='color: BLACK'>No vive en un estanque fuera como para eso…</span></figcaption><figcaption style='text-align:left; color: #d1be11'> Aura: <span style='color: BLACK'>Ya. ¿Entonces está deprimido por nadar en un frasco de popó?</span></figcaption><figcaption style='text-align:left; color: #6994a6'> Glitch: <span style='color: BLACK'>¡No nada en popó! Siempre estoy limpiando su pecera. Es más por sustancias tóxicas que se acumulan debido a cosas biológicas. Las peceras son como agua estancada; por lo tanto, la piedra sería quien filtra para eliminar los desechos. Pero cambiar su agua tan seguido…</span></figcaption><figcaption style='text-align:left; color: #d1be11'> Aura: <span style='color: BLACK'>Seguro. Está bien. La forma sin embargo es igual a las otras rocas.</span></figcaption><figcaption style='text-align:left; color: #6994a6'> Glitch: <span style='color: BLACK'>Es más característico por el color; la mayoría de piedras con propiedades mágicas brillan de colores.</span></figcaption><figcaption style='text-align:left; color: #d1be11'> Aura: <span style='color: BLACK'>… Claro.</span></figcaption><figcaption style='text-align:left; color: #6994a6'> Glitch: <span style='color: BLACK'>¿Qué es esa expresión?</span></figcaption><figcaption style='text-align:left; color: #d1be11'> Aura: <span style='color: BLACK'>No es nada. Busca tu piedra, yo vigilo que no aparezcan más de esos.</span></figcaption><figcaption style='text-align:left; color: #6994a6'> Glitch: <span style='color: BLACK'>¿Cómo sabes que están cerca? Aparte de esa aura malvada…</span></figcaption><figcaption style='text-align:left; color: #d1be11'> Aura: <span style='color: BLACK'>Eh- No más que eso. Por lo menos si están cerca puedes sentirlos, así que no te preocupes.</span></figcaption>"]
             },
             {
                 id: 80,
                 title: "Introduction I - 80",
-                image: "CHAPTER 1/Aquarium 1-82.png",
+                image: "CHAPTER 1/Aquarium 1-81.png",
                 alt: "Comic Image 80",
-                text: ["Pasó un rato de encontrar absolutamente nada hasta que un brillo desde un agujero en la pared te llamó la atención. ¡Era del mismo color que del libro!"]
+                text: ["Exploras todo el río dentro de la cueva junto a la chica cazadora. Sientes que hablaste demasiado como un nerd y te sientes un perdedor. Pero, ¿qué más daba? Al menos no había salido corriendo, y al parecer iba a cuidar de tu pellejo hasta que volvieras a tu hogar.<br><br>(O al menos eso deseabas... no querías volver a repetir esa aterradora experiencia). "]
             },
             {
                 id: 81,
                 title: "Introduction I - 81",
-                image: "CHAPTER 1/Aquarium 1-83.png",
+                image: "CHAPTER 1/Aquarium 1-82.png",
                 alt: "Comic Image 81",
-                text: [""]
+                text: ["Pasó un rato de encontrar absolutamente nada hasta que un brillo desde un agujero en la pared te llamó la atención. ¡Era del mismo color que del libro!"]
             },
             {
                 id: 82,
                 title: "Introduction I - 82",
-                image: "CHAPTER 1/Aquarium 1-84.png",
+                image: "CHAPTER 1/Aquarium 1-83.png",
                 alt: "Comic Image 82",
-                text: ["Al asomar la vista, ahí estaba. Descansando en una buena cantidad de vegetación al otro lado de la pared se encontraba la piedra. "]
+                text: [""]
             },
             {
                 id: 83,
                 title: "Introduction I - 83",
-                image: "CHAPTER 1/Aquarium 1-85.gif",
+                image: "CHAPTER 1/Aquarium 1-84.png",
                 alt: "Comic Image 83",
-                text: ["El primer paso fue pasar tu mano, algo temeroso, pero la seguridad era esencial si tu intención era impresionar a una chica. "]
+                text: ["Al asomar la vista, ahí estaba. Descansando en una buena cantidad de vegetación al otro lado de la pared se encontraba la piedra. "]
             },
             {
                 id: 84,
                 title: "Introduction I - 84",
-                image: "CHAPTER 1/Aquarium 1-86.png",
+                image: "CHAPTER 1/Aquarium 1-85.gif",
                 alt: "Comic Image 84",
-                text: ["<figcaption style=text-align:left>Aura: ¿Necesitas ayuda?<br>Glitch: No- Sólo me quitaré esto."]
+                text: ["El primer paso fue pasar tu mano, algo temeroso, pero la seguridad era esencial si tu intención era impresionar a una chica. "]
             },
             {
                 id: 85,
                 title: "Introduction I - 85",
-                image: "CHAPTER 1/Aquarium 1-87.png",
+                image: "CHAPTER 1/Aquarium 1-86.png",
                 alt: "Comic Image 85",
-                text: [""]
+                dialog: ["<figcaption style='text-align:left; color: #d1be11'> Aura: <span style='color: BLACK'>¿Necesitas ayuda?</span></figcaption><figcaption style='text-align:left; color: #6994a6'> Glitch: <span style='color: BLACK'>No- Sólo me quitaré esto.</span></figcaption>"]
             },
             {
                 id: 86,
                 title: "Introduction I - 86",
-                image: "CHAPTER 1/Aquarium 1-88.gif",
+                image: "CHAPTER 1/Aquarium 1-87.png",
                 alt: "Comic Image 86",
-                text: ["Decides acabar con la humillación y te quitas la mochila para pasarla al otro lado, seguido de ti mismo. Sientes un alivio inmediato al no tener sus ojotes sobre ti."]
+                text: [""]
             },
             {
                 id: 87,
                 title: "Introduction I - 87",
-                image: "CHAPTER 1/Aquarium 1-89.gif",
+                image: "CHAPTER 1/Aquarium 1-88.gif",
                 alt: "Comic Image 87",
-                text: ["Consigues la piedra. Oh, Chiapas va a estar muy feliz al saber que hiciste todo este esfuerzo por su bienestar. ¡Piensas que su brillo es incomparable!"]
+                text: ["Decides acabar con la humillación y te quitas la mochila para pasarla al otro lado, seguido de ti mismo. Sientes un alivio inmediato al no tener sus ojotes sobre ti."]
             },
             {
                 id: 88,
                 title: "Introduction I - 88",
-                image: "CHAPTER 1/Aquarium 1-90.png",
+                image: "CHAPTER 1/Aquarium 1-89.gif",
                 alt: "Comic Image 88",
-                text: ["“¡Detectamos el arco cerca!”<br><br>Voces se escuchan a lo lejos, ambos observan con miedo a los alrededores, parece que las brujas los habían localizado."]
+                text: ["Consigues la piedra. Oh, Chiapas va a estar muy feliz al saber que hiciste todo este esfuerzo por su bienestar. ¡Piensas que su brillo es incomparable!"]
             },
             {
                 id: 89,
                 title: "Introduction I - 89",
-                image: "CHAPTER 1/Aquarium 1-91.png",
+                image: "CHAPTER 1/Aquarium 1-90.png",
                 alt: "Comic Image 89",
-                text: ["Glitch: ¡Pasa a este lado!"]
+                text: ["“¡Detectamos el arco cerca!”<br><br>Voces se escuchan a lo lejos, ambos observan con miedo a los alrededores, parece que las brujas los habían localizado."]
             },
             {
                 id: 90,
                 title: "Introduction I - 90",
-                image: "CHAPTER 1/Aquarium 1-92.png",
+                image: "CHAPTER 1/Aquarium 1-91.png",
                 alt: "Comic Image 90",
-                text: ["Ella intenta pasar, pero parece experimentar el mismo problema que tú cuando te insertaste en ese hoyo. Lo que traías en la espalda. Sólo que ella parecía más necia al respecto.<br><br>Díalogo<br><br><figcaption style=text-align:left>Glitch: ¡Quítatelo y pásamelo!<br>Aura: ¡NO!<br>Glitch: ¡Shh! Están cerca. Sólo dámelo, ¡te lo devolveré!<br>Aura: ¡GRRRRRRR!"]
-            },
+                dialog: ["<figcaption style='text-align:left; color: #6994a6'> Glitch: <span style='color: BLACK'>¡Pasa a este lado!</span></figcaption>"]            },
             {
                 id: 91,
                 title: "Introduction I - 91",
-                image: "CHAPTER 1/Aquarium 1-93.gif",
+                image: "CHAPTER 1/Aquarium 1-92.png",
                 alt: "Comic Image 91",
+                text: ["Ella intenta pasar, pero parece experimentar el mismo problema que tú cuando te insertaste en ese hoyo. Lo que traías en la espalda. Sólo que ella parecía más necia al respecto."],
+                dialog: ["<figcaption style='text-align:left; color: #6994a6'> Glitch: <span style='color: BLACK'>¡Quítatelo y pásamelo!</span></figcaption><figcaption style='text-align:left; color: #d1be11'> Aura: <span style='color: BLACK'>¡NO!</span></figcaption><figcaption style='text-align:left; color: #6994a6'> Glitch: <span style='color: BLACK'>¡Shh! Están cerca. Sólo dámelo, ¡te lo devolveré!</span></figcaption><figcaption style='text-align:left; color: #d1be11'> Aura: <span style='color: BLACK'>¡GRRRRRRR!</span></figcaption>"]
+            },
+            {
+                id: 92,
+                title: "Introduction I - 92",
+                image: "CHAPTER 1/Aquarium 1-93.gif",
+                alt: "Comic Image 92",
                 text: [""]
             },
             {
@@ -667,21 +678,20 @@ const chapters = [
                 title: "Introduction I - 94",
                 image: "CHAPTER 1/Aquarium 1-95.gif",
                 alt: "Comic Image 94",
-                text: ["Diálogo<br><br><figcaption style=text-align:left>Bruja 1: ¿Es normal que los perros dejen este olor tan apestoso?<br>Bruja 2: ¡Recuerda el hechizo de ubicación! Mientras más apestoso sea, más cerca estamos.<br>Bruja 1: ¿Que tipo de lógica es esa? ¿No podria ser lavanda o fresas?<br>Bruja 3: Creo que secuestró a un civil a su paso.<br>Bruja 2: jeje. Eso solo agrega OTRO cargo más. En adición a las horas escapando de la justicia.<br>Brujas 1: ¿Magnolia te solicitó llevar esas cuentas?<br>Brujas 2: No. Sólo que se verá mejor cuando la publiquemos en la lista negra. Evasión de la justicia, posesión de magia no autorizada, secuestro, atentado contra la guardia de magia, uso indebido de artefactos encantados, invocación no registrada de entidades, uso de magia en zonas de baja contención, cruzar límites de civiles y cualquier otra cosa que se pueda incrustar a la marcha.<br>Bruja 1: Suena bien."]
-            },
+                dialog: ["<figcaption style='text-align:left; color: #a71bd5'> Bruja 1: <span style='color: BLACK'>¿Es normal que los perros dejen este olor tan apestoso?</span></figcaption><figcaption style='text-align:left; color: #a71bd5'> Bruja 2: <span style='color: BLACK'>¡Recuerda el hechizo de ubicación! Mientras más apestoso sea, más cerca estamos.</span></figcaption><figcaption style='text-align:left; color: #a71bd5'> Bruja 1: <span style='color: BLACK'>¿Que tipo de lógica es esa? ¿No podria ser lavanda o fresas?</span></figcaption><figcaption style='text-align:left; color: #a71bd5'> Bruja 3: <span style='color: BLACK'>Creo que secuestró a un civil a su paso.</span></figcaption><figcaption style='text-align:left; color: #a71bd5'> Bruja 2: <span style='color: BLACK'>jeje. Eso solo agrega OTRO cargo más. En adición a las horas escapando de la justicia.</span></figcaption><figcaption style='text-align:left; color: #a71bd5'> Bruja 1: <span style='color: BLACK'>¿Magnolia te solicitó llevar esas cuentas?</span></figcaption><figcaption style='text-align:left; color: #a71bd5'> Bruja 2: <span style='color: BLACK'>No. Sólo que se verá mejor cuando la publiquemos en la lista negra. Evasión de la justicia, posesión de magia no autorizada, secuestro, atentado contra la guardia de magia, uso indebido de artefactos encantados, invocación no registrada de entidades, uso de magia en zonas de baja contención, cruzar límites de civiles y cualquier otra cosa que se pueda incrustar a la marcha.</span></figcaption><figcaption style='text-align:left; color: #a71bd5'> Bruja 1: <span style='color: BLACK'>Suena bien.</span></figcaption>"]            },
             {
                 id: 95,
                 title: "Introduction I - 95",
                 image: "CHAPTER 1/Aquarium 1-96.gif",
                 alt: "Comic Image 95",
-                text: ["Diálogo<br><br><figcaption style=text-align:left>Bruja 1: No es como si estuvieramos mintiendo de todas formas. Y quién sabe que otras fechorías haya cometido fuera del radar de la ley. Éstos familiares no empezaron a revelarse recién, ¿Sabes?<br>Bruja 2: No lo sé. Lo entendería con las aves, por culpa de la ex-consejera principal de Magnolia. Pero los demás familiares están bastante cómodos con nosotros, no entiendo el enojo.<br>Bruja 3: Les dimos cuerpos más humanos y un hogar para vivir, ¡quién los entiende! No sé por qué querrían la razón en todo siempre. Están para aconsejar, no demandar.<br>Bruja 1: Bueno, suficiente. Hay que movernos rápido. Hoy debe enfrentar justicia."]
+                dialog: ["<figcaption style='text-align:left; color: #a71bd5'> Bruja 1: <span style='color: BLACK'>No es como si estuvieramos mintiendo de todas formas. Y quién sabe que otras fechorías haya cometido fuera del radar de la ley. Éstos familiares no empezaron a revelarse recién, ¿Sabes?</span></figcaption><figcaption style='text-align:left; color: #a71bd5'> Bruja 2: <span style='color: BLACK'>No lo sé. Lo entendería con las aves, por culpa de la ex-consejera principal de Magnolia. Pero los demás familiares están bastante cómodos con nosotros, no entiendo el enojo.</span></figcaption><figcaption style='text-align:left; color: #a71bd5'> Bruja 3: <span style='color: BLACK'>Les dimos cuerpos más humanos y un hogar para vivir, ¡quién los entiende! No sé por qué querrían la razón en todo siempre. Están para aconsejar, no demandar.</span></figcaption><figcaption style='text-align:left; color: #a71bd5'> Bruja 1: <span style='color: BLACK'>Bueno, suficiente. Hay que movernos rápido. Hoy debe enfrentar justicia.</span></figcaption>"]
             },
             {
                 id: 96,
                 title: "Introduction I - 96",
                 image: "CHAPTER 1/Aquarium 1-97.gif",
                 alt: "Comic Image 96",
-                text: ["Aura: ¡Qué basura!"]
+                dialog: ["<figcaption style='text-align:left; color: #d1be11'> Aura: <span style='color: BLACK'>¡Qué basura!</span></figcaption>"]
             },
             {
                 id: 97,
@@ -695,7 +705,7 @@ const chapters = [
                 title: "Introduction I - 98",
                 image: "CHAPTER 1/Aquarium 1-99.gif",
                 alt: "Comic Image 98",
-                text: ["Diálogo<br><br><figcaption style=text-align:left>Glitch: Ehm… ¿Te lo doy de regreso?<br>Aura: ¿No crees que es ridículo? ¿Absurdo? ¡Sabía bien que tenía que huir de esas locas! Cero intención de trabajar conmigo… con razón las aves no las soportan. Cuánto a que esto solo ocasiona una ruptura total.<br>Glitch:Bueno, sí, aves cercanas me han comentado al respecto…<br>Aura:¿No pueden solo llegar a un acuerdo? Vamos, no es como si fuéramos tantos en la comunidad. Algo se podría discutir si se lo propusieran. Todo ese control a las brujas se les subió a la cabeza.<br>Aura: De paso ahora es mi culpa. Tsk. Agarran al más tonto como carnada.<br>Glitch: ¿Por qué te culparían?<br>Aura: ¿Por… tener la solución? Pero no sé de dónde la saqué. No importa. NO creo que importe. Estoy ayudando, estuve ayudando. ¿¡Merezco ser perseguida como un criminal por eso!? Que suerte más de mierda.<br>Aura: ¡Las aves tampoco se salvan! Tan tercas con que pueden resolver el asunto con ellas hablando y con argumentos. Nah, nah… eso solo va—"]
+                dialog: ["<figcaption style='text-align:left; color: #6994a6'> Glitch: <span style='color: BLACK'>Ehm… ¿Te lo doy de regreso?</span></figcaption><figcaption style='text-align:left; color: #d1be11'> Aura: <span style='color: BLACK'>¿No crees que es ridículo? ¿Absurdo? ¡Sabía bien que tenía que huir de esas locas! Cero intención de trabajar conmigo… con razón las aves no las soportan. Cuánto a que esto solo ocasiona una ruptura total.</span></figcaption><figcaption style='text-align:left; color: #6994a6'> Glitch: <span style='color: BLACK'>Bueno, sí, aves cercanas me han comentado al respecto…</span></figcaption><figcaption style='text-align:left; color: #d1be11'> Aura: <span style='color: BLACK'>¿No pueden solo llegar a un acuerdo? Vamos, no es como si fuéramos tantos en la comunidad. Algo se podría discutir si se lo propusieran. Todo ese control a las brujas se les subió a la cabeza.</span></figcaption><figcaption style='text-align:left; color: #d1be11'> Aura: <span style='color: BLACK'>De paso ahora es mi culpa. Tsk. Agarran al más tonto como carnada.</span></figcaption><figcaption style='text-align:left; color: #6994a6'> Glitch: <span style='color: BLACK'>¿Por qué te culparían?</span></figcaption><figcaption style='text-align:left; color: #d1be11'> Aura: <span style='color: BLACK'>¿Por… tener la solución? Pero no sé de dónde la saqué. No importa. NO creo que importe. Estoy ayudando, estuve ayudando. ¿¡Merezco ser perseguida como un criminal por eso!? Que suerte más de mierda.</span></figcaption><figcaption style='text-align:left; color: #d1be11'> Aura: <span style='color: BLACK'>¡Las aves tampoco se salvan! Tan tercas con que pueden resolver el asunto con ellas hablando y con argumentos. Nah, nah… eso solo va—</span></figcaption>"]
             },
             {
                 id: 99,
@@ -709,21 +719,22 @@ const chapters = [
                 title: "Introduction I - 100",
                 image: "CHAPTER 1/Aquarium 1-101.gif",
                 alt: "Comic Image 100",
-                text: ["Como si escuchara tus necesidades, el arco brilló con fuerza. Mostrándola desplomada en medio de un charco de barro, completamente inmóvil.<br><br>Aura: (Quejido)"]
+                text: ["Como si escuchara tus necesidades, el arco brilló con fuerza. Mostrándola desplomada en medio de un charco de barro, completamente inmóvil."],
+                dialog: ["<figcaption style='text-align:left; color: #d1be11'> Aura: <span style='color: BLACK'>(Quejido)</span></figcaption>"]
             },
             {
                 id: 101,
                 title: "Introduction I - 101",
                 image: "CHAPTER 1/Aquarium 1-102.png",
                 alt: "Comic Image 101",
-                text: ["Diálogo<br><br><figcaption style=text-align:left>Glitch: ¡¿Estás bien?!<br>Glitch: Deberías ver dónde caminas, sabes…<br>Aura: ¿TÚ-?! ugh…"]
+                dialog: ["<figcaption style='text-align:left; color: #6994a6'> Glitch: <span style='color: BLACK'>¡¿Estás bien?!</span></figcaption><figcaption style='text-align:left; color: #6994a6'> Glitch: <span style='color: BLACK'>Deberías ver dónde caminas, sabes…</span></figcaption><figcaption style='text-align:left; color: #d1be11'> Aura: <span style='color: BLACK'>¿TÚ-?! ugh…</span></figcaption>"]
             },
             {
                 id: 102,
                 title: "Introduction I - 102",
                 image: "CHAPTER 1/Aquarium 1-103.png",
                 alt: "Comic Image 102",
-                text: ["Diálogo<br><br><figcaption style=text-align:left>Aura: Quedatelo.<br>Glitch: No lo quiero, es tuyo.<br>Aura: Quien sabe. Tal vez ese dios sólo quería deshacerse de chatarra vieja o algo. Lo único de mi propiedad es mi mediocridad, oh.. jaja.<br>Aura: El barro no es malo de todas formas. Es… Cómodo. Podría vivir aquí para siempre. Jejeje.<br>Glitch: ¡Ahí voy!<br>Aura: ¿Eh? NONO-"]
+                dialog: ["<figcaption style='text-align:left; color: #d1be11'> Aura: <span style='color: BLACK'>Quedatelo.</span></figcaption><figcaption style='text-align:left; color: #6994a6'> Glitch: <span style='color: BLACK'>No lo quiero, es tuyo.</span></figcaption><figcaption style='text-align:left; color: #d1be11'> Aura: <span style='color: BLACK'>Quien sabe. Tal vez ese dios sólo quería deshacerse de chatarra vieja o algo. Lo único de mi propiedad es mi mediocridad, oh.. jaja.</span></figcaption><figcaption style='text-align:left; color: #d1be11'> Aura: <span style='color: BLACK'>El barro no es malo de todas formas. Es… Cómodo. Podría vivir aquí para siempre. Jejeje.</span></figcaption><figcaption style='text-align:left; color: #6994a6'> Glitch: <span style='color: BLACK'>¡Ahí voy!</span></figcaption><figcaption style='text-align:left; color: #d1be11'> Aura: <span style='color: BLACK'>¿Eh? NONO-</span></figcaption>"]
             },
             {
                 id: 103,
@@ -737,14 +748,14 @@ const chapters = [
                 title: "Introduction I - 104",
                 image: "CHAPTER 1/Aquarium 1-105.gif",
                 alt: "Comic Image 104",
-                text: ["Diálogo<br><br><figcaption style=text-align:left>Aura: … Uh.<br>Glitch: ESTOY TAN ASUSTADO COMO TÚ.<br>Aura: ¿No te rompiste algo?<br>Glitch: NO LO SÉ.<br>Glitch: Ahem."]
+                dialog: ["<figcaption style='text-align:left; color: #d1be11'> Aura: <span style='color: BLACK'>… Uh.</span></figcaption><figcaption style='text-align:left; color: #6994a6'> Glitch: <span style='color: BLACK'>ESTOY TAN ASUSTADO COMO TÚ.</span></figcaption><figcaption style='text-align:left; color: #d1be11'> Aura: <span style='color: BLACK'>¿No te rompiste algo?</span></figcaption><figcaption style='text-align:left; color: #6994a6'> Glitch: <span style='color: BLACK'>NO LO SÉ.</span></figcaption><figcaption style='text-align:left; color: #6994a6'> Glitch: <span style='color: BLACK'>Ahem.</span></figcaption>"]
             },
             {
                 id: 104,
                 title: "Introduction I - 104",
                 image: "CHAPTER 1/Aquarium 1-106.png",
                 alt: "Comic Image 104",
-                text: ["Diálogo<br><br><figcaption style=text-align:left>Glitch: ¿Dices que un dios te lo dio?<br>Aura: …<br>Aura: Siempre he tenido mala suerte toda mi vida. Ese arco fue como un rayo de luz.<br>Aura: No recuerdo su rostro ni nada de él. Solo recuerdo sus palabras.<br>Glitch: ¿Qué te dijo?<br>Aura: “No te pierdas”.<br>Aura: Y aquí estamos… perdidos y sin salida.<br>Aura: Hubiera sido amable que me dijera qué camino seguir en primer lugar…<br>Glitch: He llegado a pensar eso de mí mismo. Así que no creo que sea algo que deba hacerte sentir anormal.<br>Glitch: Sentir que solo quieres vivir sin que tantas cosas pasen a tu alrededor… ninguna de las que puedes controlar.<br>Glitch: Sentirte perdido.<br>Glitch: Tal vez… tal vez no hablaba de caminos como tal, sino de no perderte a ti misma.<br>Aura: ¿Te sientes perdido?<br>Glitch: Desde siempre.<br>Aura: Yo quiero encontrar mi propósito. Pensé que lo tenía.<br>Aura: Pero… si esto es por lo que tengo que pasar, ya no sé si lo quiero.<br>Aura: Debería conformarme con la mísera paga de mi trabajo, jaja. No aspirar estupideces.<br>Aura: Pero no me escuches. No quisiera deprimirte con mi forma de pensar.<br>Aura: Gulp.<br>Glitch: Tienes muy buena puntería con esta cosa, y eres muy ágil.<br>Glitch: No creo que estés haciendo las cosas mal… sino que vivimos en una sociedad de mierda.<br>Glitch: Podrías seguir siendo tú. Y al diablo con ellos.<br>Glitch: Nadie podría manejar esto mejor que tú."]
+                dialog: ["<figcaption style='text-align:left; color: #6994a6'> Glitch: <span style='color: BLACK'>¿Dices que un dios te lo dio?</span></figcaption><figcaption style='text-align:left; color: #d1be11'> Aura: <span style='color: BLACK'>…</span></figcaption><figcaption style='text-align:left; color: #d1be11'> Aura: <span style='color: BLACK'>Siempre he tenido mala suerte toda mi vida. Ese arco fue como un rayo de luz.</span></figcaption><figcaption style='text-align:left; color: #d1be11'> Aura: <span style='color: BLACK'>No recuerdo su rostro ni nada de él. Solo recuerdo sus palabras.</span></figcaption><figcaption style='text-align:left; color: #6994a6'> Glitch: <span style='color: BLACK'>¿Qué te dijo?</span></figcaption><figcaption style='text-align:left; color: #d1be11'> Aura: <span style='color: BLACK'>“No te pierdas”.</span></figcaption><figcaption style='text-align:left; color: #d1be11'> Aura: <span style='color: BLACK'>Y aquí estamos… perdidos y sin salida.</span></figcaption><figcaption style='text-align:left; color: #d1be11'> Aura: <span style='color: BLACK'>Hubiera sido amable que me dijera qué camino seguir en primer lugar…</span></figcaption><figcaption style='text-align:left; color: #6994a6'> Glitch: <span style='color: BLACK'>He llegado a pensar eso de mí mismo. Así que no creo que sea algo que deba hacerte sentir anormal.</span></figcaption><figcaption style='text-align:left; color: #6994a6'> Glitch: <span style='color: BLACK'>Sentir que solo quieres vivir sin que tantas cosas pasen a tu alrededor… ninguna de las que puedes controlar.</span></figcaption><figcaption style='text-align:left; color: #6994a6'> Glitch: <span style='color: BLACK'>Sentirte perdido.</span></figcaption><figcaption style='text-align:left; color: #6994a6'> Glitch: <span style='color: BLACK'>Tal vez… tal vez no hablaba de caminos como tal, sino de no perderte a ti misma.</span></figcaption><figcaption style='text-align:left; color: #d1be11'> Aura: <span style='color: BLACK'>¿Te sientes perdido?</span></figcaption><figcaption style='text-align:left; color: #6994a6'> Glitch: <span style='color: BLACK'>Desde siempre.</span></figcaption><figcaption style='text-align:left; color: #d1be11'> Aura: <span style='color: BLACK'>Yo quiero encontrar mi propósito. Pensé que lo tenía.</span></figcaption><figcaption style='text-align:left; color: #d1be11'> Aura: <span style='color: BLACK'>Pero… si esto es por lo que tengo que pasar, ya no sé si lo quiero.</span></figcaption><figcaption style='text-align:left; color: #d1be11'> Aura: <span style='color: BLACK'>Debería conformarme con la mísera paga de mi trabajo, jaja. No aspirar estupideces.</span></figcaption><figcaption style='text-align:left; color: #d1be11'> Aura: <span style='color: BLACK'>Pero no me escuches. No quisiera deprimirte con mi forma de pensar.</span></figcaption><figcaption style='text-align:left; color: #d1be11'> Aura: <span style='color: BLACK'>Gulp.</span></figcaption><figcaption style='text-align:left; color: #6994a6'> Glitch: <span style='color: BLACK'>Tienes muy buena puntería con esta cosa, y eres muy ágil.</span></figcaption><figcaption style='text-align:left; color: #6994a6'> Glitch: <span style='color: BLACK'>No creo que estés haciendo las cosas mal… sino que vivimos en una sociedad de mierda.</span></figcaption><figcaption style='text-align:left; color: #6994a6'> Glitch: <span style='color: BLACK'>Podrías seguir siendo tú. Y al diablo con ellos.</span></figcaption><figcaption style='text-align:left; color: #6994a6'> Glitch: <span style='color: BLACK'>Nadie podría manejar esto mejor que tú.</span></figcaption>"]
             },
             {
                 id: 105,
@@ -793,14 +804,14 @@ const chapters = [
                 title: "Introduction I - 111",
                 image: "CHAPTER 1/Aquarium 1-113.png",
                 alt: "Comic Image 111",
-                text: ["Aura: Bien."]
+                dialog: ["<figcaption style='text-align:left; color: #d1be11'> Aura: <span style='color: BLACK'>Bien.</span></figcaption>"]
             },
             {
                 id: 112,
                 title: "Introduction I - 112",
                 image: "CHAPTER 1/Aquarium 1-114.gif",
                 alt: "Comic Image 112",
-                text: ["Diálogo<br><br><figcaption style=text-align:left>Glitch: ¿No fue eso demasiado ruidoso? Ehm,,, ¿No habrán escuchado la explosión? ¡Se estarán acercando acá!<br>Glitch: Sabes, podría pedir ayuda a unas amigas, una es una bruja otra un pato pero son de confiar, s-sólo con marcarles desde aquí vendrían a ayudar..."]
+                dialog: ["<figcaption style='text-align:left; color: #6994a6'> Glitch: <span style='color: BLACK'>¿No fue eso demasiado ruidoso? Ehm,,, ¿No habrán escuchado la explosión? ¡Se estarán acercando acá!</span></figcaption><figcaption style='text-align:left; color: #6994a6'> Glitch: <span style='color: BLACK'>Sabes, podría pedir ayuda a unas amigas, una es una bruja otra un pato pero son de confiar, s-sólo con marcarles desde aquí vendrían a ayudar...</span></figcaption>"]
             },
             {
                 id: 113,
@@ -856,7 +867,7 @@ const chapters = [
                 title: "Introduction I - 120",
                 image: "CHAPTER 1/Aquarium 1-122.png",
                 alt: "Comic Image 120",
-                text: ["Diálogo<br><br><figcaption style=text-align:left>(Vaya idiota)<br>Glitch: Tú no te metas. <br>Glitch: ¿Puedes dejarme solo?<br>(No creo que quieras estarlo, más bien, sé que no)<br>Glitch: Estoy ocupado ahora mismo.<br>(¿Ocupado evitandome?)<br>Glitch: Eso mismo.<br>(Añade ocupado evitandote)<br>Glitch: …<br>(Eh, cambia esa cara.)<br>(Sabes que sólo estoy para aclarar tu mente)<br>(Soy tu único aliado, Glitch)<br>Glitch: Claro."]
+                dialog: ["<figcaption style='text-align:left; color: #888888'> (Vaya idiota)</figcaption><figcaption style='text-align:left; color: #6994a6'> Glitch: <span style='color: BLACK'>Tú no te metas.</span></figcaption><figcaption style='text-align:left; color: #6994a6'> Glitch: <span style='color: BLACK'>¿Puedes dejarme solo?</span></figcaption><figcaption style='text-align:left; color: #888888'> (No creo que quieras estarlo, más bien, sé que no)</figcaption><figcaption style='text-align:left; color: #6994a6'> Glitch: <span style='color: BLACK'>Estoy ocupado ahora mismo.</span></figcaption><figcaption style='text-align:left; color: #888888'> (¿Ocupado evitandome?)</figcaption><figcaption style='text-align:left; color: #6994a6'> Glitch: <span style='color: BLACK'>Eso mismo.</span></figcaption><figcaption style='text-align:left; color: #888888'> (Añade ocupado evitandote)</figcaption><figcaption style='text-align:left; color: #6994a6'> Glitch: <span style='color: BLACK'>…</span></figcaption><figcaption style='text-align:left; color: #888888'> (Eh, cambia esa cara.)</figcaption><figcaption style='text-align:left; color: #888888'> (Sabes que sólo estoy para aclarar tu mente)</figcaption><figcaption style='text-align:left; color: #888888'> (Soy tu único aliado, Glitch)</figcaption><figcaption style='text-align:left; color: #6994a6'> Glitch: <span style='color: BLACK'>Claro.</span></figcaption>"]
             },
             {
                 id: 121,
@@ -1003,21 +1014,21 @@ const chapters = [
                 title: "Introduction I - 141",
                 image: "CHAPTER 1/Aquarium 1-144.gif",
                 alt: "Comic Image 141",
-                text: ["Maple: ¡Hooola, Agera!"]
+                dialog: ["<figcaption style='text-align:left; color: #f7a444'> Maple: <span style='color: BLACK'>¡Hooola, Agera!</span></figcaption>"]
             },
             {
                 id: 142,
                 title: "Introduction I - 142",
                 image: "CHAPTER 1/Aquarium 1-145.png",
                 alt: "Comic Image 142",
-                text: ["Diálogo<br><br><figcaption style=text-align:left>Agera: Aún no he salido de mi turno… ¿Por qué no me avisaron?<br>Maple: ¡Sólo venia a visitar como siempre! ¿No te alegras que Glitch esté vivo?"]
+                dialog: ["<figcaption style='text-align:left; color: #d9b3ec'> Agera: <span style='color: BLACK'>Aún no he salido de mi turno… ¿Por qué no me avisaron?</span></figcaption><figcaption style='text-align:left; color: #f7a444'> Maple: <span style='color: BLACK'>¡Sólo venia a visitar como siempre! ¿No te alegras que Glitch esté vivo?</span></figcaption>"]
             },
             {
                 id: 143,
                 title: "Introduction I - 143",
                 image: "CHAPTER 1/Aquarium 1-146.png",
                 alt: "Comic Image 143",
-                text: ["Diálogo<br><br><figcaption style=text-align:left>Agera: Pues claro que si. Glicho. ¿Dónde habías estado?<br>Glitch: Heheh… un poco aquí. Un poco allá.<br>Maple: Pudiste haber estado un poco en el bar-<br>Agera: SH- Maple!<br>Glitch: Está bien, tiene razón. Siento mi imprudencia con eso… No quería meterlas en problemas.<br>Agera: Lo importante es que estás bien. ¿Los has visto? ¿A los monstruos?<br>Glitch: Oh- pues… Si. Lamentablemente.<br>Agera: Woah. ¿C-Cómo escapaste?<br>Glitch: -SIIIGHH-...<br>Maple: Seguramente les dió su merecido. ¿Ves Agera? Que te dije yo. Que no les habían trancado los golpes necesarios. <br>Maple: Eso segurito lo aprendió de mi. ¿A qué siiii?<br>Glitch: Yo… No recuerdo bien que pasó. Ni hace cuántos días fué. <br>Glitch: Lo lamento.<br>Agera: No no, no hay de qué. Iré a seguir las clases, NO salgan de esta torre en lo que vuelvo. ¿Entendido?<br>Maple: Roger that!"]
+                dialog: ["<figcaption style='text-align:left; color: #d9b3ec'> Agera: <span style='color: BLACK'>Pues claro que si. Glicho. ¿Dónde habías estado?</span></figcaption><figcaption style='text-align:left; color: #6994a6'> Glitch: <span style='color: BLACK'>Heheh… un poco aquí. Un poco allá.</span></figcaption><figcaption style='text-align:left; color: #f7a444'> Maple: <span style='color: BLACK'>Pudiste haber estado un poco en el bar-</span></figcaption><figcaption style='text-align:left; color: #d9b3ec'> Agera: <span style='color: BLACK'>SH- Maple!</span></figcaption><figcaption style='text-align:left; color: #6994a6'> Glitch: <span style='color: BLACK'>Está bien, tiene razón. Siento mi imprudencia con eso… No quería meterlas en problemas.</span></figcaption><figcaption style='text-align:left; color: #d9b3ec'> Agera: <span style='color: BLACK'>Lo importante es que estás bien. ¿Los has visto? ¿A los monstruos?</span></figcaption><figcaption style='text-align:left; color: #6994a6'> Glitch: <span style='color: BLACK'>Oh- pues… Si. Lamentablemente.</span></figcaption><figcaption style='text-align:left; color: #d9b3ec'> Agera: <span style='color: BLACK'>Woah. ¿C-Cómo escapaste?</span></figcaption><figcaption style='text-align:left; color: #6994a6'> Glitch: <span style='color: BLACK'>-SIIIGHH-...</span></figcaption><figcaption style='text-align:left; color: #f7a444'> Maple: <span style='color: BLACK'>Seguramente les dió su merecido. ¿Ves Agera? Que te dije yo. Que no les habían trancado los golpes necesarios.</span></figcaption><figcaption style='text-align:left; color: #f7a444'> Maple: <span style='color: BLACK'>Eso segurito lo aprendió de mi. ¿A qué siiii?</span></figcaption><figcaption style='text-align:left; color: #6994a6'> Glitch: <span style='color: BLACK'>Yo… No recuerdo bien que pasó. Ni hace cuántos días fué.</span></figcaption><figcaption style='text-align:left; color: #6994a6'> Glitch: <span style='color: BLACK'>Lo lamento.</span></figcaption><figcaption style='text-align:left; color: #d9b3ec'> Agera: <span style='color: BLACK'>No no, no hay de qué. Iré a seguir las clases, NO salgan de esta torre en lo que vuelvo. ¿Entendido?</span></figcaption><figcaption style='text-align:left; color: #f7a444'> Maple: <span style='color: BLACK'>Roger that!</span></figcaption>"]  
             },
             {
                 id: 144,
@@ -1038,7 +1049,7 @@ const chapters = [
                 title: "Introduction I - 146",
                 image: "CHAPTER 1/Aquarium 1-149.gif",
                 alt: "Comic Image 146",
-                text: ["Diálogo<br><br><figcaption style=text-align:left>Maple: Hablemos de nuestros sentimientos.<br>Glitch: . . . Uh.<br>Maple: O, en cambio. Vayámonos de aquí<br>Maple: Conozco un puesto de varitas de pescado. ¿No se te hace apetitoso?<br>Glitch: Vamos."]
+                dialog: ["<figcaption style='text-align:left; color: #f7a444'> Maple: <span style='color: BLACK'>Hablemos de nuestros sentimientos.</span></figcaption><figcaption style='text-align:left; color: #6994a6'> Glitch: <span style='color: BLACK'>. . . Uh.</span></figcaption><figcaption style='text-align:left; color: #f7a444'> Maple: <span style='color: BLACK'>O, en cambio. Vayámonos de aquí</span></figcaption><figcaption style='text-align:left; color: #f7a444'> Maple: <span style='color: BLACK'>Conozco un puesto de varitas de pescado. ¿No se te hace apetitoso?</span></figcaption><figcaption style='text-align:left; color: #6994a6'> Glitch: <span style='color: BLACK'>Vamos.</span></figcaption>"]
             },
             {
                 id: 147,
@@ -1104,17 +1115,17 @@ const chapters = [
                 text: ["Una completa pesadilla con la que lidiar."]
             },
             {
-                id: 155,
-                title: "Introduction I - 155",
-                image: "CHAPTER 1/Aquarium 1-159.png",
-                alt: "Comic Image 155",
-                text: ["(Sigh)<br><br>Agera: Vaya basura de segunda oportunidad<br><br>Agera: Les fallé."]
-            },
-            {
                 id: 156,
                 title: "Introduction I - 156",
-                image: "CHAPTER 1/Aquarium 1-160.png",
+                image: "CHAPTER 1/Aquarium 1-159.png",
                 alt: "Comic Image 156",
+                dialog: ["<figcaption style='text-align:left; color: #888888'> (Sigh)</figcaption><figcaption style='text-align:left; color: #d9b3ec'> Agera: <span style='color: BLACK'>Vaya basura de segunda oportunidad</span></figcaption><figcaption style='text-align:left; color: #d9b3ec'> Agera: <span style='color: BLACK'>Les fallé.</span></figcaption>"]
+            },
+            {
+                id: 157,
+                title: "Introduction I - 157",
+                image: "CHAPTER 1/Aquarium 1-160.png",
+                alt: "Comic Image 157",
                 text: ["(Mientras tanto con éstos dos)<br><br>¡El puesto está justo ahí! Debieron ser rápidos para evitar a las brujas de mayor rango, pero valía la pena, eran las más sabrosas varitas de pescado de todo el reino. Una marca bastante popular.<br><br>No paras de comentarle a tu amigo sobre tus experiencias en éste puesto, y lo agradable y amable que es la dueña. Definitivamente un lugar al que visitas una y otra vez cada vez que estás pasando por un momento difícil."]
             },
             {
@@ -1161,23 +1172,21 @@ const chapters = [
                 title: "Introduction I - 162",
                 image: "CHAPTER 1/Aquarium 1-166.png",
                 alt: "Comic Image 162",
-                text: ["(Glitch: ¿Y yo qué hice?)"]
+                dialog: ["<figcaption style='text-align:left; color: #888888'> (Glitch: ¿Y yo qué hice?)</figcaption>"]
             },
-            
-
             {
                 id: 163,
                 title: "Introduction I - 163",
                 image: "CHAPTER 1/Aquarium 1-167.png",
                 alt: "Comic Image 163",
-                text: ["Diálogo<br><br><figcaption style=text-align:left>Magnolia: Maple.<br>Maple: <br>Magnolia: ¿Y tú tía?<br>Maple: En casa<br>Magnolia: Me refiero a cómo está.<br>Maple: ¿Tú qué crees?<br>Magnolia: Tengo una idea. Pero pensé que sería más cortés preguntar antes que asumir. Algo que tal vez ella debería aprender.<br>Maple: (Alzar hombros)<br>Magnolia: Sigh<br>Glitch: ¿Ha considerado colocar alarmas contra incendios?<br>Magnolia: ¿Eso se debe a…?<br>Glitch: Hay fuego saliendo de esa planta."]
+                dialog: ["<figcaption style='text-align:left; color: #a71bd5'> Magnolia: <span style='color: BLACK'>Maple.</span></figcaption><figcaption style='text-align:left; color: #f7a444'> Maple: <span style='color: BLACK'></span></figcaption><figcaption style='text-align:left; color: #a71bd5'> Magnolia: <span style='color: BLACK'>¿Y tú tía?</span></figcaption><figcaption style='text-align:left; color: #f7a444'> Maple: <span style='color: BLACK'>En casa</span></figcaption><figcaption style='text-align:left; color: #a71bd5'> Magnolia: <span style='color: BLACK'>Me refiero a cómo está.</span></figcaption><figcaption style='text-align:left; color: #f7a444'> Maple: <span style='color: BLACK'>¿Tú qué crees?</span></figcaption><figcaption style='text-align:left; color: #a71bd5'> Magnolia: <span style='color: BLACK'>Tengo una idea. Pero pensé que sería más cortés preguntar antes que asumir. Algo que tal vez ella debería aprender.</span></figcaption><figcaption style='text-align:left; color: #f7a444'> Maple: <span style='color: BLACK'>(Alzar hombros)</span></figcaption><figcaption style='text-align:left; color: #a71bd5'> Magnolia: <span style='color: BLACK'>Sigh</span></figcaption><figcaption style='text-align:left; color: #6994a6'> Glitch: <span style='color: BLACK'>¿Ha considerado colocar alarmas contra incendios?</span></figcaption><figcaption style='text-align:left; color: #a71bd5'> Magnolia: <span style='color: BLACK'>¿Eso se debe a…?</span></figcaption><figcaption style='text-align:left; color: #6994a6'> Glitch: <span style='color: BLACK'>Hay fuego saliendo de esa planta.</span></figcaption>"]
             },
             {
                 id: 164,
                 title: "Introduction I - 164",
                 image: "CHAPTER 1/Aquarium 1-168.gif",
                 alt: "Comic Image 164",
-                text: ["Diálogo<br><br><figcaption style=text-align:left>Magnolia: Este castillo se mueve por las emociones de su creador, sólo revela lo malo que es tener aves cerca de aquí si todas van a tener esa actitud.<br>Magnolia: Me retiraré por el momento, mientras reflexionarán aquí unas horas."]
+                dialog: ["<figcaption style='text-align:left; color: #a71bd5'> Magnolia: <span style='color: BLACK'>Este castillo se mueve por las emociones de su creador, sólo revela lo malo que es tener aves cerca de aquí si todas van a tener esa actitud.</span></figcaption><figcaption style='text-align:left; color: #a71bd5'> Magnolia: <span style='color: BLACK'>Me retiraré por el momento, mientras reflexionarán aquí unas horas.</span></figcaption>"]
             },
             
             {
@@ -1199,14 +1208,14 @@ const chapters = [
                 title: "Introduction I - 167",
                 image: "CHAPTER 1/Aquarium 1-171.png",
                 alt: "Comic Image 167",
-                text: ["Diálogo<br><br><figcaption style=text-align:left>Maple: Ohh, ¡lo siento!!<br>Glitch: Está bien, he estado encerrado en peores lugares.<br>Maple: Ni siquiera pudiste probar las varitas de pescado…<br>Glitch: Está bien, puede ser luego. No creo que el vendedor esté muerto.<br>Maple:<br>Glitch:<br>Maple:<br>Glitch: o…<br>Maple: AGHHH!!<br>Maple: ¡El mundo supone ponerme desafios emocionantes, no esto!"]
+                dialog: ["<figcaption style='text-align:left; color: #f7a444'> Maple: <span style='color: BLACK'>Ohh, ¡lo siento!!</span></figcaption><figcaption style='text-align:left; color: #6994a6'> Glitch: <span style='color: BLACK'>Está bien, he estado encerrado en peores lugares.</span></figcaption><figcaption style='text-align:left; color: #f7a444'> Maple: <span style='color: BLACK'>Ni siquiera pudiste probar las varitas de pescado…</span></figcaption><figcaption style='text-align:left; color: #6994a6'> Glitch: <span style='color: BLACK'>Está bien, puede ser luego. No creo que el vendedor esté muerto.</span></figcaption><figcaption style='text-align:left; color: #f7a444'> Maple: <span style='color: BLACK'></span></figcaption><figcaption style='text-align:left; color: #6994a6'> Glitch: <span style='color: BLACK'></span></figcaption><figcaption style='text-align:left; color: #f7a444'> Maple: <span style='color: BLACK'></span></figcaption><figcaption style='text-align:left; color: #6994a6'> Glitch: <span style='color: BLACK'>o…</span></figcaption><figcaption style='text-align:left; color: #f7a444'> Maple: <span style='color: BLACK'>AGHHH!!</span></figcaption><figcaption style='text-align:left; color: #f7a444'> Maple: <span style='color: BLACK'>¡El mundo supone ponerme desafios emocionantes, no esto!</span></figcaption>"]
             },
             {
                 id: 168,
                 title: "Introduction I - 168",
                 image: "CHAPTER 1/Aquarium 1-172.png",
                 alt: "Comic Image 168",
-                text: ["Diálogo<br><br><figcaption style=text-align:left>Glitch: Está bien Maple, podríamos leer un libro…<br>Maple: OH- (Sonreir)<br>Maple: Pero hazles vocecitas a los personajes cuando lo leas.<br>Glitch: Sólo hay libros de herbologia…<br>Maple: ¿Y?<br>(Maple agarra un libro)<br>Maple: Cada planta puede tener una voz diferente al ser descritas.<br>Glitch: …<br>Glitch: Claro."]
+                dialog: ["<figcaption style='text-align:left; color: #6994a6'> Glitch: <span style='color: BLACK'>Está bien Maple, podríamos leer un libro…</span></figcaption><figcaption style='text-align:left; color: #f7a444'> Maple: <span style='color: BLACK'>OH- (Sonreir)</span></figcaption><figcaption style='text-align:left; color: #f7a444'> Maple: <span style='color: BLACK'>Pero hazles vocecitas a los personajes cuando lo leas.</span></figcaption><figcaption style='text-align:left; color: #6994a6'> Glitch: <span style='color: BLACK'>Sólo hay libros de herbologia…</span></figcaption><figcaption style='text-align:left; color: #f7a444'> Maple: <span style='color: BLACK'>¿Y?</span></figcaption><figcaption style='text-align:left; color: #888888'> (Maple agarra un libro)</figcaption><figcaption style='text-align:left; color: #f7a444'> Maple: <span style='color: BLACK'>Cada planta puede tener una voz diferente al ser descritas.</span></figcaption><figcaption style='text-align:left; color: #6994a6'> Glitch: <span style='color: BLACK'>…</span></figcaption><figcaption style='text-align:left; color: #6994a6'> Glitch: <span style='color: BLACK'>Claro.</span></figcaption>"]
             },
             {
                 id: 169,
@@ -1339,7 +1348,7 @@ const chapters = [
                 title: "Introduction I - 187",
                 image: "CHAPTER 1/Aquarium 1-191.png",
                 alt: "Comic Image 187",
-                text: ["Diálogo<br><br><figcaption style=text-align:left>Maple: ¡Tengo todo, perro!<br>Maple: Volvamos a la base.<br>Aura: ¿De qué habla?<br>Maple: Pues perteneces al club.<br>Maple: Vaya que gastó lo ganado con rapidez, debía tener mucha sed.<br><br>Es verdad, no recuerdas como llegaste a este rincón o de dónde salieron todas estas bebidas.<br><br>Maple: ¿No lo recuerdas? Te ves…<br>Maple: Venimos de la subasta y te subastaste. Te veías muy animada después <br>de ingerir todo lo que estaba en la mesa y…<br>Aura: ¿M-me compraron?... ¿Quién?<br>Maple: ¡Yo y un amigo! Estabamos desesperados por hacer crecer el club supongo, aceptaste lo poco que teníamos."]
+                dialog: ["<figcaption style='text-align:left; color: #f7a444'> Maple: <span style='color: BLACK'>¡Tengo todo, perro!</span></figcaption><figcaption style='text-align:left; color: #f7a444'> Maple: <span style='color: BLACK'>Volvamos a la base.</span></figcaption><figcaption style='text-align:left; color: #d1be11'> Aura: <span style='color: BLACK'>¿De qué habla?</span></figcaption><figcaption style='text-align:left; color: #f7a444'> Maple: <span style='color: BLACK'>Pues perteneces al club.</span></figcaption><figcaption style='text-align:left; color: #f7a444'> Maple: <span style='color: BLACK'>Vaya que gastó lo ganado con rapidez, debía tener mucha sed.</span></figcaption><figcaption style='text-align:left; color: #888888'> Es verdad, no recuerdas como llegaste a este rincón o de dónde salieron todas estas bebidas.</figcaption><figcaption style='text-align:left; color: #f7a444'> Maple: <span style='color: BLACK'>¿No lo recuerdas? Te ves…</span></figcaption><figcaption style='text-align:left; color: #f7a444'> Maple: <span style='color: BLACK'>Venimos de la subasta y te subastaste. Te veías muy animada después de ingerir todo lo que estaba en la mesa y…</span></figcaption><figcaption style='text-align:left; color: #d1be11'> Aura: <span style='color: BLACK'>¿M-me compraron?... ¿Quién?</span></figcaption><figcaption style='text-align:left; color: #f7a444'> Maple: <span style='color: BLACK'>¡Yo y un amigo! Estabamos desesperados por hacer crecer el club supongo, aceptaste lo poco que teníamos.</span></figcaption>"]
             },
             {
                 id: 188,
@@ -1374,28 +1383,31 @@ const chapters = [
                 title: "Introduction I - 192",
                 image: "CHAPTER 1/Aquarium 1-196.png",
                 alt: "Comic Image 192",
-                text: ["El Ave, de nombre Maple, abre unas cortinas en la parte de atrás de la habitación.<br><br><figcaption style=text-align:left>Maple: Ya que comiste. ¡Sigueme a conocer nuestro proyecto!<br>Aura: Tengo unas preguntas antes que eso.<br>Maple: ¡No!"]
+                text: ["El Ave, de nombre Maple, abre unas cortinas en la parte de atrás de la habitación."],
+                dialog: ["<figcaption style='text-align:left; color: #f7a444'> Maple: <span style='color: BLACK'>Ya que comiste. ¡Sigueme a conocer nuestro proyecto!</span></figcaption><figcaption style='text-align:left; color: #d1be11'> Aura: <span style='color: BLACK'>Tengo unas preguntas antes que eso.</span></figcaption><figcaption style='text-align:left; color: #f7a444'> Maple: <span style='color: BLACK'>¡No!</span></figcaption>"]
             },
             {
                 id: 193,
                 title: "Introduction I - 193",
                 image: "CHAPTER 1/Aquarium 1-197.png",
                 alt: "Comic Image 193",
-                text: ["Eres arrastrada contra tu voluntad. Fuera, el área es más extensa de lo que pensabas, y lo que parece ser una feria en un estado bastante pobre se te presenta. Parece haber sido abandonada hace años; plantas cubren las atracciones y muchas están destruidas o han perdido piezas por el poco mantenimiento recibido.<br><br><figcaption style=text-align:left>Maple: Glitch, Agera y yo encontramos este lugar en una exploración no hace mucho tiempo. Varías de nuestras misiones para reconciliar a ambos bandos han fallado, pero esto…"]
+                text: ["Eres arrastrada contra tu voluntad. Fuera, el área es más extensa de lo que pensabas, y lo que parece ser una feria en un estado bastante pobre se te presenta. Parece haber sido abandonada hace años; plantas cubren las atracciones y muchas están destruidas o han perdido piezas por el poco mantenimiento recibido."],
+                dialog: ["<figcaption style='text-align:left; color: #f7a444'> Maple: <span style='color: BLACK'>Glitch, Agera y yo encontramos este lugar en una exploración no hace mucho tiempo. Varías de nuestras misiones para reconciliar a ambos bandos han fallado, pero esto…</span></figcaption>"]
             },
             {
                 id: 194,
                 title: "Introduction I - 194",
                 image: "CHAPTER 1/Aquarium 1-198.png",
                 alt: "Comic Image 194",
-                text: ["<figcaption style=text-align:left>Maple: ¡Parece la diversión definitiva! Claro que están amargados y han olvidado lo que nos une, ésto faltaba.<br>Maple: Por eso una voluntaria para restaurar el área era lo que buscabamos…<br><br><figcaption style=text-align:center>Oh, claro. Lo que en cualquier exdelincuente cae después de que no puede reintegrarse a la sociedad:<br><br>Servicio comunitario.<br><br>¿De verdad? ¿Eso ayudaría a qué?<br><br>Sólo podías contemplar el resultado de una forma:<br><br>Aves y brujas llegan, pelean y el festival queda aún más destruido que antes.<br><br>Pero trabajar aquí tal vez no tendría recompensa monetaria, sí comida.<br><br>Suspiras con gran fuerza."]
+                text: ["<figcaption style=text-align:center>Oh, claro. Lo que en cualquier exdelincuente cae después de que no puede reintegrarse a la sociedad:<br><br>Servicio comunitario.<br><br>¿De verdad? ¿Eso ayudaría a qué?<br><br>Sólo podías contemplar el resultado de una forma:<br><br>Aves y brujas llegan, pelean y el festival queda aún más destruido que antes.<br><br>Pero trabajar aquí tal vez no tendría recompensa monetaria, sí comida.<br><br>Suspiras con gran fuerza."],
+                dialog: ["<figcaption style='text-align:left; color: #f7a444'> Maple: <span style='color: BLACK'>¡Parece la diversión definitiva! Claro que están amargados y han olvidado lo que nos une, ésto faltaba.</span></figcaption><figcaption style='text-align:left; color: #f7a444'> Maple: <span style='color: BLACK'>Por eso una voluntaria para restaurar el área era lo que buscabamos…</span></figcaption>"]
             },
             {
                 id: 195,
                 title: "Introduction I - 195",
                 image: "CHAPTER 1/Aquarium 1-199.png",
                 alt: "Comic Image 195",
-                text: ["<figcaption style=text-align:left>Maple: ¿Entonces?<br>Aura: No creo tener otra opción.<br>Maple: Le decía a Glitch, que no ha querido salir de la tienda por alguna razón.<br>Maple: Tú no tienes opción, te compramos :D<br>Aura: …"]
+                dialog: ["<figcaption style='text-align:left; color: #f7a444'> Maple: <span style='color: BLACK'>¿Entonces?</span></figcaption><figcaption style='text-align:left; color: #d1be11'> Aura: <span style='color: BLACK'>No creo tener otra opción.</span></figcaption><figcaption style='text-align:left; color: #f7a444'> Maple: <span style='color: BLACK'>Le decía a Glitch, que no ha querido salir de la tienda por alguna razón.</span></figcaption><figcaption style='text-align:left; color: #f7a444'> Maple: <span style='color: BLACK'>Tú no tienes opción, te compramos :D</span></figcaption><figcaption style='text-align:left; color: #d1be11'> Aura: <span style='color: BLACK'>…</span></figcaption>"]
             },
             {
                 id: 196,
@@ -1409,7 +1421,8 @@ const chapters = [
                 title: "Introduction I - 197",
                 image: "CHAPTER 1/Aquarium 1-201.png",
                 alt: "Comic Image 197",
-                text: ["<figcaption style=text-align:left>Glitch: No quería interrumpir tu diálogo, odias eso.<br>Maple: ¡Tendrías razón! ¿Y Agera?<br>Glitch: Pensó que Aura podría tener hambre y fué a hacerle algo.<figcaption style=text-align:center><br><br>Genial. Todos piensan que eres una muerta de hambre.<figcaption style=text-align:left><br><br>Maple: ¡Qué considerada! Lo mejor para nuestra esclava.<br>Aura: …<br>Glitch: ¡N-no eres una esclava! Maple sólo bromea. Lo aseguro.<br>Maple: ¿Lo estoy?<br>Glitch: Ehm.<br>Glitch: Iré a ver en que ayudo a Agera."]
+                text: ["Genial. Todos piensan que eres una muerta de hambre."],
+                dialog: ["<figcaption style='text-align:left; color: #6994a6'> Glitch: <span style='color: BLACK'>No quería interrumpir tu diálogo, odias eso.</span></figcaption><figcaption style='text-align:left; color: #f7a444'> Maple: <span style='color: BLACK'>¡Tendrías razón! ¿Y Agera?</span></figcaption><figcaption style='text-align:left; color: #6994a6'> Glitch: <span style='color: BLACK'>Pensó que Aura podría tener hambre y fué a hacerle algo.</span></figcaption><figcaption style='text-align:left; color: #f7a444'> Maple: <span style='color: BLACK'>¡Qué considerada! Lo mejor para nuestra esclava.</span></figcaption><figcaption style='text-align:left; color: #d1be11'> Aura: <span style='color: BLACK'>…</span></figcaption><figcaption style='text-align:left; color: #6994a6'> Glitch: <span style='color: BLACK'>¡N-no eres una esclava! Maple sólo bromea. Lo aseguro.</span></figcaption><figcaption style='text-align:left; color: #f7a444'> Maple: <span style='color: BLACK'>¿Lo estoy?</span></figcaption><figcaption style='text-align:left; color: #6994a6'> Glitch: <span style='color: BLACK'>Ehm.</span></figcaption><figcaption style='text-align:left; color: #6994a6'> Glitch: <span style='color: BLACK'>Iré a ver en que ayudo a Agera.</span></figcaption>"]
             },
             {
                 id: 198,
@@ -1500,7 +1513,7 @@ const chapters = [
                 title: "Introduction I - 210",
                 image: "CHAPTER 1/Aquarium 1-212.png",
                 alt: "Comic Image 210",
-                text: ["Aura: Sucia rata. ¿Quién eres?"]
+                dialog: ["<figcaption style='text-align:left; color: #d1be11'> Aura: <span style='color: BLACK'>Sucia rata. ¿Quién eres?</span></figcaption>"]
             },
             {
                 id: 211,
@@ -1516,126 +1529,243 @@ const chapters = [
                 alt: "Comic Image 212",
                 text: ["La flecha en tu mano se ilumina rápidamente, convirtiéndose en una bola muy similar al resto de pelotas que había en la caja de al lado."]
             },
-    
-        
-            
-    
-        
-
         ]
     },
-    {
-        id: 2,
-        title: "Chapter 2",
-        pages: [
-            {
-                id: 1,
-                title: "Chapter 2 - Page 1",
-                video: "CHAPTER 1/video_prueba.mp4",
-                hasVideo: true,
-                alt: "Comic 2-1",
-                text: ["“”"]
-            },
-            {
-                id: 2,
-                title: "Chapter 2 - Page 2", 
-                image: "CHAPTER 2/Aquarium 2-2.png",
-                alt: "Comic Image 2-2",
-                text: ["“”"]
-            }
-        ]
-    }
 ];
 
 // Variables 
 let currentChapterIndex = 0;
 let currentPageIndex = 0;
+let preloadedImages = new Map(); 
+
+function preloadMultiplePages() {
+    const currentChapter = chapters[currentChapterIndex];
+    const pagesToPreload = 15;
+
+    for (let i = -pagesToPreload; i <= pagesToPreload; i++) {
+        const targetPageIndex = currentPageIndex + i;
+
+        // Verificar que la página existe
+        if (targetPageIndex >= 0 && targetPageIndex < currentChapter.pages.length) {
+            const targetPage = currentChapter.pages[targetPageIndex];
+
+            if (targetPage.image && !targetPage.video) {
+                if (!preloadedImages.has(targetPage.image)) {
+                    const img = new Image();
+                    img.src = targetPage.image;
+                    preloadedImages.set(targetPage.image, img);
+                }
+            }
+        }
+    }
+
+    if (currentChapterIndex < chapters.length - 1) {
+        const nextChapter = chapters[currentChapterIndex + 1];
+        if (nextChapter.pages.length > 0) {
+            const firstPage = nextChapter.pages[0];
+            if (firstPage.image && !firstPage.video && !preloadedImages.has(firstPage.image)) {
+                const img = new Image();
+                img.src = firstPage.image;
+                preloadedImages.set(firstPage.image, img);
+            }
+        }
+    }
+}
+
+function preloadChapter(chapterIndex) {
+    if (chapterIndex >= 0 && chapterIndex < chapters.length) {
+        const chapter = chapters[chapterIndex];
+
+        chapter.pages.forEach((page, index) => {
+            if (page.image && !page.video && !preloadedImages.has(page.image)) {
+                const img = new Image();
+                img.src = page.image;
+                preloadedImages.set(page.image, img);
+            }
+        });
+    }
+}
+
+function showLoader() {
+    let loader = document.getElementById('comic-loader');
+    if (!loader) {
+        loader = document.createElement('div');
+        loader.id = 'comic-loader';
+        loader.className = 'comic-loader';
+        loader.innerHTML = '<div class="loader-spinner"></div><p>Cargando...</p>';
+        document.querySelector('.comic-panel').appendChild(loader);
+    }
+    loader.style.display = 'flex';
+}
+
+function hideLoader() {
+    const loader = document.getElementById('comic-loader');
+    if (loader) {
+        loader.style.display = 'none';
+    }
+}
 
 function renderCurrentPage() {
     const chapter = chapters[currentChapterIndex];
     const page = chapter.pages[currentPageIndex];
-    
+
     const comicImg = document.getElementById("comic-img");
     const comicVideo = document.getElementById("comic-video");
     const comicText = document.getElementById("comic-text");
-    
-    // Detectar si es video o imagen, es niñe o niñe
+    const comicDialog = document.getElementById("comic-dialog");
+    const pageTitle = document.getElementById("page-title"); 
+    const expandBtn = document.getElementById("expand-btn");
+    const dialogBox = document.querySelector(".dialog-box");
+
+    comicImg.style.display = 'none';
+    comicVideo.style.display = 'none';
+
+    showLoader();
+
+    if (pageTitle) {
+        pageTitle.textContent = page.title;
+    }
+
+    const preloadedImage = preloadedImages.get(page.image);
+
+    if(!page.image){
+        comicImg.style.display = 'none';
+        hideLoader();
+    }
+    else if (preloadedImage && preloadedImage.complete) {
+        comicImg.src = page.image;
+        comicImg.style.display = 'block';
+        hideLoader();
+    } else {
+        comicImg.onload = function() {
+            comicImg.style.display = 'block';
+            hideLoader();
+        };
+
+        comicImg.onerror = function() {
+            hideLoader();
+            comicImg.alt = "Error cargando imagen";
+            comicImg.style.display = 'block';
+        };
+
+        comicImg.src = page.image;
+    }
+
+    comicImg.alt = page.alt;
+
     if (page.video) {
         comicImg.style.display = 'none';
         comicVideo.style.display = 'block';
         comicVideo.src = page.video;
-        comicVideo.poster = page.image; // Imagen de miniatura MINIATURA MINIATURA VEGETTA777
+        comicVideo.poster = page.image;
 
-        // CONFIGURACIÓN PARA LOOP
         comicVideo.loop = true;
-        comicVideo.muted = true; //autoplay
-        comicVideo.playsInline = true; // Para iOS -diva emoji-
+        comicVideo.muted = false;
+        comicVideo.playsInline = true;
 
-        // Intentar reproducción automática (golpear a la puta)
         const playPromise = comicVideo.play();
 
-        // reproducción (sexual) automática
         if (playPromise !== undefined) {
             playPromise.then(() => {
                 console.log('Video playing in loop');
+                hideLoader();
             }).catch(error => {
                 console.log('Auto-play prevented, showing controls');
                 comicVideo.controls = true;
+                hideLoader();
             });
         }
     } else {
-        // Detener video cuando cambies a una página sin video emoji joe watin
-        comicVideo.pause();
+        if (!comicVideo.paused) {
+            comicVideo.pause();
+        }
         comicVideo.currentTime = 0;
-        
         comicVideo.style.display = 'none';
-        comicImg.style.display = 'block';
-        comicImg.src = page.image;
-        comicImg.alt = page.alt;
+    }
+
+    // Renderizar texto principal — soporta tanto string como array de strings
+    const textContent = Array.isArray(page.text) ? page.text.join('') : (page.text || '');
+    comicText.innerHTML = textContent;
+    document.title = page.title;
+
+    // Mostrar/ocultar texto narrativo según contenido (trim para evitar strings vacíos)
+    const hasText = typeof textContent === 'string' && textContent.trim().length > 0;
+    if (hasText) {
+        comicText.style.display = 'block';
+    } else {
+        comicText.style.display = 'none';
+    }
+
+    // Detectar diálogo — acepta string o array; considera sólo contenido no vacío
+    let dialogContent = '';
+    if (page.dialog) {
+        dialogContent = Array.isArray(page.dialog) ? page.dialog.join('') : String(page.dialog);
+    }
+    const hasDialog = dialogContent.trim().length > 0;
+
+    if (hasDialog) {
+        // Si hay diálogo, insertarlo como HTML seguro (el contenido ya contiene <br> y tags)
+        comicDialog.innerHTML = dialogContent;
+        if (expandBtn) expandBtn.style.display = 'block';
+        if (dialogBox) dialogBox.style.display = 'block';
+        if (dialogBox) dialogBox.classList.remove('expanded');
+        if (expandBtn) expandBtn.textContent = 'Abrir Conversación';
+    } else {
+        // Si no hay diálogo
+        comicDialog.innerHTML = '';
+        if (expandBtn) expandBtn.style.display = 'none';
+        if (dialogBox) dialogBox.style.display = 'none';
     }
     
-    comicText.innerHTML = page.text;
-    document.title = page.title;
+    setTimeout(preloadMultiplePages, 100);
+
     updateNavigationButtons();
 }
 
-// Navegación entre páginas
+document.getElementById('expand-btn').addEventListener('click', function() {
+    const dialogBox = document.querySelector('.dialog-box');
+    dialogBox.classList.toggle('expanded');
+            
+    // Cambiar el texto del botón
+    if (dialogBox.classList.contains('expanded')) {
+        this.textContent = 'Cerrar';
+    } else {
+        this.textContent = 'Abrir Conversación';
+    }
+});
+
 function nextPage() {
     const currentChapter = chapters[currentChapterIndex];
-    
+
     if (currentPageIndex < currentChapter.pages.length - 1) {
-        // Hay más páginas en este capítulo
         currentPageIndex++;
     } else if (currentChapterIndex < chapters.length - 1) {
-        // sisno pues pasa al siguiente capítulo
         currentChapterIndex++;
         currentPageIndex = 0;
+        preloadedImages.clear();
     }
-    // Si no hay más contenido, no hace nada xD
-    
+
     renderCurrentPage();
     saveProgress();
 }
 
 function prevPage() {
     if (currentPageIndex > 0) {
-        // Página anterior
         currentPageIndex--;
     } else if (currentChapterIndex > 0) {
-        // Capítulo anterior
         currentChapterIndex--;
         currentPageIndex = chapters[currentChapterIndex].pages.length - 1;
+        preloadedImages.clear();
     }
-    // Si es el primer capítulo y primera página, no hace nadaXD
     renderCurrentPage();
     saveProgress();
 }
 
-// Navegación a capítulos
 function goToChapter(chapterIndex) {
     if (chapterIndex >= 0 && chapterIndex < chapters.length) {
         currentChapterIndex = chapterIndex;
         currentPageIndex = 0;
+        preloadedImages.clear();
         renderCurrentPage();
         saveProgress();
     }
@@ -1645,6 +1775,7 @@ function nextChapter() {
     if (currentChapterIndex < chapters.length - 1) {
         currentChapterIndex++;
         currentPageIndex = 0;
+        preloadedImages.clear();
         renderCurrentPage();
         saveProgress();
     }
@@ -1654,23 +1785,21 @@ function prevChapter() {
     if (currentChapterIndex > 0) {
         currentChapterIndex--;
         currentPageIndex = 0;
+        preloadedImages.clear();
         renderCurrentPage();
         saveProgress();
     }
 }
 
-// Actualizar botones de navegación
 function updateNavigationButtons() {
     const currentChapter = chapters[currentChapterIndex];
     const prevButtons = document.querySelectorAll('.fa-arrow-left');
     const nextButtons = document.querySelectorAll('.fa-arrow-right');
-    
-    // Verificar si hay contenido anterior/siguiente
+
     const hasPrevPage = currentPageIndex > 0 || currentChapterIndex > 0;
     const hasNextPage = currentPageIndex < currentChapter.pages.length - 1 || 
                        currentChapterIndex < chapters.length - 1;
-    
-    // Actualizar botones de flecha izquierda
+
     prevButtons.forEach(icon => {
         const button = icon.closest('.nav-btn');
         if (hasPrevPage) {
@@ -1683,8 +1812,7 @@ function updateNavigationButtons() {
             button.style.cursor = 'not-allowed';
         }
     });
-    
-    // Actualizar botones de flecha derecha
+
     nextButtons.forEach(icon => {
         const button = icon.closest('.nav-btn');
         if (hasNextPage) {
@@ -1699,20 +1827,6 @@ function updateNavigationButtons() {
     });
 }
 
-// Actualizar indicadores de progreso
-function updateProgressIndicators() {
-    const currentChapter = chapters[currentChapterIndex];
-    
-    // Crear indicador de progreso si no existe
-    let progressIndicator = document.querySelector('.progress-indicator');
-    if (!progressIndicator) {
-        progressIndicator = document.createElement('div');
-        progressIndicator.className = 'progress-indicator';
-        document.querySelector('.comic-panel').appendChild(progressIndicator);
-    }
-}
-
-// Sistema de guardado de progreso
 function saveProgress() {
     const progress = {
         chapterIndex: currentChapterIndex,
@@ -1727,8 +1841,9 @@ function loadProgress() {
     if (saved) {
         try {
             const progress = JSON.parse(saved);
-            // Validar que los índices existen
-            if (progress.chapterIndex < chapters.length && 
+            if (progress.chapterIndex !== undefined && 
+                progress.pageIndex !== undefined &&
+                progress.chapterIndex < chapters.length && 
                 progress.pageIndex < chapters[progress.chapterIndex].pages.length) {
                 currentChapterIndex = progress.chapterIndex;
                 currentPageIndex = progress.pageIndex;
@@ -1743,15 +1858,14 @@ function resetProgress() {
     localStorage.removeItem('comicProgress');
     currentChapterIndex = 0;
     currentPageIndex = 0;
+    preloadedImages.clear();
     renderCurrentPage();
 }
 
-// Navegación con teclado
 function setupKeyboardNavigation() {
     document.addEventListener('keydown', function(e) {
-        // Ignorar si se está escribiendo en un input
         if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
-        
+
         switch(e.key) {
             case 'ArrowLeft':
                 e.preventDefault();
@@ -1769,21 +1883,18 @@ function setupKeyboardNavigation() {
                 e.preventDefault();
                 currentChapterIndex = chapters.length - 1;
                 currentPageIndex = chapters[currentChapterIndex].pages.length - 1;
+                preloadedImages.clear();
                 renderCurrentPage();
                 break;
         }
     });
 }
 
-// Inicialización cuando se carga la página
 document.addEventListener('DOMContentLoaded', function() {
-    // Cargar progreso guardado
     loadProgress();
-    
-    // Renderizar página actual
+
     renderCurrentPage();
-    
-    // Configurar event listeners para navegación
+
     document.querySelectorAll('.fa-arrow-left').forEach(icon => {
         icon.closest('.nav-btn').addEventListener('click', function(e) {
             e.preventDefault();
@@ -1792,7 +1903,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
-    
+
     document.querySelectorAll('.fa-arrow-right').forEach(icon => {
         icon.closest('.nav-btn').addEventListener('click', function(e) {
             e.preventDefault();
@@ -1801,24 +1912,23 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
-    
+
     // Botón home
     document.querySelector('.home-btn').addEventListener('click', function(e) {
         e.preventDefault();
         window.location.href = 'main.html';
     });
-    
+
     // Botón cerrar
     document.querySelector('.nav-btn-close').addEventListener('click', function(e) {
         e.preventDefault();
         window.close() || window.history.back();
     });
-    
-    // Botones de gestión de progreso
+
     document.querySelector('.save-btn')?.addEventListener('click', saveProgress);
     document.querySelector('.load-btn')?.addEventListener('click', loadProgress);
     document.querySelector('.reset-btn')?.addEventListener('click', resetProgress);
-    
+
     // Auto-save
     const autoSaveCheckbox = document.querySelector('.auto-save');
     if (autoSaveCheckbox) {
@@ -1829,10 +1939,33 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
-    
-    // Configurar navegación por teclado
+
     setupKeyboardNavigation();
-    
-    // Guardar progreso al cerrar la página
+
+    setTimeout(() => {
+        if (currentChapterIndex < chapters.length - 1) {
+            preloadChapter(currentChapterIndex + 1);
+        }
+    }, 2000);
+
     window.addEventListener('beforeunload', saveProgress);
+
+    if (currentChapterIndex > 0) {
+        setTimeout(() => {
+            preloadChapter(currentChapterIndex - 1);
+        }, 3000);
+    }
 });
+
+function preloadAllChapters() {
+    chapters.forEach((chapter, index) => {
+        setTimeout(() => {
+            preloadChapter(index);
+        }, index * 1000); 
+    });
+}
+
+function clearImageCache() {
+    preloadedImages.clear();
+    console.log('Cache de imágenes limpiado');
+}

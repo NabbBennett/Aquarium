@@ -31,7 +31,24 @@ p, h2{
     padding:0;
 }
 
+.Progress{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.Progress img{
+    width: 100%;
+    height: auto    ;
+    margin: 0 auto;
+    position: relative;
+}
 /* HEADER */
+
+.Poster-Ext{
+    display: none;
+}
 
 header {
     display: flex;
@@ -68,7 +85,7 @@ header {
 .navegator-item{
     display: flex;
     justify-content: space-between;
-    padding-left: 5px;
+    padding: 0 15px;
 }
 
 .nav-btn {
@@ -104,9 +121,10 @@ header {
 /* CERRAR */
 
 .close-button{
-    padding-right: 10px;
+    padding-right: 15px;
     align-items: center;
 }
+
 .nav-btn-close {
     padding: 5px;
     color: #CDC0A0;
@@ -158,11 +176,12 @@ header {
     margin: 0;
     padding: 20px 0 5px 0;
     border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 .content{
     background-color: white;
-    padding: 10px 0 0;
+    padding: 10px 0;
 }
 
 /* WELCOME */
@@ -172,14 +191,25 @@ header {
     display: flex;
     flex-direction: column;
     padding: 10px 20px;
+    margin: 10px 0 5px;
 }
 
-.information h2{
+.welcome{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome h2{
+    position: absolute;
     background-color: #A7D1E9;
+    color: white;
+    font-family: 'FuturaCondensed', monospace;
     width: 35%;
     text-align: center;
     border-radius: 5px;
     margin: 0 auto;
+    transform: translateY(-16px);
 }
 
 .square-blue-top{
@@ -233,18 +263,6 @@ header {
     font-size: 14px;
 }
 
-.vali{
-    background-color: red;
-    padding: auto;
-    position: absolute;
-    transform: translateX(80%);
-}    
-
-.vali img{
-    width: 50px;
-    height: 50px;
-}
-/* WHAT IS AQUARIUM? */
 
 /* INTER-POSTER */
 .inter-poster{
@@ -258,6 +276,7 @@ header {
     border-radius: 10px;
     align-items: center;
     display: flex;
+    max-width: 250px;
     width: 100%;
     margin: auto;
 }
@@ -286,218 +305,229 @@ header {
     transform: scale(1.1);
 }
 
-@media screen and (min-width: 768px) and (max-width: 1279px) {
-    body {
-        max-width: 768px;
-        margin: 20px;
+@media screen and (min-width: 768px) and (max-width: 1009px) {
+
+    body{
+        max-width: 700px;
+        margin: 50px auto;
     }
 
-   header {
-        max-width: 748px;
-    }
-
-    .tab{
-        font-size: 30px;
-        max-width: 80px;
-        padding: 10px 20px 10px 15px;
+    .tab {
+        width: 15%;
+        font-size: 25px;
     }
 
     .nav-btn {
         font-size: 25px;
     }
 
-    .logo{
-        padding: 15px 200px;
-    }
-
-    .logo-img{
-        width: 200px;
-        top: 20px;
-    }
-
     .close-button{
-        padding-right: 20px;
+        padding-right: 25px;
     }
 
     .nav-btn-close {
         font-size: 25px;
     }
 
+    .navegator{
+        padding: 10px 0;
+    }
+
+    .logo {
+        padding: 15px 180px;
+    }
+
+    .logo-img {
+        width: 190px;
+        top: 50px;
+    }
+
     .navbar a {
-        font-size: 30px;
-    }
-
-    .navbar span {
-        font-size: 30px;
-        margin: 0 10px;
-    }
-
-    .main-section{
-        max-width: 748px;
-        padding: 40px 0 10px 0;
-    }
-
-    .content{
-        padding:40px 0 0;
-    }
-
-    .information{
-        padding: 40px;
-    }
-    .summary-header{
-        max-width: 300px;
-        padding: 6px 12px;
-        top: 235px;
-    }
-    
-    .summary-header h2{
-        font-size: 35px;
-    }
-
-    .square-blue{
-        max-width: 500px;
-        padding: 25px 120px;
-        margin-bottom: 40px;
-        border-width: 4px;
-    }
-
-    .square-blue p{
-        padding: 30px;
         font-size: 25px;
     }
 
-    .validoggo{
-        width: 100px;
-        height: 100px;
-        position: absolute;
-        top: 530px;
-        padding-left: 120px;
+    .information{
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 25px;
+        align-items: start;
     }
 
-    .inter-poster{
-        padding: 20px;;
+    .welcome {
+        margin-top: 10px;
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .inter-poster {
+        grid-column: 2;
+        grid-row: 1 / span 3;
+    }
+
+    .square-blue {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .welcome  h2{
+        font-size: 35px;
+        max-width: 150px;
+        width: 20%;
+    }
+
+    .square-blue-top{
+        margin: 20px 10px 0;
+    }
+
+    .square-blue-top p{
+        padding-top: 28px;
+        font-size: 20px;   
     }
 
     .poster-img{
-        width: 100%;
+        max-width: 350px;
+        height: auto;
+    }
+
+    .square-blue{
+        margin: 0 10px; ;
+    }
+
+    .square-blue p{
+        padding: 10px;
+        font-size: 20px;
     }
 
     .read-it{
+        padding: 10px 80px;
         max-width: 200px;
-        padding: 10px 30px;
         margin: 15px auto;
     }
 
     .read-button{
-        font-size: 40px;
+        font-size: 35px;
     }
-
 }
 
-@media screen and (min-width: 1280px) {
-    body {
-        max-width: 1280px;
-        margin: 20px;
+@media screen and (min-width: 1001px) {
+
+    .Poster-Ext{
+        display: block;
     }
 
-   header {
-        max-width: 1260px;
+    .poster-ext-img{
+        width: 250px;
+        height: auto;
+        transform: translateY(30%);
     }
 
-    .tab{
-        font-size: 50px;
-        max-width: 100px;
-        padding: 20px 40px 20px 25px;
+    body{
+        align-items: center;
+        min-width: 1400px;
+        max-width: 1400px;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 40px;
+        align-items: start;
+        margin: 50px auto;
+    }
+
+    .body{
+        margin: 0 200px 0 0;
+    }
+
+    .tab {
+        width: 15%;
+        font-size: 30px;
     }
 
     .nav-btn {
-        font-size: 45px;
-    }
-
-    .logo{
-        padding: 25px 350px;
-    }
-
-    .logo-img{
-        width: 350px;
-        top: 20px;
+        font-size: 30px;
+        padding: 0 10px;
     }
 
     .close-button{
-        padding-right: 40px;
+        padding-right: 30px;
     }
 
     .nav-btn-close {
-        font-size: 45px;
+        font-size: 30px;
+    }
+
+    .navegator{
+        padding: 10px 0;
+    }
+
+    .logo {
+        padding: 15px 280px;
+    }
+
+    .logo-img {
+        width: 250px;
+        top: 30px;
     }
 
     .navbar a {
-        font-size: 45px;
-    }
-
-    .navbar span {
-        font-size: 45px;
-        margin: 0 15px;
-    }
-
-    .main-section{
-        max-width: 1260px;
-        padding: 60px 0 20px 0;
-    }
-
-    .content{
-        padding:60px 0px 0px;
+        font-size: 25px;
     }
 
     .information{
-        padding: 60px;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 30px;
+        align-items: start;
     }
-    .summary-header{
-        max-width: 600px;
-        padding: 6px 24px;
-        top: 350px;
+
+    .welcome {
+        margin-top: 50px;
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .inter-poster {
+        grid-column: 2;
+        grid-row: 1 / span 3;
+    }
+
+    .square-blue {
+        grid-column: 1;
+        grid-row: 2;
+        margin: 0 50px; 
+    }
+
+    .square-blue-top{
+        margin: 0 50px;
+    }
+
+    .welcome  h2{
+        font-size: 35px;
+        width: 15%;
+        transform: translateY(-23px);
     }
     
-    .summary-header h2{
-        font-size: 70px;
-    }
-
-    .square-blue{
-        max-width: 600px;
-        padding: 45px 200px;
-        margin-bottom: 80px;
-        border-width: 6px;
-    }
-
-    .square-blue p{
-        padding: 45px;
-        font-size: 45px;
-    }
-
-    .validoggo{
-        width: 200px;
-        height: 200px;
-        position: absolute;
-        top: 850px;
-        padding-left: 200px;
-    }
-
-    .inter-poster{
-        padding: 60px;
+    .square-blue-top p{
+        padding-top: 30px;
+        font-size: 20px;   
     }
 
     .poster-img{
-        width: 120%;
+        max-width: 400px;
         height: auto;
+        margin-right: 50px;
+    }
+
+    .square-blue p{
+        padding: 20px;
+        font-size: 20px;
     }
 
     .read-it{
-        max-width: 350px;
-        padding: 20px 50px;
-        margin: 25px auto;
+        padding: 10px 80px;
+        max-width: 200px;
+        margin: 15px auto;
     }
 
     .read-button{
-        font-size: 70px;
+        font-size: 35px;
     }
 }

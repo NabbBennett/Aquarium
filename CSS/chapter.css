@@ -258,7 +258,7 @@ header {
 
 .dialog-box.expanded {
     padding: 10px 0;
-    max-height: 2500px;
+    max-height: 5000px;
     transition: max-height 0.5s ease-in;
 }
 

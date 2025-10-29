@@ -210,6 +210,9 @@ header {
     padding: 5px;
     margin: 0 20px;
     font-size: 15px;
+    font-size: 12px;
+    font-family: 'Courier New', monospace;
+    font-size: medium;
 }
 
 .button-action{
@@ -258,7 +261,7 @@ header {
 
 .dialog-box.expanded {
     padding: 10px 0;
-    max-height: 5000px;
+    max-height: none;
     transition: max-height 0.5s ease-in;
 }
 
@@ -285,11 +288,6 @@ header {
 
 .expand-btn:active {
     transform: scale(0.98);
-}
-
-.comic-panel figcaption{
-    font-size: 12px;
-    font-family: 'Courier New', Courier, monospace;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1009px) {

@@ -1105,7 +1105,7 @@ const chapters = [
                 title: "Introduction I - 154",
                 image: "CHAPTER 1/Aquarium 1-157.gif",
                 alt: "Comic Image 154",
-                text: ["Aún al ser eliminados por el arco mágino y parecer que no quedén restos. Con el pasar del tiempo las criaturas se regeneran, y no solamente regeneración, sino que se multiplican. Como si se alimentaran del propio hecho trágico de su muerte para crear más de ellos."]
+                text: ["Aún al ser eliminados por el arco mágico y parecer que no quedén restos. Con el pasar del tiempo las criaturas se regeneran, y no solamente regeneración, sino que se multiplican. Como si se alimentaran del propio hecho trágico de su muerte para crear más de ellos."]
             },
             {
                 id: 155,
@@ -1327,7 +1327,7 @@ const chapters = [
                 title: "Introduction I - 184",
                 image: "CHAPTER 1/Aquarium 1-188.png",
                 alt: "Comic Image 184",
-                text: ["Incluso cazar peces podría ser una tarea imposible. Distinguirlos es como distinguir esas piedras de colores que ese sujeto quería, todas iguales.<br><br>¿Cuál es el punto de tener tantos colores en primer lugar? Parece avaricia. Tal vez con eso ganaron dinero, haciendo colores. Tú también podrías hacer eso (ilusiones); ser el primero en algo siempre es lo que te da los beneficios monetarios más grandes. A menos que haya gente con más poder que te arrebate tus logros sin consecuencia alguna.<br><br>Ese arco era como tu pase VIP a la vida. El deus ex machina de esta basura de historia montada. Misma sensación de ser adoptado por una familia de millonarios en una historia ficticia, para que después, por esa puerta, entre un famoso guapo quien, en sus manos, por supuesto, tiene tu arco.Ese arco era como tu pase VIP a la vida. El deus ex machina de esta basura de historia montada. Misma sensación de ser adoptado por una familia de millonarios en una historia ficticia, para que después, por esa puerta, entre un famoso guapo quien, en sus manos, por supuesto, tiene tu arco."]
+                text: ["Incluso cazar peces podría ser una tarea imposible. Distinguirlos es como distinguir esas piedras de colores que ese sujeto quería, todas iguales.<br><br>¿Cuál es el punto de tener tantos colores en primer lugar? Parece avaricia. Tal vez con eso ganaron dinero, haciendo colores. Tú también podrías hacer eso (ilusiones); ser el primero en algo siempre es lo que te da los beneficios monetarios más grandes. A menos que haya gente con más poder que te arrebate tus logros sin consecuencia alguna.<br><br>Ese arco era como tu pase VIP a la vida. El deus ex machina de esta basura de historia montada. Misma sensación de ser adoptado por una familia de millonarios en una historia ficticia, para que después, por esa puerta, entre un famoso guapo quien, en sus manos, por supuesto, tiene tu arco."]
             },
             {
                 id: 185,

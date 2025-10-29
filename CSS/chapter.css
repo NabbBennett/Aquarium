@@ -269,6 +269,7 @@ header {
 .expand-btn {
     background-color: #A7D1E9;
     color: #F9FDEC;
+    max-width: 2500px;
     border: none;
     padding: 10px 20px;
     font-size: 15px;

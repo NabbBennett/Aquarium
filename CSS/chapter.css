@@ -257,7 +257,6 @@ header {
 }
 
 .dialog-box.expanded {
-    max-height: 1500px;
     padding: 10px 0;
     transition: max-height 0.5s ease-in;
 }
@@ -374,7 +373,6 @@ header {
     }
 
     .dialog-box.expanded {
-        max-height: 1500px;
         padding: 25px;
         transition: max-height 0.5s ease-in;
     }
@@ -469,7 +467,6 @@ header {
     }
 
     .dialog-box.expanded {
-        max-height: 1500px;
         padding: 25px;
         transition: max-height 0.5s ease-in;
     }
